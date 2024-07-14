@@ -1,3 +1,7 @@
+Here's the updated README with the added section on chunk size optimization:
+
+---
+
 # RAG Techniques Demonstration 🚀
 
 This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses. Explore the techniques below to enhance the performance and capabilities of your RAG systems.
@@ -116,3 +120,4 @@ Using NLP techniques to identify topic boundaries or coherent sections within do
 
 - Providing transparency in the retrieval process by explaining why certain pieces of information were retrieved and how they relate to the query.
 - Enhancing user trust and providing opportunities for system refinement.
+
