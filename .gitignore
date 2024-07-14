@@ -1,2 +1,10 @@
-.env
-.gitignore
+# Ignore everything by default
+*
+# Allow only specific file types
+!*.py
+!*.md
+!*.txt
+!*.ipynb
+!*jpeg
+!LICENSE
+!*.gif
