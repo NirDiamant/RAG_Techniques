@@ -1,5 +1,6 @@
 # Ignore everything by default
 *
+
 # Allow only specific file types
 !*.py
 !*.md
@@ -11,4 +12,8 @@
 !all_rag_techniques
 !data
 !evaluation
+
+# remove specific files
+__pycache__
+__init__.py
 
