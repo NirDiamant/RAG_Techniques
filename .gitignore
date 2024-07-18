@@ -14,6 +14,7 @@
 !evaluation
 
 # remove specific files
-__pycache__
+__pycache__/
 __init__.py
+gitignore
 
