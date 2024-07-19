@@ -5,6 +5,8 @@ from langchain.vectorstores import FAISS
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain import PromptTemplate
 import fitz
+from typing import List
+from rank_bm25 import BM25Okapi
 
 
 
@@ -176,3 +178,31 @@ def read_pdf_to_string(path):
         content += page.get_text()
     return content
 
+
+
+def bm25_retrieval(bm25: BM25Okapi, cleaned_texts: List[str], query: str, k: int = 5) -> List[str]:
+    """
+    Perform BM25 retrieval and return the top k cleaned text chunks.
+
+    Args:
+    bm25 (BM25Okapi): Pre-computed BM25 index.
+    cleaned_texts (List[str]): List of cleaned text chunks corresponding to the BM25 index.
+    query (str): The query string.
+    k (int): The number of text chunks to retrieve.
+
+    Returns:
+    List[str]: The top k cleaned text chunks based on BM25 scores.
+    """
+    # Tokenize the query
+    query_tokens = query.split()
+
+    # Get BM25 scores for the query
+    bm25_scores = bm25.get_scores(query_tokens)
+
+    # Get the indices of the top k scores
+    top_k_indices = np.argsort(bm25_scores)[::-1][:k]
+
+    # Retrieve the top k cleaned text chunks
+    top_k_texts = [cleaned_texts[i] for i in top_k_indices]
+
+    return top_k_texts
