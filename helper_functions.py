@@ -7,6 +7,8 @@ from langchain import PromptTemplate
 import fitz
 from typing import List
 from rank_bm25 import BM25Okapi
+import asyncio
+import random
 
 
 
@@ -206,3 +208,51 @@ def bm25_retrieval(bm25: BM25Okapi, cleaned_texts: List[str], query: str, k: int
     top_k_texts = [cleaned_texts[i] for i in top_k_indices]
 
     return top_k_texts
+
+
+
+async def exponential_backoff(attempt):
+    """
+    Implements exponential backoff with a jitter.
+    
+    Args:
+        attempt: The current retry attempt number.
+        
+    Waits for a period of time before retrying the operation.
+    The wait time is calculated as (2^attempt) + a random fraction of a second.
+    """
+    # Calculate the wait time with exponential backoff and jitter
+    wait_time = (2 ** attempt) + random.uniform(0, 1)
+    print(f"Rate limit hit. Retrying in {wait_time:.2f} seconds...")
+    
+    # Asynchronously sleep for the calculated wait time
+    await asyncio.sleep(wait_time)
+
+async def retry_with_exponential_backoff(coroutine, max_retries=5):
+    """
+    Retries a coroutine using exponential backoff upon encountering a RateLimitError.
+    
+    Args:
+        coroutine: The coroutine to be executed.
+        max_retries: The maximum number of retry attempts.
+        
+    Returns:
+        The result of the coroutine if successful.
+        
+    Raises:
+        The last encountered exception if all retry attempts fail.
+    """
+    for attempt in range(max_retries):
+        try:
+            # Attempt to execute the coroutine
+            return await coroutine
+        except RateLimitError as e:
+            # If the last attempt also fails, raise the exception
+            if attempt == max_retries - 1:
+                raise e
+            
+            # Wait for an exponential backoff period before retrying
+            await exponential_backoff(attempt)
+    
+    # If max retries are reached without success, raise an exception
+    raise Exception("Max retries reached")
