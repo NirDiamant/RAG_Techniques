@@ -1,125 +1,213 @@
-# RAG Techniques Demonstration 🚀
+# Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
-This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses. Explore the techniques below to enhance the performance and capabilities of your RAG systems.
+I am pleased to present this comprehensive collection of advanced Retrieval-Augmented Generation (RAG) techniques. The aim is to provide a valuable resource for researchers and practitioners seeking to enhance the accuracy, efficiency, and contextual richness of their RAG systems.
 
-## RAG Techniques 🛠️
+## Table of Contents
+- [Introduction](#introduction) 🌟
+- [Key Features](#key-features) 🔑
+- [Advanced Techniques](#advanced-techniques) 🧠
+- [Getting Started](#getting-started) 🚀
+- [Contributing](#contributing) 🤝
+- [License](#license) 📄
+
+## Introduction
+
+Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
+
+## Key Features
+
+- 🧠 State-of-the-art RAG enhancements
+- 📚 Comprehensive documentation for each technique
+- 🛠️ Practical implementation guidelines
+- 🌟 Regular updates with the latest advancements
+
+## Advanced Techniques
+
+Explore the extensive list of cutting-edge RAG techniques:
 
 ### 1. Context Enrichment Techniques 📝
-Embedding individual sentences and extending context to neighboring sentences. For example, retrieving the most relevant sentence while also accessing the sentences before and after it in the original text.
 
-### 2. Filtering 🔍
-- **Metadata Filtering:** 🏷️ Applying filters based on metadata attributes such as date, source, author, or document type. For instance, filtering out older documents if recency is crucial for the query.
-- **Similarity Thresholds:** 📊 Setting thresholds for the relevance scores. Only results that meet or exceed a certain similarity score are kept for further processing.
-- **Content Filtering:** 📄 Removing results that do not match specific content criteria. For example, filtering out results that do not contain certain keywords or phrases essential for answering the query accurately.
-- **Diversity Filtering:** 🌈 Ensuring diversity in the results by filtering out near-duplicate entries, thus providing a broad spectrum of relevant information without redundancy.
+#### Overview 🔎
+Enhancing retrieval accuracy by embedding individual sentences and extending context to neighboring sentences.
+
+#### Implementation 🛠️
+Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
+
+### 2. Multi-faceted Filtering 🔍
+
+#### Overview 🔎
+Applying various filtering techniques to refine and improve the quality of retrieved results.
+
+#### Implementation 🛠️
+- 🏷️ **Metadata Filtering:** Apply filters based on attributes like date, source, author, or document type.
+- 📊 **Similarity Thresholds:** Set thresholds for relevance scores to keep only the most pertinent results.
+- 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
+- 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
 ### 3. Fusion Retrieval 🔗
-Combining keyword-based search with vector-based search for optimized retrieval.
+
+#### Overview 🔎
+Optimizing search results by combining different retrieval methods.
+
+#### Implementation 🛠️
+Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
 ### 4. Reference Citations 📚
-Ensuring source accuracy using direct source mentions and fuzzy matching techniques.
 
-### 5. Reranking 📈
-Applying additional scoring mechanisms to the initially retrieved results to determine their relevance more accurately. This can be done using various models, including:
-- **LLM-based Scoring:** 🧠 Using a language model to score the relevance of each retrieved chunk.
-- **Cross-Encoder Models:** 🔀 Re-encoding both the query and the retrieved documents jointly to produce a similarity score.
-- **Metadata Scoring:** 🏆 Incorporating metadata such as recency, author credibility, or document type into the scoring process.
+#### Overview 🔎
+Boosting credibility and accuracy of information by providing reliable source attributions.
+
+#### Implementation 🛠️
+Use direct source mentions and fuzzy matching techniques to ensure accurate citations.
+
+### 5. Intelligent Reranking 📈
+
+#### Overview 🔎
+Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
+
+#### Implementation 🛠️
+- 🧠 **LLM-based Scoring:** Use a language model to score the relevance of each retrieved chunk.
+- 🔀 **Cross-Encoder Models:** Re-encode both the query and retrieved documents jointly for similarity scoring.
+- 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
 
 ### 6. Query Transformations 🔄
 
-#### 6.1. Query Rewriting ✍️
-Reformulating queries to improve retrieval.
+#### Overview 🔎
+Modifying and expanding queries to improve retrieval effectiveness.
 
-#### 6.2. Step-back Prompting 🔙
-Generating broader queries for better context retrieval.
-
-#### 6.3. Sub-query Decomposition 🧩
-Breaking complex queries into simpler sub-queries.
+#### Implementation 🛠️
+- ✍️ **Query Rewriting:** Reformulate queries to improve retrieval.
+- 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
+- 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
 ### 7. Hierarchical Indices 🗂️
-Creating a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
+
+#### Overview 🔎
+Creating a multi-tiered system for efficient information navigation and retrieval.
+
+#### Implementation 🛠️
+Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
 
 ### 8. Hypothetical Questions (HyDE Approach) ❓
-Generating hypothetical questions for better alignment between queries and data. Each question points to the relevant location in the data.
+
+#### Overview 🔎
+Generating hypothetical questions to improve alignment between queries and data.
+
+#### Implementation 🛠️
+Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
 
 ### 9. Dynamic Chunk Sizing 📏
-- Adjusting the size of text chunks based on the complexity or importance of the content, rather than using a fixed chunk size.
-- This helps preserve context in complex sections while reducing redundancy in simpler parts.
+
+#### Overview 🔎
+Adaptively adjusting the size of text chunks based on content complexity.
+
+#### Implementation 🛠️
+Vary chunk sizes to preserve context in complex sections while reducing redundancy in simpler parts.
 
 ### 10. Semantic Chunking 🧠
 
-#### 10.1. Overview 🔎
-Instead of splitting documents into fixed-size chunks, dividing them based on semantic coherence.
+#### Overview 🔎
+Dividing documents based on semantic coherence rather than fixed sizes.
 
-#### 10.2. Implementation 🛠️
-Using NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
+#### Implementation 🛠️
+Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
 ### 11. Contextual Compression 🗜️
-- After initial retrieval, using an LLM to compress or summarize the retrieved chunks while preserving key information relevant to the query.
-- This allows for including more diverse information within the context window.
+
+#### Overview 🔎
+Compressing retrieved information while preserving query-relevant content.
+
+#### Implementation 🛠️
+Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
 ### 12. Explainable Retrieval 🔍
 
-- Providing transparency in the retrieval process by explaining why certain pieces of information were retrieved and how they relate to the query.
-- Enhancing user trust and providing opportunities for system refinement.
+#### Overview 🔎
+Providing transparency in the retrieval process to enhance user trust and system refinement.
+
+#### Implementation 🛠️
+Explain why certain pieces of information were retrieved and how they relate to the query.
 
 ### 13. Retrieval with Feedback Loops 🔁
 
-#### 13.1. Overview 📊
-Implementing feedback mechanisms where the system can learn from user interactions to improve future retrievals.
+#### Overview 🔎
+Implementing mechanisms to learn from user interactions and improve future retrievals.
 
-#### 13.2. Implementation 🔧
-- Collecting user feedback on the relevance and quality of the retrieved documents and generated responses.
-- Using this feedback to fine-tune the retrieval and ranking models.
+#### Implementation 🛠️
+Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
 ### 14. Adaptive Retrieval 🎯
 
-#### 14.1. Overview 🔍
-Dynamically adjusting retrieval strategies based on the type of query or the user's context.
+#### Overview 🔎
+Dynamically adjusting retrieval strategies based on query types and user contexts.
 
-#### 14.2. Implementation 🛠️
-- Classifying queries into different categories (e.g., factual, opinion-based) and using specific retrieval strategies tailored to each category.
-- Considering user context, such as previous interactions or preferences, to refine the retrieval process.
+#### Implementation 🛠️
+Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
 
 ### 15. Iterative Retrieval 🔄
 
-#### 15.1. Overview 🔁
-Performing multiple rounds of retrieval, using the information from previous rounds to refine subsequent queries.
+#### Overview 🔎
+Performing multiple rounds of retrieval to refine and enhance result quality.
 
-#### 15.2. Implementation 🛠️
-After an initial retrieval, using the LLM to analyze the results and generate follow-up queries to fill in gaps or clarify information.
+#### Implementation 🛠️
+Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
 
 ### 16. Ensemble Retrieval 🎭
 
-#### 16.1. Overview 🔍
-Using multiple retrieval models or techniques and combining their results.
+#### Overview 🔎
+Combining multiple retrieval models or techniques for more robust and accurate results.
 
-#### 16.2. Implementation 🛠️
-Applying different embedding models or retrieval algorithms and using voting or weighting mechanisms to determine the final set of retrieved documents.
+#### Implementation 🛠️
+Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
 ### 17. Knowledge Graph Integration 🕸️
 
-#### 17.1. Overview 📊
-Integrating knowledge graphs with RAG systems to provide structured data and relationships that can enrich the context.
+#### Overview 🔎
+Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
 
-#### 17.2. Implementation 🛠️
-- Retrieving entities and their relationships from a knowledge graph relevant to the query.
-- Combining this structured data with the unstructured text retrieved by the RAG system to provide a more informative response.
+#### Implementation 🛠️
+Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
 
 ### 18. Multi-modal Retrieval 📽️
 
-#### 18.1. Overview 🔍
-Extending RAG systems to handle multiple types of data, such as text, images, and videos, to provide richer responses.
+#### Overview 🔎
+Extending RAG capabilities to handle diverse data types for richer responses.
 
-#### 18.2. Implementation 🛠️
-- Integrating models that can retrieve and understand different data modalities.
-- Combining insights from text, images, and videos to generate comprehensive responses.
+#### Implementation 🛠️
+Integrate models that can retrieve and understand different data modalities, combining insights from text, images, and videos.
 
 ### 19. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳
 
-#### 19.1. Overview 🔍
+#### Overview 🔎
 Implementing a recursive approach to process and organize retrieved information in a tree structure.
 
-#### 19.2. Implementation 🛠️
-- Using abstractive summarization to recursively process and summarize retrieved documents.
-- Organizing the summarized information in a tree structure to provide hierarchical context and improve the comprehensiveness of the response.
+#### Implementation 🛠️
+Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
+
+## Getting Started
+
+To start implementing these advanced RAG techniques in your projects:
+
+1. Clone this repository: `git clone https://github.com/NirDiamant/RAG_Techniques.git`
+2. Navigate to the technique you're interested in: `cd rag-techniques/technique-name`
+3. Follow the detailed implementation guide in each technique's directory
+
+## Contributing
+
+We welcome contributions from the community! If you have a new technique or improvement to suggest:
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a pull request
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐️ If you find this repository helpful, please consider giving it a star!
+
+Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing
