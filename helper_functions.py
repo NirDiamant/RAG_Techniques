@@ -9,6 +9,8 @@ from typing import List
 from rank_bm25 import BM25Okapi
 import asyncio
 import random
+import textwrap
+
 
 
 
@@ -27,6 +29,20 @@ def replace_t_with_space(list_of_documents):
     for doc in list_of_documents:
         doc.page_content = doc.page_content.replace('\t', ' ')  # Replace tabs with spaces
     return list_of_documents
+
+
+def text_wrap(text, width=120):
+    """
+    Wraps the input text to the specified width.
+
+    Args:
+        text (str): The input text to wrap.
+        width (int): The width at which to wrap the text.
+
+    Returns:
+        str: The wrapped text.
+    """
+    return textwrap.fill(text, width=width)
 
 
 
