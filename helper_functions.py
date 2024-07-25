@@ -10,6 +10,7 @@ from rank_bm25 import BM25Okapi
 import asyncio
 import random
 import textwrap
+import numpy as np
 
 
 
@@ -75,6 +76,20 @@ def encode_pdf(path, chunk_size=1000, chunk_overlap=200):
     embeddings = OpenAIEmbeddings()
     vectorstore = FAISS.from_documents(cleaned_texts, embeddings)
 
+    return vectorstore
+
+def encode_from_string(content):
+    text_splitter = RecursiveCharacterTextSplitter(
+        # Set a really small chunk size, just to show.
+        chunk_size=1000,
+        chunk_overlap=200,
+        length_function=len,
+        is_separator_regex=False,
+    )
+    chunks = text_splitter.create_documents([content])
+    embeddings = OpenAIEmbeddings()
+
+    vectorstore = FAISS.from_documents(chunks, embeddings)
     return vectorstore
 
 
