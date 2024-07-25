@@ -87,6 +87,10 @@ def encode_from_string(content):
         is_separator_regex=False,
     )
     chunks = text_splitter.create_documents([content])
+
+    for chunk in chunks:
+        chunk.metadata['relevance_score'] = 1.0
+        
     embeddings = OpenAIEmbeddings()
 
     vectorstore = FAISS.from_documents(chunks, embeddings)
