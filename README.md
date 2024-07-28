@@ -210,4 +210,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ⭐️ If you find this repository helpful, please consider giving it a star!
 
-Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing
+Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing, LLM, Embeddings, Semantic Search
