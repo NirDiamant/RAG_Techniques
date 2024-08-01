@@ -80,7 +80,7 @@ Modifying and expanding queries to improve retrieval effectiveness.
 - 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
 - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
-### 7. Hierarchical Indices 🗂️
+### 7. Hierarchical Indices 🗂️ (https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
 
 #### Overview 🔎
 Creating a multi-tiered system for efficient information navigation and retrieval.
