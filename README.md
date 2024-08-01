@@ -25,7 +25,15 @@ Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine infor
 
 Explore the extensive list of cutting-edge RAG techniques:
 
-### 1. Context Enrichment Techniques 📝
+### 1. [Simple RAG 🌱](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
+
+#### Overview 🔎
+Introducing basic RAG techniques ideal for newcomers.
+
+#### Implementation 🛠️
+Start with basic retrieval queries and integrate incremental learning mechanisms.
+
+### 2. [Context Enrichment Techniques 📝](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)
 
 #### Overview 🔎
 Enhancing retrieval accuracy by embedding individual sentences and extending context to neighboring sentences.
@@ -33,7 +41,7 @@ Enhancing retrieval accuracy by embedding individual sentences and extending con
 #### Implementation 🛠️
 Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
-### 2. Multi-faceted Filtering 🔍
+### 3. Multi-faceted Filtering 🔍
 
 #### Overview 🔎
 Applying various filtering techniques to refine and improve the quality of retrieved results.
@@ -44,7 +52,7 @@ Applying various filtering techniques to refine and improve the quality of retri
 - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
 - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-### 3. Fusion Retrieval 🔗
+### 4. [Fusion Retrieval 🔗](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
 
 #### Overview 🔎
 Optimizing search results by combining different retrieval methods.
@@ -52,15 +60,7 @@ Optimizing search results by combining different retrieval methods.
 #### Implementation 🛠️
 Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-### 4. Reference Citations 📚
-
-#### Overview 🔎
-Boosting credibility and accuracy of information by providing reliable source attributions.
-
-#### Implementation 🛠️
-Use direct source mentions and fuzzy matching techniques to ensure accurate citations.
-
-### 5. Intelligent Reranking 📈
+### 5. [Intelligent Reranking 📈](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
 
 #### Overview 🔎
 Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
@@ -70,7 +70,7 @@ Applying advanced scoring mechanisms to improve the relevance ranking of retriev
 - 🔀 **Cross-Encoder Models:** Re-encode both the query and retrieved documents jointly for similarity scoring.
 - 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
 
-### 6. Query Transformations 🔄
+### 6.[Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
 
 #### Overview 🔎
 Modifying and expanding queries to improve retrieval effectiveness.
@@ -80,7 +80,7 @@ Modifying and expanding queries to improve retrieval effectiveness.
 - 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
 - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
-### 7. [Hierarchical Indices 🗂️ ](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
+### 7. [Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
 
 #### Overview 🔎
 Creating a multi-tiered system for efficient information navigation and retrieval.
@@ -88,7 +88,7 @@ Creating a multi-tiered system for efficient information navigation and retrieva
 #### Implementation 🛠️
 Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
 
-### 8. Hypothetical Questions (HyDE Approach) ❓
+### 8. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
 
 #### Overview 🔎
 Generating hypothetical questions to improve alignment between queries and data.
@@ -104,7 +104,7 @@ Adaptively adjusting the size of text chunks based on content complexity.
 #### Implementation 🛠️
 Vary chunk sizes to preserve context in complex sections while reducing redundancy in simpler parts.
 
-### 10. Semantic Chunking 🧠
+### 10. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
 
 #### Overview 🔎
 Dividing documents based on semantic coherence rather than fixed sizes.
@@ -112,7 +112,7 @@ Dividing documents based on semantic coherence rather than fixed sizes.
 #### Implementation 🛠️
 Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
-### 11. Contextual Compression 🗜️
+### 11. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
 
 #### Overview 🔎
 Compressing retrieved information while preserving query-relevant content.
@@ -120,7 +120,7 @@ Compressing retrieved information while preserving query-relevant content.
 #### Implementation 🛠️
 Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
-### 12. Explainable Retrieval 🔍
+### 12. [Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)
 
 #### Overview 🔎
 Providing transparency in the retrieval process to enhance user trust and system refinement.
@@ -128,7 +128,7 @@ Providing transparency in the retrieval process to enhance user trust and system
 #### Implementation 🛠️
 Explain why certain pieces of information were retrieved and how they relate to the query.
 
-### 13. Retrieval with Feedback Loops 🔁
+### 13. [Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)
 
 #### Overview 🔎
 Implementing mechanisms to learn from user interactions and improve future retrievals.
@@ -136,7 +136,7 @@ Implementing mechanisms to learn from user interactions and improve future retri
 #### Implementation 🛠️
 Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
-### 14. Adaptive Retrieval 🎯
+### 14. [Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)
 
 #### Overview 🔎
 Dynamically adjusting retrieval strategies based on query types and user contexts.
@@ -160,7 +160,7 @@ Combining multiple retrieval models or techniques for more robust and accurate r
 #### Implementation 🛠️
 Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
-### 17. Knowledge Graph Integration 🕸️
+### 17. [Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)
 
 #### Overview 🔎
 Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
