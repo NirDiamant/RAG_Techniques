@@ -184,7 +184,7 @@ Implementing a recursive approach to process and organize retrieved information 
 #### Implementation 🛠️
 Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-### [20. Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
+### 20. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
 
 #### Overview 🔎
 Enhancing RAG systems with self-reflection and self-correction capabilities.
