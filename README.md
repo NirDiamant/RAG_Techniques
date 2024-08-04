@@ -96,13 +96,13 @@ Generating hypothetical questions to improve alignment between queries and data.
 #### Implementation 🛠️
 Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
 
-### 9. Dynamic Chunk Sizing 📏
+### 9. [Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
 
 #### Overview 🔎
-Adaptively adjusting the size of text chunks based on content complexity.
+Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
 
 #### Implementation 🛠️
-Vary chunk sizes to preserve context in complex sections while reducing redundancy in simpler parts.
+Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
 
 ### 10. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
 
@@ -183,6 +183,14 @@ Implementing a recursive approach to process and organize retrieved information 
 
 #### Implementation 🛠️
 Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
+
+### [20. Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
+
+#### Overview 🔎
+Enhancing RAG systems with self-reflection and self-correction capabilities.
+
+#### Implementation 🛠️
+Implement a feedback loop where the LLM evaluates its own responses, identifies potential inaccuracies or missing information, and initiates additional retrieval or reasoning steps to improve the final output.
 
 ## Getting Started
 
