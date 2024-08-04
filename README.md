@@ -187,10 +187,18 @@ Use abstractive summarization to recursively process and summarize retrieved doc
 ### 20. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
 
 #### Overview 🔎
-Enhancing RAG systems with self-reflection and self-correction capabilities.
+A dynamic approach that combines retrieval-based and generation-based methods, adaptively deciding whether to use retrieved information and how to best utilize it in generating responses.
 
 #### Implementation 🛠️
-Implement a feedback loop where the LLM evaluates its own responses, identifies potential inaccuracies or missing information, and initiates additional retrieval or reasoning steps to improve the final output.
+• Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
+
+### 21. [Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)
+
+#### Overview 🔎
+A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
+
+#### Implementation 🛠️
+• Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
 ## Getting Started
 
