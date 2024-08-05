@@ -200,6 +200,16 @@ A sophisticated RAG approach that dynamically evaluates and corrects the retriev
 #### Implementation 🛠️
 • Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
+## 🌟 Special Advanced Technique 🌟
+
+### 22. [Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)
+
+#### Overview 🔎
+An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
+
+#### Implementation 🛠️
+• Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
+
 ## Getting Started
 
 To start implementing these advanced RAG techniques in your projects:
