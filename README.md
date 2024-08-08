@@ -176,7 +176,7 @@ Extending RAG capabilities to handle diverse data types for richer responses.
 #### Implementation 🛠️
 Integrate models that can retrieve and understand different data modalities, combining insights from text, images, and videos.
 
-### 19. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳
+### 19. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
 
 #### Overview 🔎
 Implementing a recursive approach to process and organize retrieved information in a tree structure.
