@@ -18,6 +18,8 @@ I am pleased to present this comprehensive collection of advanced Retrieval-Augm
 
 Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
 
+🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to [connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/).
+
 ## Key Features
 
 - 🧠 State-of-the-art RAG enhancements
