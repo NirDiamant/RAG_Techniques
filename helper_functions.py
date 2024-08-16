@@ -78,11 +78,11 @@ def encode_pdf(path, chunk_size=1000, chunk_overlap=200):
 
     return vectorstore
 
-def encode_from_string(content):
+def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
     text_splitter = RecursiveCharacterTextSplitter(
         # Set a really small chunk size, just to show.
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
         length_function=len,
         is_separator_regex=False,
     )

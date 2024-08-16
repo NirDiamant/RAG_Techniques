@@ -1,3 +1,7 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
 I am pleased to present this comprehensive collection of advanced Retrieval-Augmented Generation (RAG) techniques. The aim is to provide a valuable resource for researchers and practitioners seeking to enhance the accuracy, efficiency, and contextual richness of their RAG systems.
