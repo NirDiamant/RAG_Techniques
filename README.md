@@ -216,11 +216,17 @@ An advanced RAG solution designed to tackle complex questions that simple semant
 
 ## Getting Started
 
-To start implementing these advanced RAG techniques in your projects:
+To begin implementing these advanced RAG techniques in your projects:
 
-1. Clone this repository: `git clone https://github.com/NirDiamant/RAG_Techniques.git`
-2. Navigate to the technique you're interested in: `cd all_rag_techniques/technique-name`
-3. Follow the detailed implementation guide in each technique's directory
+1. Clone this repository:
+   ```
+   git clone https://github.com/NirDiamant/RAG_Techniques.git
+   ```
+2. Navigate to the technique you're interested in:
+   ```
+   cd all_rag_techniques/technique-name
+   ```
+3. Follow the detailed implementation guide in each technique's directory.
 
 ## Contributing
 
