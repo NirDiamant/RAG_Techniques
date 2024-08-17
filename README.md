@@ -2,7 +2,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/NirDiamantAI.svg?style=social&label=Follow%20%40cloudposse)](https://twitter.com/NirDiamantAI)
+[![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20on%20X&style=social)](https://twitter.com/NirDiamantAI)
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
