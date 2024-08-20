@@ -3,6 +3,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
 [![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&style=social)](https://twitter.com/NirDiamantAI)
+[![Discord](https://img.shields.io/discord/1234567890?style=flat-square&label=Discord&logo=discord&logoColor=white&color=7289da)](https://discord.gg/8PSA7s5v)
 <a href="https://app.commanddash.io/agent/github_NirDiamant_RAG_Techniques"><img src="https://img.shields.io/badge/AI-Code%20Agent-EB9FDA"></a>
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
@@ -17,9 +18,9 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 ## A Community-Driven Knowledge Hub
 
-This repository thrives on community contributions! Join our Slack community — the central hub for discussing and managing contributions to this project:
+This repository thrives on community contributions! Join our Discord community — the central hub for discussing and managing contributions to this project:
 
-[RAG Techniques Slack Community](https://join.slack.com/t/ragtechniques/shared_invite/zt-2oycgwuvp-5WveAcpJtSrkUSyDi8VD1Q)
+[RAG Techniques Discord Community](https://discord.gg/8PSA7s5v)
 
 Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our [CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md) file. Let's advance RAG technology together!
 
