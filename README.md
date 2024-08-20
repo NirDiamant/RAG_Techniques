@@ -9,6 +9,12 @@
 
 Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
 
+## Introduction
+
+Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
+
+Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
+
 ## A Community-Driven Knowledge Hub
 
 This repository thrives on community contributions! Join our Slack community — the central hub for discussing and managing contributions to this project:
@@ -16,18 +22,6 @@ This repository thrives on community contributions! Join our Slack community —
 [RAG Techniques Slack Community](https://join.slack.com/t/ragtechniques/shared_invite/zt-2oycgwuvp-5WveAcpJtSrkUSyDi8VD1Q)
 
 Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our [CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md) file. Let's advance RAG technology together!
-
-## Table of Contents
-- [Introduction](#introduction) 🌟
-- [Key Features](#key-features) 🔑
-- [Advanced Techniques](#advanced-techniques) 🧠
-- [Getting Started](#getting-started) 🚀
-- [Contributing](#contributing) 🤝
-- [License](#license) 📄
-
-## Introduction
-
-Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
 
 🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to [connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/).
 
