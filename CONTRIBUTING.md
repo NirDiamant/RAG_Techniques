@@ -4,9 +4,9 @@ Welcome to the world's largest and most comprehensive repository of Retrieval-Au
 
 ## Join Our Community
 
-We have a vibrant Slack community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
+We have a vibrant Discord community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
 
-[RAG Techniques Slack Community](https://join.slack.com/t/rag-techniques/shared_invite/zt-1234567890)
+[RAG Techniques Discord Server](https://discord.gg/8PSA7s5v)
 
 Don't hesitate to introduce yourself and share your thoughts!
 
@@ -19,13 +19,13 @@ We welcome contributions of all kinds! Here are some ways you can help:
 3. **Fix Bugs:** Help us squash bugs in existing code or explanations.
 4. **Enhance Documentation:** Improve clarity, add examples, or fix typos in our docs.
 5. **Share Creative Ideas:** Have an innovative idea? We're all ears!
-6. **Engage in Discussions:** Participate in our Slack community to help shape the future of RAG.
+6. **Engage in Discussions:** Participate in our Discord community to help shape the future of RAG.
 
 Remember, no contribution is too small. Every improvement helps make this repository an even better resource for the community.
 
 ## Reporting Issues
 
-Found a problem or have a suggestion? Please create an issue on GitHub, providing as much detail as possible. You can also discuss issues in our Slack community.
+Found a problem or have a suggestion? Please create an issue on GitHub, providing as much detail as possible. You can also discuss issues in our Discord community.
 
 ## Contributing Code or Content
 
@@ -35,7 +35,7 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 4. **Follow the Style:** Adhere to the coding and documentation conventions used throughout the project.
 5. **Commit:** Make your git commits informative and concise.
 6. **Push and Pull Request:** Push to your fork and submit a pull request.
-7. **Discuss:** Use the Slack community to discuss your contribution if you need feedback or have questions.
+7. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
 
 ## Notebook Structure
 
@@ -65,7 +65,7 @@ Clear documentation is crucial. Whether you're improving existing docs or adding
 
 ## Final Notes
 
-We're grateful for all our contributors and excited to see how you'll help expand the world's most comprehensive RAG resource. Don't hesitate to ask questions in our Slack community if you're unsure about anything.
+We're grateful for all our contributors and excited to see how you'll help expand the world's most comprehensive RAG resource. Don't hesitate to ask questions in our Discord community if you're unsure about anything.
 
 Let's harness our collective knowledge and creativity to push the boundaries of RAG technology together!
 
