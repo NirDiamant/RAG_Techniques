@@ -37,6 +37,31 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 6. **Push and Pull Request:** Push to your fork and submit a pull request.
 7. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
 
+## Adding a New RAG Method
+
+When adding a new RAG method to the repository, please follow these additional steps:
+
+1. Create your notebook in the `all_rag_techniques` folder.
+2. Update the README.md file:
+   - Add your new method to the list of techniques in the README.
+   - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated).
+   - Use the following format for the link:
+     ```
+     ### [Number]. [Your Method Name 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
+     ```
+   - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file.
+   - Choose an appropriate emoji that represents your method.
+   - After inserting your new method, make sure to update the numbers of all subsequent techniques to maintain the correct order.
+
+For example:
+```
+### 1. [Simple RAG 🌱](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
+### 2. [Your New Method 🆕](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
+### 3. [Next Method 🔜](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
+```
+
+Remember to increment the numbers of all methods that come after your newly inserted technique.
+
 ## Notebook Structure
 
 For new notebooks or significant additions to existing ones, please follow this structure:
