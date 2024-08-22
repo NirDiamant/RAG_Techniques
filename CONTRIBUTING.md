@@ -6,7 +6,7 @@ Welcome to the world's largest and most comprehensive repository of Retrieval-Au
 
 We have a vibrant Slack community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
 
-[RAG Techniques Slack Community](https://join.slack.com/t/ragtechniques/shared_invite/zt-2oycgwuvp-5WveAcpJtSrkUSyDi8VD1Q)
+[RAG Techniques Slack Community](https://join.slack.com/t/rag-techniques/shared_invite/zt-1234567890)
 
 Don't hesitate to introduce yourself and share your thoughts!
 
@@ -49,6 +49,15 @@ For new notebooks or significant additions to existing ones, please follow this 
 6. **Comparison:** Compare with basic RAG, both qualitatively and quantitatively if possible.
 7. **Additional Considerations:** Discuss limitations, potential improvements, or specific use cases.
 8. **References:** Include relevant citations or resources if you have.
+
+## Code Quality and Readability
+
+To ensure the highest quality and readability of our code:
+
+1. **Write Clean Code:** Follow best practices for clean, readable code.
+2. **Use Comments:** Add clear and concise comments to explain complex logic.
+3. **Format Your Code:** Use consistent formatting throughout your contribution.
+4. **Language Model Review:** After completing your code, consider passing it through a language model for additional formatting and readability improvements. This extra step can help make your code even more accessible and maintainable.
 
 ## Documentation
 
