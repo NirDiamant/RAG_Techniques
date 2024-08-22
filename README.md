@@ -221,6 +221,14 @@ An advanced RAG solution designed to tackle complex questions that simple semant
 #### Implementation 🛠️
 • Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
 
+### 23. [Document Augmentation through Question Generation for Enhanced Retrieval ]((https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb))
+
+#### Overview 🔎
+This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
+
+#### Implementation 🛠️
+Use an LLM to augment text dataset with all possible questions that can be asked to each document.
+
 ## Getting Started
 
 To begin implementing these advanced RAG techniques in your projects:
