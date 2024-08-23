@@ -67,12 +67,32 @@ Remember to increment the numbers of all methods that come after your newly inse
 For new notebooks or significant additions to existing ones, please follow this structure:
 
 1. **Title and Overview:** Clear title and brief overview of the technique.
+
 2. **Detailed Explanation:** Cover motivation, key components, method details, and benefits.
-3. **Visual Representation:** Include a diagram (preferably using Mermaid syntax) to visualize the technique.
+
+3. **Visual Representation:** Include a diagram to visualize the technique. We recommend using Mermaid syntax for creating these diagrams. Here's how to do it:
+
+• Create a graph using Mermaid's graph TD (top-down) syntax
+• You can use Claude or other AI assistants to help you design the graph if needed
+• Paste your Mermaid code into [Mermaid Live Editor](https://mermaid.live/)
+• In the "Actions" tab of Mermaid Live Editor, download the SVG file of your diagram
+• Store the SVG file in the [images folder](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) of the repository
+• Use an appropriate, descriptive name for the file
+• In your notebook, display the image using Markdown syntax:
+  ```markdown
+  ![Your Technique Name](../images/your-technique-name.svg)
+  ```
+
+This process ensures consistency in our visual representations and makes it easy for others to understand and potentially modify the diagrams in the future.
+
 4. **Implementation:** Step-by-step Python implementation with clear comments and explanations.
+
 5. **Usage Example:** Demonstrate the technique with a practical example.
+
 6. **Comparison:** Compare with basic RAG, both qualitatively and quantitatively if possible.
+
 7. **Additional Considerations:** Discuss limitations, potential improvements, or specific use cases.
+
 8. **References:** Include relevant citations or resources if you have.
 
 ## Code Quality and Readability
