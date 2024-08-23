@@ -72,13 +72,13 @@ For new notebooks or significant additions to existing ones, please follow this 
 
 3. **Visual Representation:** Include a diagram to visualize the technique. We recommend using Mermaid syntax for creating these diagrams. Here's how to do it:
 
-• Create a graph using Mermaid's graph TD (top-down) syntax
-• You can use Claude or other AI assistants to help you design the graph if needed
-• Paste your Mermaid code into [Mermaid Live Editor](https://mermaid.live/)
-• In the "Actions" tab of Mermaid Live Editor, download the SVG file of your diagram
-• Store the SVG file in the [images folder](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) of the repository
-• Use an appropriate, descriptive name for the file
-• In your notebook, display the image using Markdown syntax:
+• Create a graph using Mermaid's graph TD (top-down) syntax<br>
+• You can use Claude or other AI assistants to help you design the graph if needed<br>
+• Paste your Mermaid code into [Mermaid Live Editor](https://mermaid.live/)<br>
+• In the "Actions" tab of Mermaid Live Editor, download the SVG file of your diagram<br>
+• Store the SVG file in the [images folder](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) of the repository<br>
+• Use an appropriate, descriptive name for the file<br>
+• In your notebook, display the image using Markdown syntax:<br>
   ```markdown
   ![Your Technique Name](../images/your-technique-name.svg)
   ```
