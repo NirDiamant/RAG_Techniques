@@ -179,3 +179,5 @@ wrapt==1.16.0
 xxhash==3.4.1
 yarl==1.9.4
 zipp==3.19.2
+# Additional libraries for LlamaIndex implementations
+llama-index-vector-stores-faiss==0.1.2
