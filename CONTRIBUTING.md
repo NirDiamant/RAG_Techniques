@@ -34,8 +34,9 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 3. **Test:** Ensure your changes work as expected.
 4. **Follow the Style:** Adhere to the coding and documentation conventions used throughout the project.
 5. **Commit:** Make your git commits informative and concise.
-6. **Push and Pull Request:** Push to your fork and submit a pull request.
-7. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
+6. **Stay Updated:** The main branch is frequently updated. Before opening a pull request, make sure your code is up-to-date with the current main branch and has no conflicts.
+7. **Push and Pull Request:** Push to your fork and submit a pull request.
+8. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
 
 ## Adding a New RAG Method
 
