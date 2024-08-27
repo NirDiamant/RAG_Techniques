@@ -1,4 +1,4 @@
-from langchain.document_loaders import  PyPDFLoader
+from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
@@ -6,6 +6,8 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain import PromptTemplate
 import fitz
 from typing import List
+
+from openai import RateLimitError
 from rank_bm25 import BM25Okapi
 import asyncio
 import random
