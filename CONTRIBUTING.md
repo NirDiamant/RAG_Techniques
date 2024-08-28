@@ -6,7 +6,7 @@ Welcome to the world's largest and most comprehensive repository of Retrieval-Au
 
 We have a vibrant Discord community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
 
-[RAG Techniques Discord Server](https://discord.gg/8PSA7s5v)
+[RAG Techniques Discord Server](https://discord.gg/cA6Aa4uyDX)
 
 Don't hesitate to introduce yourself and share your thoughts!
 
