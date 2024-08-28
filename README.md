@@ -68,8 +68,11 @@ Applying various filtering techniques to refine and improve the quality of retri
 - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
 - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-### 4. [Fusion Retrieval 🔗](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
+### 4. Fusion Retrieval 🔗
 
+- **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**
+- **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
+ 
 #### Overview 🔎
 Optimizing search results by combining different retrieval methods.
 
