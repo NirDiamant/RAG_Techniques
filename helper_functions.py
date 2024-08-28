@@ -79,21 +79,52 @@ def encode_pdf(path, chunk_size=1000, chunk_overlap=200):
     return vectorstore
 
 def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
-    text_splitter = RecursiveCharacterTextSplitter(
-        # Set a really small chunk size, just to show.
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-        length_function=len,
-        is_separator_regex=False,
-    )
-    chunks = text_splitter.create_documents([content])
+    """
+    Encodes a string into a vector store using OpenAI embeddings.
 
-    for chunk in chunks:
-        chunk.metadata['relevance_score'] = 1.0
-        
-    embeddings = OpenAIEmbeddings()
+    Args:
+        content (str): The text content to be encoded.
+        chunk_size (int): The size of each chunk of text.
+        chunk_overlap (int): The overlap between chunks.
 
-    vectorstore = FAISS.from_documents(chunks, embeddings)
+    Returns:
+        FAISS: A vector store containing the encoded content.
+
+    Raises:
+        ValueError: If the input content is not valid.
+        RuntimeError: If there is an error during the encoding process.
+    """
+   
+    if not isinstance(content, str) or not content.strip():
+        raise ValueError("Content must be a non-empty string.")
+
+    if not isinstance(chunk_size, int) or chunk_size <= 0:
+        raise ValueError("chunk_size must be a positive integer.")
+
+    if not isinstance(chunk_overlap, int) or chunk_overlap < 0:
+        raise ValueError("chunk_overlap must be a non-negative integer.")
+
+    try:
+        # Split the content into chunks
+        text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            length_function=len,
+            is_separator_regex=False,
+        )
+        chunks = text_splitter.create_documents([content])
+
+        # Assign metadata to each chunk
+        for chunk in chunks:
+            chunk.metadata['relevance_score'] = 1.0
+
+        # Generate embeddings and create the vector store
+        embeddings = OpenAIEmbeddings()
+        vectorstore = FAISS.from_documents(chunks, embeddings)
+
+    except Exception as e:
+        raise RuntimeError(f"An error occurred during the encoding process: {str(e)}")
+
     return vectorstore
 
 
