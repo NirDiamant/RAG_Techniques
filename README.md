@@ -20,7 +20,7 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 This repository thrives on community contributions! Join our Discord community — the central hub for discussing and managing contributions to this project:
 
-[RAG Techniques Discord Community](https://discord.gg/8PSA7s5v)
+[RAG Techniques Discord Community](https://discord.com/invite/wh3rVazc)
 
 Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our [CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md) file. Let's advance RAG technology together!
 
