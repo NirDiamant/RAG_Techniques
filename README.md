@@ -6,6 +6,9 @@
 
 <a href="https://app.commanddash.io/agent/github_NirDiamant_RAG_Techniques"><img src="https://img.shields.io/badge/AI-Code%20Agent-EB9FDA"></a>
 
+> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. [Become a sponsor](https://github.com/sponsors/NirDiamant) to help maintain and expand this valuable resource!
+
+
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
 Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
