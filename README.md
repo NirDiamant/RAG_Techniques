@@ -50,8 +50,10 @@ Introducing basic RAG techniques ideal for newcomers.
 #### Implementation 🛠️
 Start with basic retrieval queries and integrate incremental learning mechanisms.
 
-### 2. [Context Enrichment Techniques 📝](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)
-
+### 2. Context Enrichment Techniques 📝
+- **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**
+- **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
+  
 #### Overview 🔎
 Enhancing retrieval accuracy by embedding individual sentences and extending context to neighboring sentences.
 
@@ -69,8 +71,11 @@ Applying various filtering techniques to refine and improve the quality of retri
 - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
 - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-### 4. [Fusion Retrieval 🔗](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
+### 4. Fusion Retrieval 🔗
 
+- **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**
+- **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
+ 
 #### Overview 🔎
 Optimizing search results by combining different retrieval methods.
 
