@@ -190,13 +190,13 @@ Incorporating structured data from knowledge graphs to enrich context and improv
 #### Implementation 🛠️
 Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
 
-### 18. Multi-modal Retrieval 📽️
+### 18. [Multi-modal Retrieval 📽️](https://github.com/superlinked/superlinked/blob/main/notebook/rag_hr_knowledgebase.ipynb)
 
 #### Overview 🔎
-Extending RAG capabilities to handle diverse data types for richer responses.
+Extending RAG capabilities to handle diverse data types for better retrieval quality achieving richer responses.
 
 #### Implementation 🛠️
-Integrate models that can retrieve and understand different data modalities, combining insights from text, images, and videos.
+Integrate encoders that can retrieve and understand different data modalities, combining insights from text, numbers and timestamps.
 
 ### 19. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
 
