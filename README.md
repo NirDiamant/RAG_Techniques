@@ -190,7 +190,7 @@ Incorporating structured data from knowledge graphs to enrich context and improv
 #### Implementation 🛠️
 Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
 
-### 18. [Multi-modal Retrieval 📽️](https://github.com/superlinked/superlinked/blob/main/notebook/rag_hr_knowledgebase.ipynb)
+### 18. [Multi-modal Retrieval 📽️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi-modal-rag-hr-documents.ipynb)
 
 #### Overview 🔎
 Extending RAG capabilities to handle diverse data types for better retrieval quality achieving richer responses.
