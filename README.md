@@ -92,6 +92,9 @@ Applying advanced scoring mechanisms to improve the relevance ranking of retriev
 - 🔀 **Cross-Encoder Models:** Re-encode both the query and retrieved documents jointly for similarity scoring.
 - 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
 
+#### Additional Resources 📚
+- [Relevance Revolution: How Re-ranking Transforms RAG Systems](https://medium.com/@nirdiamant21/relevance-revolution-how-re-ranking-transforms-rag-systems-0ffaa15f1047) - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
+
 ### 6.[Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
 
 #### Overview 🔎
