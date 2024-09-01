@@ -113,6 +113,9 @@ Creating a multi-tiered system for efficient information navigation and retrieva
 #### Implementation 🛠️
 Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
 
+#### Additional Resources 📚
+- [Hierarchical Indices: Enhancing RAG Systems](https://medium.com/@nirdiamant21/hierarchical-indices-enhancing-rag-systems-43c06330c085?sk=d5f97cbece2f640da8746f8da5f95188) - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
+
 ### 8. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
 
 #### Overview 🔎
