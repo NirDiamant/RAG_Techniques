@@ -269,6 +269,10 @@ We welcome contributions from the community! If you have a new technique or impr
 4. Push to the branch: `git push origin feature/AmazingFeature`
 5. Open a pull request
 
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=NirDiamant/RAG_Techniques)](https://github.com/NirDiamant/RAG_Techniques/graphs/contributors)
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
