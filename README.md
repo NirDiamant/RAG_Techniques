@@ -108,6 +108,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
+   #### Additional Resources 📚
+   - [Semantic Chunking: Improving AI Information Retrieval](https://medium.com/@nirdiamant21/semantic-chunking-improving-ai-information-retrieval-2f468be2d707) - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
+
 8. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
 
    #### Overview 🔎
