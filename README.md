@@ -40,7 +40,9 @@ Whether you're an expert or just starting out, your insights can shape the futur
 
 Explore the extensive list of cutting-edge RAG techniques:
 
-### 1. Simple RAG 🌱
+### 🌱 Foundational RAG Techniques
+
+1. Simple RAG 🌱
 - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)**
 - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
 
@@ -50,7 +52,7 @@ Introducing basic RAG techniques ideal for newcomers.
 #### Implementation 🛠️
 Start with basic retrieval queries and integrate incremental learning mechanisms.
 
-### 2. [Reliable RAG 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)
+2. [Reliable RAG 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)
 
 #### Overview 🔎
 Enhances the Simple RAG by adding validation and refinement to ensure the accuracy and relevance of retrieved information.
@@ -58,7 +60,37 @@ Enhances the Simple RAG by adding validation and refinement to ensure the accura
 #### Implementation 🛠️
 Check for retrieved document relevancy and highlight the segment of docs used for answering.
 
-### 3. Context Enrichment Techniques 📝
+3. [Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
+
+#### Overview 🔎
+Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
+
+#### Implementation 🛠️
+Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
+
+### 🔍 Query Enhancement
+
+4. [Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
+
+#### Overview 🔎
+Modifying and expanding queries to improve retrieval effectiveness.
+
+#### Implementation 🛠️
+- ✍️ **Query Rewriting:** Reformulate queries to improve retrieval.
+- 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
+- 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
+
+5. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
+
+#### Overview 🔎
+Generating hypothetical questions to improve alignment between queries and data.
+
+#### Implementation 🛠️
+Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
+
+### 📚 Context and Content Enrichment
+
+6. Context Enrichment Techniques 📝
 - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**
 - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
   
@@ -68,19 +100,33 @@ Enhancing retrieval accuracy by embedding individual sentences and extending con
 #### Implementation 🛠️
 Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
-### 4. Multi-faceted Filtering 🔍
+7. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
 
 #### Overview 🔎
-Applying various filtering techniques to refine and improve the quality of retrieved results.
+Dividing documents based on semantic coherence rather than fixed sizes.
 
 #### Implementation 🛠️
-- 🏷️ **Metadata Filtering:** Apply filters based on attributes like date, source, author, or document type.
-- 📊 **Similarity Thresholds:** Set thresholds for relevance scores to keep only the most pertinent results.
-- 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
-- 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
+Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
-### 5. Fusion Retrieval 🔗
+8. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
 
+#### Overview 🔎
+Compressing retrieved information while preserving query-relevant content.
+
+#### Implementation 🛠️
+Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
+
+9. [Document Augmentation through Question Generation for Enhanced Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)
+
+#### Overview 🔎
+This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
+
+#### Implementation 🛠️
+Use an LLM to augment text dataset with all possible questions that can be asked to each document.
+
+### 🚀 Advanced Retrieval Methods
+
+10. Fusion Retrieval 🔗
 - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**
 - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
  
@@ -90,7 +136,7 @@ Optimizing search results by combining different retrieval methods.
 #### Implementation 🛠️
 Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-### 6. [Intelligent Reranking 📈](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
+11. [Intelligent Reranking 📈](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
 
 #### Overview 🔎
 Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
@@ -103,17 +149,18 @@ Applying advanced scoring mechanisms to improve the relevance ranking of retriev
 #### Additional Resources 📚
 - [Relevance Revolution: How Re-ranking Transforms RAG Systems](https://medium.com/@nirdiamant21/relevance-revolution-how-re-ranking-transforms-rag-systems-0ffaa15f1047) - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
 
-### 7.[Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
+12. Multi-faceted Filtering 🔍
 
 #### Overview 🔎
-Modifying and expanding queries to improve retrieval effectiveness.
+Applying various filtering techniques to refine and improve the quality of retrieved results.
 
 #### Implementation 🛠️
-- ✍️ **Query Rewriting:** Reformulate queries to improve retrieval.
-- 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
-- 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
+- 🏷️ **Metadata Filtering:** Apply filters based on attributes like date, source, author, or document type.
+- 📊 **Similarity Thresholds:** Set thresholds for relevance scores to keep only the most pertinent results.
+- 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
+- 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-### 8. [Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
+13. [Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
 
 #### Overview 🔎
 Creating a multi-tiered system for efficient information navigation and retrieval.
@@ -124,71 +171,7 @@ Implement a two-tiered system for document summaries and detailed chunks, both c
 #### Additional Resources 📚
 - [Hierarchical Indices: Enhancing RAG Systems](https://medium.com/@nirdiamant21/hierarchical-indices-enhancing-rag-systems-43c06330c085?sk=d5f97cbece2f640da8746f8da5f95188) - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
-### 9. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
-
-#### Overview 🔎
-Generating hypothetical questions to improve alignment between queries and data.
-
-#### Implementation 🛠️
-Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
-
-### 10. [Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
-
-#### Overview 🔎
-Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
-
-#### Implementation 🛠️
-Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
-
-### 11. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
-
-#### Overview 🔎
-Dividing documents based on semantic coherence rather than fixed sizes.
-
-#### Implementation 🛠️
-Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
-
-### 12. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
-
-#### Overview 🔎
-Compressing retrieved information while preserving query-relevant content.
-
-#### Implementation 🛠️
-Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
-
-### 13. [Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)
-
-#### Overview 🔎
-Providing transparency in the retrieval process to enhance user trust and system refinement.
-
-#### Implementation 🛠️
-Explain why certain pieces of information were retrieved and how they relate to the query.
-
-### 14. [Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)
-
-#### Overview 🔎
-Implementing mechanisms to learn from user interactions and improve future retrievals.
-
-#### Implementation 🛠️
-Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
-
-### 15. [Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)
-
-#### Overview 🔎
-Dynamically adjusting retrieval strategies based on query types and user contexts.
-
-#### Implementation 🛠️
-Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
-
-### 16. Iterative Retrieval 🔄
-
-#### Overview 🔎
-Performing multiple rounds of retrieval to refine and enhance result quality.
-
-#### Implementation 🛠️
-Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
-
-### 17. Ensemble Retrieval 🎭
+14. Ensemble Retrieval 🎭
 
 #### Overview 🔎
 Combining multiple retrieval models or techniques for more robust and accurate results.
@@ -196,15 +179,7 @@ Combining multiple retrieval models or techniques for more robust and accurate r
 #### Implementation 🛠️
 Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
-### 18. [Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)
-
-#### Overview 🔎
-Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
-
-#### Implementation 🛠️
-Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
-
-### 19. Multi-modal Retrieval 📽️
+15. Multi-modal Retrieval 📽️
 
 #### Overview 🔎
 Extending RAG capabilities to handle diverse data types for richer responses.
@@ -212,7 +187,53 @@ Extending RAG capabilities to handle diverse data types for richer responses.
 #### Implementation 🛠️
 Integrate models that can retrieve and understand different data modalities, combining insights from text, images, and videos.
 
-### 20. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
+### 🔁 Iterative and Adaptive Techniques
+
+16. [Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)
+
+#### Overview 🔎
+Implementing mechanisms to learn from user interactions and improve future retrievals.
+
+#### Implementation 🛠️
+Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
+
+17. [Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)
+
+#### Overview 🔎
+Dynamically adjusting retrieval strategies based on query types and user contexts.
+
+#### Implementation 🛠️
+Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
+
+18. Iterative Retrieval 🔄
+
+#### Overview 🔎
+Performing multiple rounds of retrieval to refine and enhance result quality.
+
+#### Implementation 🛠️
+Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
+
+### 🔬 Explainability and Transparency
+
+19. [Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)
+
+#### Overview 🔎
+Providing transparency in the retrieval process to enhance user trust and system refinement.
+
+#### Implementation 🛠️
+Explain why certain pieces of information were retrieved and how they relate to the query.
+
+### 🏗️ Advanced Architectures
+
+20. [Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)
+
+#### Overview 🔎
+Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
+
+#### Implementation 🛠️
+Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
+
+21. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
 
 #### Overview 🔎
 Implementing a recursive approach to process and organize retrieved information in a tree structure.
@@ -220,39 +241,31 @@ Implementing a recursive approach to process and organize retrieved information 
 #### Implementation 🛠️
 Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-### 21. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
+22. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
 
 #### Overview 🔎
 A dynamic approach that combines retrieval-based and generation-based methods, adaptively deciding whether to use retrieved information and how to best utilize it in generating responses.
 
 #### Implementation 🛠️
-• Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
+- Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-### 22. [Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)
+23. [Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)
 
 #### Overview 🔎
 A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
 
 #### Implementation 🛠️
-• Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
-
-### 23. [Document Augmentation through Question Generation for Enhanced Retrieval ](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)
-
-#### Overview 🔎
-This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
-
-#### Implementation 🛠️
-Use an LLM to augment text dataset with all possible questions that can be asked to each document.
+- Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
 ## 🌟 Special Advanced Technique 🌟
 
-### 24. [Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)
+24. [Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)
 
 #### Overview 🔎
 An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
 
 #### Implementation 🛠️
-• Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
+- Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
 
 
 
