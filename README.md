@@ -139,8 +139,10 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-11. [Intelligent Reranking 📈](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
-
+11. Intelligent Reranking 📈
+    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)**
+    - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
+    
     #### Overview 🔎
     Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
 
