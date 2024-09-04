@@ -45,6 +45,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 1. Simple RAG 🌱
    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)**
    - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
+   - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/simple_rag.py)**
 
    #### Overview 🔎
    Introducing basic RAG techniques ideal for newcomers.
