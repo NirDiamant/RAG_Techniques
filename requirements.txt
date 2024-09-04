@@ -79,7 +79,7 @@ llama-index-program-openai==0.2.0
 llama-index-question-gen-openai==0.2.0
 llama-index-readers-file==0.2.0
 llama-index-readers-llama-parse==0.3.0
-llama-index-vector-stores-faiss==0.1.2
+llama-index-vector-stores-faiss==0.2.1
 llama-index-retrievers-bm25==0.2.0
 llama-parse==0.4.7
 marisa-trie==1.2.0
