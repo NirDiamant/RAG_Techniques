@@ -8,10 +8,13 @@
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. [Become a sponsor](https://github.com/sponsors/NirDiamant) to help maintain and expand this valuable resource!
 
-
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
+![](https://media.licdn.com/dms/image/v2/D4D22AQHJ0XmgngVcTA/feedshare-shrink_1280/feedshare-shrink_1280/0/1725340745599?e=1728518400&v=beta&t=5sRrbeIN2jmC_qcn-ZnAjaGHt9V4KFF6JUCg0PDKLIY)
+
 Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
+
+![]()
 
 ## Introduction
 
