@@ -6,7 +6,7 @@ Welcome to the world's largest and most comprehensive repository of Retrieval-Au
 
 We have a vibrant Discord community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
 
-[RAG Techniques Discord Server](https://discord.gg/8PSA7s5v)
+[RAG Techniques Discord Server](https://discord.gg/cA6Aa4uyDX)
 
 Don't hesitate to introduce yourself and share your thoughts!
 
@@ -34,8 +34,9 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 3. **Test:** Ensure your changes work as expected.
 4. **Follow the Style:** Adhere to the coding and documentation conventions used throughout the project.
 5. **Commit:** Make your git commits informative and concise.
-6. **Push and Pull Request:** Push to your fork and submit a pull request.
-7. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
+6. **Stay Updated:** The main branch is frequently updated. Before opening a pull request, make sure your code is up-to-date with the current main branch and has no conflicts.
+7. **Push and Pull Request:** Push to your fork and submit a pull request.
+8. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
 
 ## Adding a New RAG Method
 
@@ -67,13 +68,43 @@ Remember to increment the numbers of all methods that come after your newly inse
 For new notebooks or significant additions to existing ones, please follow this structure:
 
 1. **Title and Overview:** Clear title and brief overview of the technique.
+
 2. **Detailed Explanation:** Cover motivation, key components, method details, and benefits.
-3. **Visual Representation:** Include a diagram (preferably using Mermaid syntax) to visualize the technique.
+
+3. **Visual Representation:** Include a diagram to visualize the technique. We recommend using Mermaid syntax for creating these diagrams. Here's how to do it:
+
+• Create a graph using Mermaid's graph TD (top-down) syntax<br>
+• You can use Claude or other AI assistants to help you design the graph if needed<br>
+• Paste your Mermaid code into [Mermaid Live Editor](https://mermaid.live/)<br>
+• In the "Actions" tab of Mermaid Live Editor, download the SVG file of your diagram<br>
+• Store the SVG file in the [images folder](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) of the repository<br>
+• Use an appropriate, descriptive name for the file<br>
+• In your notebook, display the image using Markdown syntax:<br>
+  ```markdown
+  ![Your Technique Name](../images/your-technique-name.svg)
+  ```
+
+This process ensures consistency in our visual representations and makes it easy for others to understand and potentially modify the diagrams in the future.
+
 4. **Implementation:** Step-by-step Python implementation with clear comments and explanations.
+
 5. **Usage Example:** Demonstrate the technique with a practical example.
+
 6. **Comparison:** Compare with basic RAG, both qualitatively and quantitatively if possible.
+
 7. **Additional Considerations:** Discuss limitations, potential improvements, or specific use cases.
+
 8. **References:** Include relevant citations or resources if you have.
+
+## Notebook Best Practices
+
+To ensure consistency and readability across all notebooks:
+
+1. **Code Cell Descriptions:** Each code cell should be preceded by a markdown cell with a clear, concise title describing the cell's content or purpose.
+
+2. **Clear Unnecessary Outputs:** Before committing your notebook, clear all unnecessary cell outputs. This helps reduce file size and avoids confusion from outdated results.
+
+3. **Consistent Formatting:** Maintain consistent formatting throughout the notebook, including regular use of markdown headers, code comments, and proper indentation.
 
 ## Code Quality and Readability
 

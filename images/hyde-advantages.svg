@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f0f8ff"/>
+  
+  <!-- Title -->
+  <rect width="1000" height="70" fill="#2c3e50"/>
+  <text x="500" y="45" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">HyDE: Bridging Gaps in Information Retrieval</text>
+  
+  <!-- Query -->
+  <rect x="250" y="85" width="500" height="40" rx="20" fill="#3498db"/>
+  <text x="500" y="112" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Query: "new diabetes treatments"</text>
+  
+  <!-- Regular RAG -->
+  <rect x="20" y="140" width="470" height="210" rx="10" fill="#ecf0f1" stroke="#34495e" stroke-width="2"/>
+  <text x="255" y="170" font-family="Arial, sans-serif" font-size="24" fill="#2c3e50" text-anchor="middle" font-weight="bold">Regular RAG</text>
+  
+  <!-- Regular RAG Process -->
+  <circle cx="50" cy="210" r="15" fill="#3498db"/>
+  <text x="50" y="215" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">1</text>
+  <text x="80" y="215" font-family="Arial, sans-serif" font-size="16" fill="#333">Encode query directly</text>
+  
+  <circle cx="50" cy="250" r="15" fill="#3498db"/>
+  <text x="50" y="255" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">2</text>
+  <text x="80" y="255" font-family="Arial, sans-serif" font-size="16" fill="#333">Search document chunks</text>
+  
+  <circle cx="50" cy="290" r="15" fill="#3498db"/>
+  <text x="50" y="295" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">3</text>
+  <text x="80" y="295" font-family="Arial, sans-serif" font-size="16" fill="#333">Retrieve similar chunks</text>
+  
+  <!-- HyDE -->
+  <rect x="510" y="140" width="470" height="210" rx="10" fill="#ecf0f1" stroke="#34495e" stroke-width="2"/>
+  <text x="745" y="170" font-family="Arial, sans-serif" font-size="24" fill="#2c3e50" text-anchor="middle" font-weight="bold">HyDE</text>
+  
+  <!-- HyDE Process -->
+  <circle cx="540" cy="210" r="15" fill="#3498db"/>
+  <text x="540" y="215" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">1</text>
+  <text x="570" y="215" font-family="Arial, sans-serif" font-size="16" fill="#333">Generate hypothetical document</text>
+  
+  <circle cx="540" cy="250" r="15" fill="#3498db"/>
+  <text x="540" y="255" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">2</text>
+  <text x="570" y="255" font-family="Arial, sans-serif" font-size="16" fill="#333">Encode hypothetical document</text>
+  
+  <circle cx="540" cy="290" r="15" fill="#3498db"/>
+  <text x="540" y="295" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">3</text>
+  <text x="570" y="295" font-family="Arial, sans-serif" font-size="16" fill="#333">Search document chunks</text>
+  
+  <circle cx="540" cy="330" r="15" fill="#3498db"/>
+  <text x="540" y="335" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">4</text>
+  <text x="570" y="335" font-family="Arial, sans-serif" font-size="16" fill="#333">Retrieve similar chunks</text>
+  
+  <!-- Advantages of HyDE -->
+  <rect x="20" y="370" width="960" height="210" rx="10" fill="#e8f8f5" stroke="#16a085" stroke-width="2"/>
+  <text x="500" y="405" font-family="Arial, sans-serif" font-size="24" fill="#16a085" text-anchor="middle" font-weight="bold">Advantages of HyDE</text>
+  
+  <circle cx="60" cy="450" r="15" fill="#16a085"/>
+  <text x="60" y="455" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">1</text>
+  <text x="90" y="455" font-family="Arial, sans-serif" font-size="18" fill="#333">Bridges domain terminology gap</text>
+  
+  <circle cx="60" cy="495" r="15" fill="#16a085"/>
+  <text x="60" y="500" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">2</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="18" fill="#333">Narrows query-document semantic gap</text>
+  
+  <circle cx="60" cy="540" r="15" fill="#16a085"/>
+  <text x="60" y="545" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">3</text>
+  <text x="90" y="545" font-family="Arial, sans-serif" font-size="18" fill="#333">Improves retrieval for complex queries</text>
+  
+  <!-- Hypothetical Document Example -->
+  <rect x="510" y="435" width="450" height="135" rx="10" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+  <text x="735" y="460" font-family="Arial, sans-serif" font-size="18" fill="#16a085" text-anchor="middle" font-weight="bold">Hypothetical Document Example</text>
+  <text x="530" y="485" font-family="Arial, sans-serif" font-size="14" fill="#333">Recent advancements in diabetes treatments include:</text>
+  <text x="530" y="510" font-family="Arial, sans-serif" font-size="14" fill="#333">1. GLP-1 receptor agonists (e.g., semaglutide)</text>
+  <text x="530" y="535" font-family="Arial, sans-serif" font-size="14" fill="#333">2. SGLT2 inhibitors (e.g., empagliflozin)</text>
+  <text x="530" y="560" font-family="Arial, sans-serif" font-size="14" fill="#333">3. Dual GIP/GLP-1 receptor agonists</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Traditional vs Context-Enriched Vector Search</text>
+  
+  <!-- Traditional Search -->
+  <rect x="50" y="60" width="300" height="300" fill="#ffffff" stroke="#000000"/>
+  <text x="200" y="90" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Traditional Search</text>
+  
+  <!-- Traditional Search Chunks -->
+  <rect x="70" y="110" width="260" height="40" fill="#ff9999" stroke="#000000"/>
+  <rect x="70" y="160" width="260" height="40" fill="#ff9999" stroke="#000000"/>
+  <rect x="70" y="210" width="260" height="40" fill="#ff9999" stroke="#000000"/>
+  
+  <text x="200" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Isolated Chunk 1</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Isolated Chunk 2</text>
+  <text x="200" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Isolated Chunk 3</text>
+  
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">Limited context</text>
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">Potential coherence issues</text>
+  
+  <!-- Context-Enriched Search -->
+  <rect x="450" y="60" width="300" height="300" fill="#ffffff" stroke="#000000"/>
+  <text x="600" y="90" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Context-Enriched Search</text>
+  
+  <!-- Context-Enriched Search Chunks -->
+  <rect x="470" y="110" width="260" height="40" fill="#99ff99" stroke="#000000"/>
+  <rect x="470" y="150" width="260" height="40" fill="#ffff99" stroke="#000000"/>
+  <rect x="470" y="190" width="260" height="40" fill="#99ff99" stroke="#000000"/>
+  
+  <text x="600" y="135" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Context Before</text>
+  <text x="600" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Retrieved Chunk</text>
+  <text x="600" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Context After</text>
+  
+  <text x="600" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">Enhanced coherence</text>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">More comprehensive information</text>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">Better understanding</text>
+  
+  <!-- Arrows -->
+  <path d="M 370 200 L 430 200" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>
