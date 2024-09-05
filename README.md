@@ -53,7 +53,15 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Start with basic retrieval queries and integrate incremental learning mechanisms.
 
-2. [Reliable RAG 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)
+2. [Simple RAG using a CSV file 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)
+    
+    #### Overview 🔎
+    Introducing basic RAG using CSV files.
+
+    #### Implementation 🛠️
+    This uses CSV files to create basic retrieval and integrates with openai to create question and answering system.
+
+3. [Reliable RAG 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)
 
    #### Overview 🔎
    Enhances the Simple RAG by adding validation and refinement to ensure the accuracy and relevance of retrieved information.
@@ -61,7 +69,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Check for retrieved document relevancy and highlight the segment of docs used for answering.
 
-3. [Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
+4. [Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
 
    #### Overview 🔎
    Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
@@ -71,7 +79,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔍 Query Enhancement
 
-4. [Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
+5. [Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)
 
    #### Overview 🔎
    Modifying and expanding queries to improve retrieval effectiveness.
@@ -81,7 +89,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    - 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
    - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
-5. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
+6. [Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)
 
    #### Overview 🔎
    Generating hypothetical questions to improve alignment between queries and data.
@@ -91,7 +99,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📚 Context and Content Enrichment
 
-6. Context Enrichment Techniques 📝
+7. Context Enrichment Techniques 📝
    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**
    - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
   
@@ -101,7 +109,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
-7. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
+8. [Semantic Chunking 🧠](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
 
    #### Overview 🔎
    Dividing documents based on semantic coherence rather than fixed sizes.
@@ -112,7 +120,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Additional Resources 📚
    - [Semantic Chunking: Improving AI Information Retrieval](https://medium.com/@nirdiamant21/semantic-chunking-improving-ai-information-retrieval-2f468be2d707) - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
-8. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
+9. [Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)
 
    #### Overview 🔎
    Compressing retrieved information while preserving query-relevant content.
@@ -120,7 +128,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
-9. [Document Augmentation through Question Generation for Enhanced Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)
+10. [Document Augmentation through Question Generation for Enhanced Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)
 
    #### Overview 🔎
    This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
@@ -130,7 +138,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🚀 Advanced Retrieval Methods
 
-10. Fusion Retrieval 🔗
+11. Fusion Retrieval 🔗
     - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
  
@@ -140,7 +148,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-11. Intelligent Reranking 📈
+12. Intelligent Reranking 📈
     - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)**
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
     
@@ -155,7 +163,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     - [Relevance Revolution: How Re-ranking Transforms RAG Systems](https://medium.com/@nirdiamant21/relevance-revolution-how-re-ranking-transforms-rag-systems-0ffaa15f1047) - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
 
-12. Multi-faceted Filtering 🔍
+13. Multi-faceted Filtering 🔍
 
     #### Overview 🔎
     Applying various filtering techniques to refine and improve the quality of retrieved results.
@@ -166,7 +174,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
     - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-13. [Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
+14. [Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)
 
     #### Overview 🔎
     Creating a multi-tiered system for efficient information navigation and retrieval.
@@ -177,7 +185,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     - [Hierarchical Indices: Enhancing RAG Systems](https://medium.com/@nirdiamant21/hierarchical-indices-enhancing-rag-systems-43c06330c085?sk=d5f97cbece2f640da8746f8da5f95188) - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
-14. Ensemble Retrieval 🎭
+15. Ensemble Retrieval 🎭
 
     #### Overview 🔎
     Combining multiple retrieval models or techniques for more robust and accurate results.
@@ -185,7 +193,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
-15. Multi-modal Retrieval 📽️
+16. Multi-modal Retrieval 📽️
 
     #### Overview 🔎
     Extending RAG capabilities to handle diverse data types for richer responses.
@@ -195,7 +203,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔁 Iterative and Adaptive Techniques
 
-16. [Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)
+17. [Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)
 
     #### Overview 🔎
     Implementing mechanisms to learn from user interactions and improve future retrievals.
@@ -203,7 +211,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
-17. [Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)
+18. [Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)
 
     #### Overview 🔎
     Dynamically adjusting retrieval strategies based on query types and user contexts.
@@ -211,7 +219,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
 
-18. Iterative Retrieval 🔄
+19. Iterative Retrieval 🔄
 
     #### Overview 🔎
     Performing multiple rounds of retrieval to refine and enhance result quality.
@@ -221,7 +229,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔬 Explainability and Transparency
 
-19. [Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)
+20. [Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)
 
     #### Overview 🔎
     Providing transparency in the retrieval process to enhance user trust and system refinement.
@@ -231,7 +239,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🏗️ Advanced Architectures
 
-20. [Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)
+21. [Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)
 
     #### Overview 🔎
     Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
@@ -239,7 +247,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
 
-21. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
+22. [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)
 
     #### Overview 🔎
     Implementing a recursive approach to process and organize retrieved information in a tree structure.
@@ -247,7 +255,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-22. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
+23. [Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)
 
     #### Overview 🔎
     A dynamic approach that combines retrieval-based and generation-based methods, adaptively deciding whether to use retrieved information and how to best utilize it in generating responses.
@@ -255,7 +263,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-23. [Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)
+24. [Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)
 
     #### Overview 🔎
     A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
@@ -265,7 +273,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ## 🌟 Special Advanced Technique 🌟
 
-24. [Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)
+25. [Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
