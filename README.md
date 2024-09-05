@@ -110,8 +110,8 @@ Explore the extensive list of cutting-edge RAG techniques:
    Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
 8. Semantic Chunking 🧠
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)**
-   - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/semantic_chunking.py)**
+   - **[LangChain](all_rag_techniques/semantic_chunking.ipynb)**
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/semantic_chunking.py)**
 
    #### Overview 🔎
    Dividing documents based on semantic coherence rather than fixed sizes.
