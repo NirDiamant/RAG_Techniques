@@ -74,7 +74,7 @@ llama-index-embeddings-openai==0.2.4
 llama-index-indices-managed-llama-cloud==0.3.0
 llama-index-legacy==0.9.48
 llama-index-llms-openai==0.2.2
-llama-index-multi-modal-llms-openai==0.2.2
+llama-index-multi-modal-llms-openai==0.2.0
 llama-index-program-openai==0.2.0
 llama-index-question-gen-openai==0.2.0
 llama-index-readers-file==0.2.0
