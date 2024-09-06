@@ -53,8 +53,10 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Start with basic retrieval queries and integrate incremental learning mechanisms.
 
-2. [Simple RAG using a CSV file 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)
-    
+2. Simple RAG using a CSV file 🧩
+   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)**
+   - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb)**
+   
     #### Overview 🔎
     Introducing basic RAG using CSV files.
 
