@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ecf0f1"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Propositions Method: Ingestion Phase</text>
+  
+  <!-- Main Process Flow -->
+  <g transform="translate(0, 20)">
+    <!-- Input Data -->
+    <rect x="50" y="80" width="140" height="70" fill="#3498db" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+    <text x="120" y="120" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Input Text</text>
+    
+    <!-- Generate Propositions -->
+    <rect x="240" y="80" width="140" height="70" fill="#e74c3c" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+    <text x="310" y="110" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Generate</text>
+    <text x="310" y="135" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Propositions</text>
+    
+    <!-- Quality Check -->
+    <rect x="430" y="80" width="140" height="70" fill="#f39c12" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+    <text x="500" y="120" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Quality Check</text>
+    
+    <!-- Index Propositions -->
+    <rect x="620" y="80" width="140" height="70" fill="#2ecc71" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+    <text x="690" y="110" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Index</text>
+    <text x="690" y="135" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Propositions</text>
+  </g>
+  
+  <!-- Example -->
+  <rect x="50" y="200" width="700" height="380" fill="#ffffff" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="230" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">Example: Proposition Generation</text>
+  
+  <!-- Input Sentence -->
+  <rect x="70" y="250" width="660" height="60" fill="#bdc3c7" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="275" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#34495e">
+    <tspan x="400" dy="0">The Eiffel Tower, built in 1889, is a wrought-iron</tspan>
+    <tspan x="400" dy="25">lattice tower located in Paris, France.</tspan>
+  </text>
+  
+  <!-- Propositions -->
+  <rect x="70" y="350" width="660" height="50" fill="#3498db" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">The Eiffel Tower was built in 1889.</text>
+  
+  <rect x="70" y="410" width="660" height="50" fill="#3498db" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">The Eiffel Tower is a wrought-iron lattice tower.</text>
+  
+  <rect x="70" y="470" width="660" height="50" fill="#3498db" stroke="#34495e" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">The Eiffel Tower is located in Paris, France.</text>
+  
+  <!-- Arrows -->
+  <line x1="190" y1="115" x2="240" y2="115" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="115" x2="430" y2="115" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="115" x2="620" y2="115" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <path d="M400 310 L400 330 L400 350" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>
