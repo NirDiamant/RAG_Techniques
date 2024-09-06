@@ -6,7 +6,7 @@
 
 <a href="https://app.commanddash.io/agent/github_NirDiamant_RAG_Techniques"><img src="https://img.shields.io/badge/AI-Code%20Agent-EB9FDA"></a>
 
-> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. [Become a sponsor](https://github.com/sponsors/NirDiamant) to help maintain and expand this valuable resource!
+> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://github.com/sponsors/NirDiamant)** to help maintain and expand this valuable resource!
 
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
@@ -23,11 +23,11 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 This repository thrives on community contributions! Join our Discord community — the central hub for discussing and managing contributions to this project:
 
-[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)
+**[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)**
 
-Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our [CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md) file. Let's advance RAG technology together!
+Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)** file. Let's advance RAG technology together!
 
-🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to [connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/).
+🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to **[connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**.
 
 ## Key Features
 
