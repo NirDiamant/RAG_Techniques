@@ -6,7 +6,7 @@ Welcome to the world's largest and most comprehensive repository of Retrieval-Au
 
 We have a vibrant Discord community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
 
-[RAG Techniques Discord Server](https://discord.gg/8PSA7s5v)
+[RAG Techniques Discord Server](https://discord.gg/cA6Aa4uyDX)
 
 Don't hesitate to introduce yourself and share your thoughts!
 
@@ -95,6 +95,16 @@ This process ensures consistency in our visual representations and makes it easy
 7. **Additional Considerations:** Discuss limitations, potential improvements, or specific use cases.
 
 8. **References:** Include relevant citations or resources if you have.
+
+## Notebook Best Practices
+
+To ensure consistency and readability across all notebooks:
+
+1. **Code Cell Descriptions:** Each code cell should be preceded by a markdown cell with a clear, concise title describing the cell's content or purpose.
+
+2. **Clear Unnecessary Outputs:** Before committing your notebook, clear all unnecessary cell outputs. This helps reduce file size and avoids confusion from outdated results.
+
+3. **Consistent Formatting:** Maintain consistent formatting throughout the notebook, including regular use of markdown headers, code comments, and proper indentation.
 
 ## Code Quality and Readability
 

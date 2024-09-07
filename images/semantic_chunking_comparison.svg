@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Regular vs Semantic Chunking: Both Using Semantic Search</text>
+  
+  <!-- Regular Chunking -->
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Regular Chunking</text>
+  <rect x="50" y="70" width="300" height="50" fill="#ff9999" stroke="#000000"/>
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 1: Abstract, Intro, part of Methods</text>
+  
+  <rect x="50" y="130" width="300" height="50" fill="#ffcc99" stroke="#000000"/>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 2: Rest of Methods, part of Results</text>
+  
+  <rect x="50" y="190" width="300" height="50" fill="#ffffcc" stroke="#000000"/>
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 3: Rest of Results, part of Discussion</text>
+  
+  <rect x="50" y="250" width="300" height="50" fill="#ccffcc" stroke="#000000"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 4: Rest of Discussion, Conclusion, References</text>
+  
+  <!-- Semantic Chunking -->
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Semantic Chunking</text>
+  <rect x="450" y="70" width="300" height="40" fill="#ff9999" stroke="#000000"/>
+  <text x="600" y="95" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 1: Abstract and Introduction</text>
+  
+  <rect x="450" y="120" width="300" height="40" fill="#ffcc99" stroke="#000000"/>
+  <text x="600" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 2: Methods</text>
+  
+  <rect x="450" y="170" width="300" height="40" fill="#ffffcc" stroke="#000000"/>
+  <text x="600" y="195" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 3: Results</text>
+  
+  <rect x="450" y="220" width="300" height="40" fill="#ccffcc" stroke="#000000"/>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 4: Discussion and Conclusion</text>
+  
+  <rect x="450" y="270" width="300" height="40" fill="#ccccff" stroke="#000000"/>
+  <text x="600" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Chunk 5: References</text>
+  
+  <!-- Query Example -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Query Example</text>
+  <rect x="50" y="350" width="700" height="40" fill="#e6e6e6" stroke="#000000"/>
+  <text x="400" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">"What were the methods used to measure blood pressure in studies that found a significant reduction in hypertension?"</text>
+  
+  <!-- Semantic Search Illustration -->
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Semantic Search Results</text>
+  
+  <!-- Regular Chunking Search -->
+  <text x="200" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Regular Chunking</text>
+  <rect x="50" y="460" width="300" height="120" fill="#f9f9f9" stroke="#000000"/>
+  <text x="55" y="475" font-family="Arial, sans-serif" font-size="10">• Retrieves parts of Chunks 1 and 2</text>
+  <text x="55" y="495" font-family="Arial, sans-serif" font-size="10">• Combines relevant info from multiple chunks</text>
+  <text x="55" y="515" font-family="Arial, sans-serif" font-size="10">• May include some irrelevant information</text>
+  <text x="55" y="535" font-family="Arial, sans-serif" font-size="10">• Requires more complex combination of info</text>
+  
+  <!-- Semantic Chunking Search -->
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Semantic Chunking</text>
+  <rect x="450" y="460" width="300" height="120" fill="#f9f9f9" stroke="#000000"/>
+  <text x="455" y="475" font-family="Arial, sans-serif" font-size="10">• Retrieves Chunk 2 (entire Methods section)</text>
+  <text x="455" y="495" font-family="Arial, sans-serif" font-size="10">• All relevant information in one coherent chunk</text>
+  <text x="455" y="515" font-family="Arial, sans-serif" font-size="10">• Minimal irrelevant information included</text>
+  <text x="455" y="535" font-family="Arial, sans-serif" font-size="10">• Preserves full context of Methods</text>
+  
+  <!-- Advantages of Semantic Chunking -->
+  <text x="400" y="610" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Potential Advantages of Semantic Chunking</text>
+  <rect x="50" y="620" width="700" height="70" fill="#e6e6e6" stroke="#000000"/>
+  <text x="55" y="635" font-family="Arial, sans-serif" font-size="10">1. Better coherence and context preservation</text>
+  <text x="55" y="655" font-family="Arial, sans-serif" font-size="10">2. Reduced noise and irrelevant information</text>
+  <text x="55" y="675" font-family="Arial, sans-serif" font-size="10">3. Potentially more efficient retrieval (fewer chunks needed)</text>
+  <text x="400" y="635" font-family="Arial, sans-serif" font-size="10">4. Improved handling of long-range dependencies</text>
+  <text x="400" y="655" font-family="Arial, sans-serif" font-size="10">5. Possible better ranking of most relevant information</text>
+  <text x="400" y="675" font-family="Arial, sans-serif" font-size="10">6. Easier for model to understand complete ideas</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 24px; font-weight: bold; }
+    .subtitle { font-size: 18px; font-weight: bold; }
+    .content { font-size: 14px; }
+    .highlight { fill: #1a73e8; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+
+  <!-- Title -->
+  <rect width="800" height="60" fill="#4285f4"/>
+  <text x="400" y="40" text-anchor="middle" class="title" fill="white">Movie Review Database: RAG vs Hierarchical Indices</text>
+
+  <!-- Scenario -->
+  <rect x="50" y="70" width="700" height="80" fill="white" stroke="#d3d3d3"/>
+  <text x="400" y="95" text-anchor="middle" class="subtitle">Scenario</text>
+  <text x="400" y="120" text-anchor="middle" class="content">Large database: 10,000 movie reviews (50,000 chunks)</text>
+  <text x="400" y="140" text-anchor="middle" class="content">Query: "Opinions on visual effects in recent sci-fi movies?"</text>
+
+  <!-- Comparison Section -->
+  <text x="400" y="180" text-anchor="middle" class="subtitle">Comparison</text>
+
+  <!-- Regular RAG Approach -->
+  <rect x="50" y="200" width="340" height="220" fill="white" stroke="#d3d3d3"/>
+  <text x="220" y="230" text-anchor="middle" class="subtitle">Regular RAG Approach</text>
+  <line x1="70" y1="245" x2="370" y2="245" stroke="#4285f4" stroke-width="2"/>
+  <text x="70" y="270" class="content">• Searches all 50,000 chunks</text>
+  <text x="70" y="295" class="content">• Retrieves top 10 similar chunks</text>
+  <text x="70" y="330" class="content" font-weight="bold">Result:</text>
+  <text x="70" y="355" class="content">May miss context or include irrelevant movies</text>
+
+  <!-- Hierarchical Indices Approach -->
+  <rect x="410" y="200" width="340" height="320" fill="white" stroke="#d3d3d3"/>
+  <text x="580" y="230" text-anchor="middle" class="subtitle">Hierarchical Indices Approach</text>
+  <line x1="430" y1="245" x2="730" y2="245" stroke="#4285f4" stroke-width="2"/>
+  <text x="430" y="270" class="content">• First tier: 10,000 review summaries</text>
+  <text x="430" y="295" class="content">• Second tier: 50,000 detailed chunks</text>
+  <text x="430" y="320" class="content" font-weight="bold">Process:</text>
+  <text x="450" y="345" class="content">1. Search 10,000 summaries</text>
+  <text x="450" y="370" class="content">2. Identify top 100 relevant reviews</text>
+  <text x="450" y="395" class="content">3. Search ~500 chunks from these reviews</text>
+  <text x="450" y="420" class="content">4. Retrieve top 10 chunks</text>
+  <text x="430" y="455" class="content" font-weight="bold">Result:</text>
+  <text x="430" y="480" class="content">More relevant chunks, better context</text>
+
+  <!-- Advantages -->
+  <rect x="50" y="440" width="340" height="140" fill="#e8f0fe" stroke="#4285f4"/>
+  <text x="220" y="470" text-anchor="middle" class="subtitle">Advantages of Hierarchical Indices</text>
+  <line x1="70" y1="485" x2="370" y2="485" stroke="#4285f4" stroke-width="2"/>
+  <text x="70" y="510" class="content highlight">1. Context Preservation</text>
+  <text x="70" y="535" class="content highlight">2. Efficiency (searches 500 vs 50,000 chunks)</text>
+  <text x="70" y="560" class="content highlight">3. Improved Relevance</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4285f4"/>
+    </marker>
+  </defs>
+  <line x1="220" y1="420" x2="220" y2="435" stroke="#4285f4" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="520" x2="395" y2="520" stroke="#4285f4" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>
