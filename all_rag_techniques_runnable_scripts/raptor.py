@@ -18,8 +18,7 @@ import os
 import sys
 from dotenv import load_dotenv
 
-sys.path.append(os.path.abspath(
-    os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path sicnce we work with notebooks
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path
 from helper_functions import *
 from evaluation.evalute_rag import *
 
@@ -29,15 +28,8 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
-# Define logging, llm and embeddings
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-embeddings = OpenAIEmbeddings()
-llm = ChatOpenAI(model_name="gpt-4o-mini")
-
-
-# Helper Functions
+# Helper functions
 
 def extract_text(item):
     """Extract text content from either a string or an AIMessage object."""
@@ -48,6 +40,7 @@ def extract_text(item):
 
 def embed_texts(texts: List[str]) -> List[List[float]]:
     """Embed texts using OpenAIEmbeddings."""
+    embeddings = OpenAIEmbeddings()
     logging.info(f"Embedding {len(texts)} texts")
     return embeddings.embed_documents([extract_text(text) for text in texts])
 
@@ -59,7 +52,7 @@ def perform_clustering(embeddings: np.ndarray, n_clusters: int = 10) -> np.ndarr
     return gm.fit_predict(embeddings)
 
 
-def summarize_texts(texts: List[str]) -> str:
+def summarize_texts(texts: List[str], llm: ChatOpenAI) -> str:
     """Summarize a list of texts using OpenAI."""
     logging.info(f"Summarizing {len(texts)} texts")
     prompt = ChatPromptTemplate.from_template(
@@ -85,64 +78,7 @@ def visualize_clusters(embeddings: np.ndarray, labels: np.ndarray, level: int):
     plt.show()
 
 
-# RAPTOR Core Function
-
-def build_raptor_tree(texts: List[str], max_levels: int = 3) -> Dict[int, pd.DataFrame]:
-    """Build the RAPTOR tree structure with level metadata and parent-child relationships."""
-    results = {}
-    current_texts = [extract_text(text) for text in texts]
-    current_metadata = [{"level": 0, "origin": "original", "parent_id": None} for _ in texts]
-
-    for level in range(1, max_levels + 1):
-        logging.info(f"Processing level {level}")
-
-        embeddings = embed_texts(current_texts)
-        n_clusters = min(10, len(current_texts) // 2)
-        cluster_labels = perform_clustering(np.array(embeddings), n_clusters)
-
-        df = pd.DataFrame({
-            'text': current_texts,
-            'embedding': embeddings,
-            'cluster': cluster_labels,
-            'metadata': current_metadata
-        })
-
-        results[level - 1] = df
-
-        summaries = []
-        new_metadata = []
-        for cluster in df['cluster'].unique():
-            cluster_docs = df[df['cluster'] == cluster]
-            cluster_texts = cluster_docs['text'].tolist()
-            cluster_metadata = cluster_docs['metadata'].tolist()
-            summary = summarize_texts(cluster_texts)
-            summaries.append(summary)
-            new_metadata.append({
-                "level": level,
-                "origin": f"summary_of_cluster_{cluster}_level_{level - 1}",
-                "child_ids": [meta.get('id') for meta in cluster_metadata],
-                "id": f"summary_{level}_{cluster}"
-            })
-
-        current_texts = summaries
-        current_metadata = new_metadata
-
-        if len(current_texts) <= 1:
-            results[level] = pd.DataFrame({
-                'text': current_texts,
-                'embedding': embed_texts(current_texts),
-                'cluster': [0],
-                'metadata': current_metadata
-            })
-            logging.info(f"Stopping at level {level} as we have only one summary")
-            break
-
-    return results
-
-
-# Vectorstore Function
-
-def build_vectorstore(tree_results: Dict[int, pd.DataFrame]) -> FAISS:
+def build_vectorstore(tree_results: Dict[int, pd.DataFrame], embeddings) -> FAISS:
     """Build a FAISS vectorstore from all texts in the RAPTOR tree."""
     all_texts = []
     all_embeddings = []
@@ -155,49 +91,12 @@ def build_vectorstore(tree_results: Dict[int, pd.DataFrame]) -> FAISS:
         all_metadatas.extend(df['metadata'].tolist())
 
     logging.info(f"Building vectorstore with {len(all_texts)} texts")
-
-    # Create Document objects manually to ensure correct types
     documents = [Document(page_content=str(text), metadata=metadata)
                  for text, metadata in zip(all_texts, all_metadatas)]
-
     return FAISS.from_documents(documents, embeddings)
 
 
-# Define tree traversal retrieval
-def tree_traversal_retrieval(query: str, vectorstore: FAISS, k: int = 3) -> List[Document]:
-    """Perform tree traversal retrieval."""
-    query_embedding = embeddings.embed_query(query)
-
-    def retrieve_level(level: int, parent_ids: List[str] = None) -> List[Document]:
-        if parent_ids:
-            docs = vectorstore.similarity_search_by_vector_with_relevance_scores(
-                query_embedding,
-                k=k,
-                filter=lambda meta: meta['level'] == level and meta['id'] in parent_ids
-            )
-        else:
-            docs = vectorstore.similarity_search_by_vector_with_relevance_scores(
-                query_embedding,
-                k=k,
-                filter=lambda meta: meta['level'] == level
-            )
-
-        if not docs or level == 0:
-            return docs
-
-        child_ids = [doc.metadata.get('child_ids', []) for doc, _ in docs]
-        child_ids = [item for sublist in child_ids for item in sublist]  # Flatten the list
-
-        child_docs = retrieve_level(level - 1, child_ids)
-        return docs + child_docs
-
-    max_level = max(doc.metadata['level'] for doc in vectorstore.docstore.values())
-    return retrieve_level(max_level)
-
-
-# Create Retriever
-
-def create_retriever(vectorstore: FAISS) -> ContextualCompressionRetriever:
+def create_retriever(vectorstore: FAISS, llm: ChatOpenAI) -> ContextualCompressionRetriever:
     """Create a retriever with contextual compression."""
     logging.info("Creating contextual compression retriever")
     base_retriever = vectorstore.as_retriever()
@@ -210,131 +109,125 @@ def create_retriever(vectorstore: FAISS) -> ContextualCompressionRetriever:
     )
 
     extractor = LLMChainExtractor.from_llm(llm, prompt=prompt)
-
     return ContextualCompressionRetriever(
         base_compressor=extractor,
         base_retriever=base_retriever
     )
 
 
-# Define hierarchical retrieval
-def hierarchical_retrieval(query: str, retriever: ContextualCompressionRetriever, max_level: int) -> List[Document]:
-    """Perform hierarchical retrieval starting from the highest level, handling potential None values."""
-    all_retrieved_docs = []
+# Main class RAPTORMethod
+class RAPTORMethod:
+    def __init__(self, texts: List[str], max_levels: int = 3):
+        self.texts = texts
+        self.max_levels = max_levels
+        self.embeddings = OpenAIEmbeddings()
+        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+        self.tree_results = self.build_raptor_tree()
 
-    for level in range(max_level, -1, -1):
-        # Retrieve documents from the current level
-        level_docs = retriever.get_relevant_documents(
-            query,
-            filter=lambda meta: meta['level'] == level
+    def build_raptor_tree(self) -> Dict[int, pd.DataFrame]:
+        """Build the RAPTOR tree structure with level metadata and parent-child relationships."""
+        results = {}
+        current_texts = [extract_text(text) for text in self.texts]
+        current_metadata = [{"level": 0, "origin": "original", "parent_id": None} for _ in self.texts]
+
+        for level in range(1, self.max_levels + 1):
+            logging.info(f"Processing level {level}")
+
+            embeddings = embed_texts(current_texts)
+            n_clusters = min(10, len(current_texts) // 2)
+            cluster_labels = perform_clustering(np.array(embeddings), n_clusters)
+
+            df = pd.DataFrame({
+                'text': current_texts,
+                'embedding': embeddings,
+                'cluster': cluster_labels,
+                'metadata': current_metadata
+            })
+
+            results[level - 1] = df
+
+            summaries = []
+            new_metadata = []
+            for cluster in df['cluster'].unique():
+                cluster_docs = df[df['cluster'] == cluster]
+                cluster_texts = cluster_docs['text'].tolist()
+                cluster_metadata = cluster_docs['metadata'].tolist()
+                summary = summarize_texts(cluster_texts, self.llm)
+                summaries.append(summary)
+                new_metadata.append({
+                    "level": level,
+                    "origin": f"summary_of_cluster_{cluster}_level_{level - 1}",
+                    "child_ids": [meta.get('id') for meta in cluster_metadata],
+                    "id": f"summary_{level}_{cluster}"
+                })
+
+            current_texts = summaries
+            current_metadata = new_metadata
+
+            if len(current_texts) <= 1:
+                results[level] = pd.DataFrame({
+                    'text': current_texts,
+                    'embedding': embed_texts(current_texts),
+                    'cluster': [0],
+                    'metadata': current_metadata
+                })
+                logging.info(f"Stopping at level {level} as we have only one summary")
+                break
+
+        return results
+
+    def run(self, query: str, k: int = 3) -> Dict[str, Any]:
+        """Run the RAPTOR query pipeline."""
+        vectorstore = build_vectorstore(self.tree_results, self.embeddings)
+        retriever = create_retriever(vectorstore, self.llm)
+
+        logging.info(f"Processing query: {query}")
+        relevant_docs = retriever.get_relevant_documents(query)
+
+        doc_details = [{"content": doc.page_content, "metadata": doc.metadata} for doc in relevant_docs]
+
+        context = "\n\n".join([doc.page_content for doc in relevant_docs])
+        prompt = ChatPromptTemplate.from_template(
+            "Given the following context, please answer the question:\n\n"
+            "Context: {context}\n\n"
+            "Question: {question}\n\n"
+            "Answer:"
         )
-        all_retrieved_docs.extend(level_docs)
+        chain = LLMChain(llm=self.llm, prompt=prompt)
+        answer = chain.run(context=context, question=query)
 
-        # If we've found documents, retrieve their children from the next level down
-        if level_docs and level > 0:
-            child_ids = [doc.metadata.get('child_ids', []) for doc in level_docs]
-            child_ids = [item for sublist in child_ids for item in sublist if
-                         item is not None]  # Flatten and filter None
-
-            if child_ids:  # Only modify query if there are valid child IDs
-                child_query = f" AND id:({' OR '.join(str(id) for id in child_ids)})"
-                query += child_query
-
-    return all_retrieved_docs
+        return {
+            "query": query,
+            "retrieved_documents": doc_details,
+            "context_used": context,
+            "answer": answer,
+            "model_used": self.llm.model_name,
+        }
 
 
-# RAPTOR Query Process (Online Process)
-def raptor_query(query: str, retriever: ContextualCompressionRetriever, max_level: int) -> Dict[str, Any]:
-    """Process a query using the RAPTOR system with hierarchical retrieval."""
-    logging.info(f"Processing query: {query}")
-
-    relevant_docs = hierarchical_retrieval(query, retriever, max_level)
-
-    doc_details = []
-    for i, doc in enumerate(relevant_docs, 1):
-        doc_details.append({
-            "index": i,
-            "content": doc.page_content,
-            "metadata": doc.metadata,
-            "level": doc.metadata.get('level', 'Unknown'),
-            "similarity_score": doc.metadata.get('score', 'N/A')
-        })
-
-    context = "\n\n".join([doc.page_content for doc in relevant_docs])
-
-    prompt = ChatPromptTemplate.from_template(
-        "Given the following context, please answer the question:\n\n"
-        "Context: {context}\n\n"
-        "Question: {question}\n\n"
-        "Answer:"
-    )
-    chain = LLMChain(llm=llm, prompt=prompt)
-    answer = chain.run(context=context, question=query)
-
-    logging.info("Query processing completed")
-
-    result = {
-        "query": query,
-        "retrieved_documents": doc_details,
-        "num_docs_retrieved": len(relevant_docs),
-        "context_used": context,
-        "answer": answer,
-        "model_used": llm.model_name,
-    }
-
-    return result
+# Argument Parsing and Validation
+def parse_args():
+    import argparse
+    parser = argparse.ArgumentParser(description="Run RAPTORMethod")
+    parser.add_argument("--path", type=str, default="../data/Understanding_Climate_Change.pdf",
+                        help="Path to the PDF file to process.")
+    parser.add_argument("--query", type=str, default="What is the greenhouse effect?",
+                        help="Query to test the retriever (default: 'What is the main topic of the document?').")
+    parser.add_argument('--max_levels', type=int, default=3, help="Max levels for RAPTOR tree")
+    return parser.parse_args()
 
 
-def print_query_details(result: Dict[str, Any]):
-    """Print detailed information about the query process, including tree level metadata."""
+# Main Execution
+if __name__ == "__main__":
+    args = parse_args()
+    loader = PyPDFLoader(args.path)
+    documents = loader.load()
+    texts = [doc.page_content for doc in documents]
+
+    raptor_method = RAPTORMethod(texts, max_levels=args.max_levels)
+    result = raptor_method.run(args.query)
+
     print(f"Query: {result['query']}")
-    print(f"\nNumber of documents retrieved: {result['num_docs_retrieved']}")
-    print(f"\nRetrieved Documents:")
-    for doc in result['retrieved_documents']:
-        print(f"  Document {doc['index']}:")
-        print(f"    Content: {doc['content'][:100]}...")  # Show first 100 characters
-        print(f"    Similarity Score: {doc['similarity_score']}")
-        print(f"    Tree Level: {doc['metadata'].get('level', 'Unknown')}")
-        print(f"    Origin: {doc['metadata'].get('origin', 'Unknown')}")
-        if 'child_docs' in doc['metadata']:
-            print(f"    Number of Child Documents: {len(doc['metadata']['child_docs'])}")
-        print()
-
-    print(f"\nContext used for answer generation:")
-    print(result['context_used'])
-
-    print(f"\nGenerated Answer:")
-    print(result['answer'])
-
-    print(f"\nModel Used: {result['model_used']}")
-
-
-# ## Example Usage and Visualization
-# 
-
-# ## Define data folder
-
-
-path = "../data/Understanding_Climate_Change.pdf"
-
-# Process texts
-loader = PyPDFLoader(path)
-documents = loader.load()
-texts = [doc.page_content for doc in documents]
-
-# Create RAPTOR components instances
-# Build the RAPTOR tree
-tree_results = build_raptor_tree(texts)
-
-# Build vectorstore
-vectorstore = build_vectorstore(tree_results)
-
-# Create retriever
-retriever = create_retriever(vectorstore)
-
-# Run a query and observe where it got the data from + results
-# Run the pipeline
-max_level = 3  # Adjust based on your tree depth
-query = "What is the greenhouse effect?"
-result = raptor_query(query, retriever, max_level)
-print_query_details(result)
+    print(f"Context Used: {result['context_used']}")
+    print(f"Answer: {result['answer']}")
+    print(f"Model Used: {result['model_used']}")
