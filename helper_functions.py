@@ -6,6 +6,8 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain import PromptTemplate
 from openai import RateLimitError
 from typing import List
+
+from openai import RateLimitError
 from rank_bm25 import BM25Okapi
 
 import fitz

@@ -71,7 +71,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Check for retrieved document relevancy and highlight the segment of docs used for answering.
 
-4. **[Choose Chunk Size 📏](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)**
+4. Choose Chunk Size 📏  
+   - **[LangChain](all_rag_techniques/choose_chunk_size.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py)**
 
    #### Overview 🔎
    Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
@@ -93,7 +95,9 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔍 Query Enhancement
 
-6. **[Query Transformations 🔄](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)**
+6. Query Transformations 🔄  
+   - **[LangChain](all_rag_techniques/query_transformations.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py)**
 
    #### Overview 🔎
    Modifying and expanding queries to improve retrieval effectiveness.
@@ -103,7 +107,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    - 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
    - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
-7. **[Hypothetical Questions (HyDE Approach) ❓](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)**
+7. Hypothetical Questions (HyDE Approach) ❓  
+   - **[LangChain](all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py)**
 
    #### Overview 🔎
    Generating hypothetical questions to improve alignment between queries and data.
@@ -113,9 +119,10 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📚 Context and Content Enrichment
 
-8. Context Enrichment Techniques 📝
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**
-   - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
+8. Context Enrichment Techniques 📝  
+   - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
+   - **[LlamaIndex](all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py)**
   
    #### Overview 🔎
    Enhancing retrieval accuracy by embedding individual sentences and extending context to neighboring sentences.
@@ -136,7 +143,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Additional Resources 📚
    - **[Semantic Chunking: Improving AI Information Retrieval](https://medium.com/@nirdiamant21/semantic-chunking-improving-ai-information-retrieval-2f468be2d707)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
-10. **[Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)**
+10. Contextual Compression 🗜️  
+   - **[LangChain](all_rag_techniques/contextual_compression.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py)**
 
    #### Overview 🔎
    Compressing retrieved information while preserving query-relevant content.
@@ -144,7 +153,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
-11. **[Document Augmentation through Question Generation for Enhanced Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)**
+11. Document Augmentation through Question Generation for Enhanced Retrieval  
+   - **[LangChain](all_rag_techniques/document_augmentation.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py)**
 
    #### Overview 🔎
    This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
@@ -154,23 +165,25 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🚀 Advanced Retrieval Methods
 
-12. Fusion Retrieval 🔗
-    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**
+12. Fusion Retrieval 🔗  
+    - **[LangChain](all_rag_techniques/fusion_retrieval.ipynb)**  
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py)**
  
     #### Overview 🔎
     Optimizing search results by combining different retrieval methods.
-
+    
     #### Implementation 🛠️
     Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-13. Intelligent Reranking 📈
-    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)**
+13. Intelligent Reranking 📈  
+    - **[LangChain](all_rag_techniques/reranking.ipynb)**  
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
-    
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/reranking.py)**
+
     #### Overview 🔎
     Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
-
+    
     #### Implementation 🛠️
     - 🧠 **LLM-based Scoring:** Use a language model to score the relevance of each retrieved chunk.
     - 🔀 **Cross-Encoder Models:** Re-encode both the query and retrieved documents jointly for similarity scoring.
@@ -190,14 +203,16 @@ Explore the extensive list of cutting-edge RAG techniques:
     - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
     - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-15. **[Hierarchical Indices 🗂️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)**
+15. Hierarchical Indices 🗂️  
+    - **[LangChain](all_rag_techniques/hierarchical_indices.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py)**
 
     #### Overview 🔎
     Creating a multi-tiered system for efficient information navigation and retrieval.
-
+    
     #### Implementation 🛠️
     Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
-
+    
     #### Additional Resources 📚
     - **[Hierarchical Indices: Enhancing RAG Systems](https://medium.com/@nirdiamant21/hierarchical-indices-enhancing-rag-systems-43c06330c085?sk=d5f97cbece2f640da8746f8da5f95188)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
@@ -219,7 +234,9 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔁 Iterative and Adaptive Techniques
 
-18. **[Retrieval with Feedback Loops 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)**
+18. Retrieval with Feedback Loops 🔁  
+    - **[LangChain](all_rag_techniques/retrieval_with_feedback_loop.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py)**
 
     #### Overview 🔎
     Implementing mechanisms to learn from user interactions and improve future retrievals.
@@ -227,7 +244,9 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
-19. **[Adaptive Retrieval 🎯](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)**
+19. Adaptive Retrieval 🎯  
+    - **[LangChain](all_rag_techniques/adaptive_retrieval.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py)**
 
     #### Overview 🔎
     Dynamically adjusting retrieval strategies based on query types and user contexts.
@@ -245,45 +264,55 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔬 Explainability and Transparency
 
-21. **[Explainable Retrieval 🔍](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)**
+21. Explainable Retrieval 🔍  
+    - **[LangChain](all_rag_techniques/explainable_retrieval.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
 
     #### Overview 🔎
     Providing transparency in the retrieval process to enhance user trust and system refinement.
-
+    
     #### Implementation 🛠️
     Explain why certain pieces of information were retrieved and how they relate to the query.
 
 ### 🏗️ Advanced Architectures
 
-22. **[Knowledge Graph Integration (Graph RAG)🕸️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)**
+22. Knowledge Graph Integration (Graph RAG) 🕸️  
+    - **[LangChain](all_rag_techniques/graph_rag.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
 
     #### Overview 🔎
     Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
-
+    
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
 
-23. **[RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)**
+23. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
+    - **[LangChain](all_rag_techniques/raptor.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
     #### Overview 🔎
     Implementing a recursive approach to process and organize retrieved information in a tree structure.
-
+    
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-24. **[Self RAG 🔁](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)**
+24. Self RAG 🔁  
+    - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
     #### Overview 🔎
     A dynamic approach that combines retrieval-based and generation-based methods, adaptively deciding whether to use retrieved information and how to best utilize it in generating responses.
-
+    
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-25. **[Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)**
+25. Corrective RAG 🔧  
+    - **[LangChain](all_rag_techniques/crag.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
     #### Overview 🔎
     A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
-
+    
     #### Implementation 🛠️
     • Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
