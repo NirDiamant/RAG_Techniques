@@ -43,9 +43,9 @@ Explore the extensive list of cutting-edge RAG techniques:
 ### 🌱 Foundational RAG Techniques
 
 1. Simple RAG 🌱
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)**
-   - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
-   - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/simple_rag.py)**
+   - **[LangChain](all_rag_techniques/simple_rag.ipynb)**
+   - **[LlamaIndex](all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/simple_rag.py)**
 
    #### Overview 🔎
    Introducing basic RAG techniques ideal for newcomers.
@@ -279,7 +279,9 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-25. **[Corrective RAG 🔧](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)**
+25. Corrective RAG 🔧  
+    - **[LangChain](all_rag_techniques/crag.ipynb)**  
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
     #### Overview 🔎
     A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
