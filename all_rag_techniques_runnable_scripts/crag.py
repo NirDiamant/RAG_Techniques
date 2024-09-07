@@ -155,12 +155,12 @@ class CRAG:
         max_score = max(eval_scores)
         sources = []
 
-        if max_score > 0.7:
+        if max_score > self.upper_threshold:
             print("\nAction: Correct - Using retrieved document")
             best_doc = retrieved_docs[eval_scores.index(max_score)]
             final_knowledge = best_doc
             sources.append(("Retrieved document", ""))
-        elif max_score < 0.3:
+        elif max_score < self.lower_threshold:
             print("\nAction: Incorrect - Performing web search")
             final_knowledge, sources = self.perform_web_search(query)
         else:
