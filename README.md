@@ -136,7 +136,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Additional Resources 📚
    - **[Semantic Chunking: Improving AI Information Retrieval](https://medium.com/@nirdiamant21/semantic-chunking-improving-ai-information-retrieval-2f468be2d707)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
-10. **[Contextual Compression 🗜️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)**
+10. Contextual Compression 🗜️
+    - **[LangChain](all_rag_techniques/contextual_compression.ipynb)**
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py)**
 
    #### Overview 🔎
    Compressing retrieved information while preserving query-relevant content.
