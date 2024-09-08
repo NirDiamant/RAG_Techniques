@@ -285,8 +285,17 @@ Explore the extensive list of cutting-edge RAG techniques:
     
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
+    
+23. GraphRag (Microsoft) 🎯
+    - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
 
-23. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
+    #### Overview 🔎
+    Microsoft GraphRAG (Open Source) is an advanced RAG system that integrates knowledge graphs to improve the performance of LLMs
+    
+    #### Implementation 🛠️
+    • Analyze an input corpus by extracting entities, relationshipsfrom text units. generates summaries of each community and its constituents from the bottom-up.
+
+24. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
     - **[LangChain](all_rag_techniques/raptor.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
@@ -296,7 +305,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-24. Self RAG 🔁  
+25. Self RAG 🔁  
     - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
@@ -306,7 +315,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-25. Corrective RAG 🔧  
+26. Corrective RAG 🔧  
     - **[LangChain](all_rag_techniques/crag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
@@ -318,7 +327,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ## 🌟 Special Advanced Technique 🌟
 
-26. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+27. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
@@ -326,15 +335,6 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
 
-
-27. GraphRag 🎯
-    - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
-
-    #### Overview 🔎
-    Microsoft GraphRAG (Open Source) is an advanced Retrieval-Augmented Generation (RAG) system that integrates knowledge graphs to improve the performance of large language models (LLMs). GraphRAG addresses limitations in traditional RAG approaches by using LLM-generated knowledge graphs to enhance document analysis and improve response quality.
-    
-    #### Implementation 🛠️
-    • GraphRAG is a tool that uses graph machine learning to analyze an input corpus by extracting entities, relationships, and key claims from text units. It performs hierarchical clustering of the graph using the Leiden technique and generates summaries of each community and its constituents from the bottom-up. This helps in holistic understanding of the dataset. At query time, GraphRAG provides materials for the LLM context window when answering a question through global and local search modes.
 
 
 ## Getting Started
