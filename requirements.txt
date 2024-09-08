@@ -206,3 +206,4 @@ wrapt==1.16.0
 xxhash==3.5.0
 yarl==1.10.0
 zipp==3.20.1
+graphrag==0.3.2
