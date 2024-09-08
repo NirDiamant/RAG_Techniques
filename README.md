@@ -327,6 +327,15 @@ Explore the extensive list of cutting-edge RAG techniques:
     • Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
 
 
+27. GraphRag 🎯
+    - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
+
+    #### Overview 🔎
+    Microsoft GraphRAG (Open Source) is an advanced Retrieval-Augmented Generation (RAG) system that integrates knowledge graphs to improve the performance of large language models (LLMs). GraphRAG addresses limitations in traditional RAG approaches by using LLM-generated knowledge graphs to enhance document analysis and improve response quality.
+    
+    #### Implementation 🛠️
+    • GraphRAG is a tool that uses graph machine learning to analyze an input corpus by extracting entities, relationships, and key claims from text units. It performs hierarchical clustering of the graph using the Leiden technique and generates summaries of each community and its constituents from the bottom-up. This helps in holistic understanding of the dataset. At query time, GraphRAG provides materials for the LLM context window when answering a question through global and local search modes.
+
 
 ## Getting Started
 
