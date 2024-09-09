@@ -203,7 +203,6 @@ wcwidth==0.2.13
 weasel==0.4.1
 widgetsnbextension==4.0.13
 wrapt==1.16.0
-ollama==0.3.1
 nbformat==5.10.4
 xxhash==3.5.0
 yarl==1.10.0
