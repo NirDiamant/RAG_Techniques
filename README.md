@@ -19,6 +19,12 @@ Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine infor
 
 Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
 
+## Related Project
+
+If you're interested in AI Agents implementations and tutorials, check out our sister project:
+
+📚 **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)**
+
 ## A Community-Driven Knowledge Hub
 
 This repository thrives on community contributions! Join our Discord community — the central hub for discussing and managing contributions to this project:
