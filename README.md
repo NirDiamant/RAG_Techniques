@@ -23,7 +23,7 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 If you're interested in AI Agents implementations and tutorials, check out our sister project:
 
-📚 **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)**
+🤖 **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)**
 
 ## A Community-Driven Knowledge Hub
 
