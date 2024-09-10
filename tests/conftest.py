@@ -1,5 +1,9 @@
 import pytest
 import os
+import sys
+
+# Add the main folder to sys.path
+sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/../"))
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -9,7 +13,7 @@ def pytest_addoption(parser):
 @pytest.fixture
 def notebook_paths(request):
     exclude = request.config.getoption("--exclude")
-    folder = '../all_rag_techniques/'
+    folder = 'all_rag_techniques/'
     notebook_paths = os.listdir(folder)
 
     if exclude:
@@ -25,7 +29,7 @@ def notebook_paths(request):
 @pytest.fixture
 def script_paths(request):
     exclude = request.config.getoption("--exclude")
-    folder = '../all_rag_techniques_runnable_scripts/'
+    folder = 'all_rag_techniques_runnable_scripts/'
     script_paths = os.listdir(folder)
 
     if exclude:

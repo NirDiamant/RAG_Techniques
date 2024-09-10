@@ -4,9 +4,6 @@ import os
 import re
 import pytest
 
-# Add the parent directory to the path to not fail on relative imports 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..'))) 
-
 # Function to extract and execute import statements from a notebook
 def execute_imports_from_notebook(notebook_path) -> None:
     # Assert that the file exists
@@ -32,7 +29,7 @@ def execute_imports_from_notebook(notebook_path) -> None:
             for line_num, line in enumerate(lines):
                 if import_pattern.match(line):
                     try:
-                        exec(line)
+                        exec(line.strip())
                     except Exception as e:
                         error_message = (
                             f"Notebook: {notebook_path}, Cell: {i+1}, Line: {line_num+1} - "
