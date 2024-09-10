@@ -115,14 +115,6 @@ To ensure the highest quality and readability of our code:
 3. **Format Your Code:** Use consistent formatting throughout your contribution.
 4. **Language Model Review:** After completing your code, consider passing it through a language model for additional formatting and readability improvements. This extra step can help make your code even more accessible and maintainable.
 
-## Testing
-To ensure all the notebooks working please run the tests.
-1. **Import tests** If you made changes in the `requirements.txt` please make sure all the notebooks and scripts' (if there is no exception) imports work as well with `test_imports.py`. The test has `--exclude` opition to opt-out specifict notebook(s).
-    ```bash
-    cd tests
-    pytest test_imports.py --exclude all_rag_techiques/standalone_notebook1.ipynb,all_rag_techniques_runnable_scripts/standalone_script1.py
-    ```
-
 ## Documentation
 
 Clear documentation is crucial. Whether you're improving existing docs or adding new ones, follow the same process: fork, change, test, and submit a pull request.
