@@ -4,11 +4,16 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - "requirements.txt"
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      OPENAI_API_KEY: "123"
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

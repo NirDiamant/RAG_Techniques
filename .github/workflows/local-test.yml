@@ -7,6 +7,9 @@ jobs:
   test:
     container:
       image: catthehacker/ubuntu:act-latest
+    
+    env:
+      OPENAI_API_KEY: "123"
 
     steps:
       - name: Checkout code
