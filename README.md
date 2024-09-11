@@ -125,7 +125,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📚 Context and Content Enrichment
 
-8. [Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)
+8. **[Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
 
     #### Overview 🔎
     Contextual chunk headers (CCH) is a method of creating document-level and section-level context, and prepending those chunk headers to the chunks prior to embedding them.
@@ -134,7 +134,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Create a chunk header that includes context about the document and/or section of the document, and prepend that to each chunk in order to improve the retrieval accuracy.
 
     #### Additional Resources 📚
-    [dsRAG](https://github.com/D-Star-AI/dsRAG): open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
+    **[dsRAG](https://github.com/D-Star-AI/dsRAG): open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)**
 
 9. Context Enrichment Techniques 📝  
    - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
