@@ -134,7 +134,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Create a chunk header that includes context about the document and/or section of the document, and prepend that to each chunk in order to improve the retrieval accuracy.
 
     #### Additional Resources 📚
-    **[dsRAG](https://github.com/D-Star-AI/dsRAG): open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)**
+    **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
 
 9. **[Relevant Segment Extraction 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)**
 
@@ -145,7 +145,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Perform a retrieval post-processing step that analyzes the most relevant chunks and identifies longer multi-chunk segments to provide more complete context to the LLM.
 
     #### Additional Resources 📚
-    **[dsRAG](https://github.com/D-Star-AI/dsRAG): open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)**
+    **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
 
 10. Context Enrichment Techniques 📝  
    - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
