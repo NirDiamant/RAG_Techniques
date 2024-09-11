@@ -2,13 +2,19 @@ name: GitHub PR Test
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
     branches:
       - main
+    paths:
+      - "requirements.txt"
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      OPENAI_API_KEY: "123"
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -17,6 +23,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12.6'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
