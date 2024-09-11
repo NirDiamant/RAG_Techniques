@@ -131,6 +131,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Contextual chunk headers (CCH) is a method of creating document-level and section-level context, and prepending those chunk headers to the chunks prior to embedding them.
 
     #### Implementation 🛠️
+    Create a chunk header that includes context about the document and/or section of the document, and prepend that to each chunk in order to improve the retrieval accuracy.
 
     #### Additional Resources 📚
     [Production ready open source implementation of this technique, along with a few others](https://github.com/D-Star-AI/dsRAG)
