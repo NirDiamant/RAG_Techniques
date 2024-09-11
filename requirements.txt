@@ -205,5 +205,5 @@ widgetsnbextension==4.0.13
 wrapt==1.16.0
 nbformat==5.10.4
 xxhash==3.5.0
-yarl==1.10.0
 zipp==3.20.1
+yarl==1.10.0
