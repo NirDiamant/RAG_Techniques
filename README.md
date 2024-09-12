@@ -144,9 +144,6 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Perform a retrieval post-processing step that analyzes the most relevant chunks and identifies longer multi-chunk segments to provide more complete context to the LLM.
 
-    #### Additional Resources 📚
-    **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
-
 10. Context Enrichment Techniques 📝  
    - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
    - **[LlamaIndex](all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
