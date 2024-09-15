@@ -21,18 +21,27 @@ from deepeval.metrics import GEval, FaithfulnessMetric, ContextualRelevancyMetri
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from langchain_openai import ChatOpenAI
 
+# 09/15/24 kimmeyh Added path where helper functions is located to the path
+# Add the parent directory to the path since we work with notebooks
+import sys
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
 
 from helper_functions import (
     create_question_answer_from_context_chain,
     answer_question_from_context,
-    retrieve_context_per_question
+    retrieve_context_per_question,
 )
+
 
 def create_deep_eval_test_cases(
     questions: List[str],
     gt_answers: List[str],
     generated_answers: List[str],
-    retrieved_documents: List[str]
+    retrieved_documents: List[str],
 ) -> List[LLMTestCase]:
     """
     Create a list of LLMTestCase objects for evaluation.
@@ -51,12 +60,13 @@ def create_deep_eval_test_cases(
             input=question,
             expected_output=gt_answer,
             actual_output=generated_answer,
-            retrieval_context=retrieved_document
+            retrieval_context=retrieved_document,
         )
         for question, gt_answer, generated_answer, retrieved_document in zip(
             questions, gt_answers, generated_answers, retrieved_documents
         )
     ]
+
 
 # Define evaluation metrics
 correctness_metric = GEval(
@@ -64,7 +74,7 @@ correctness_metric = GEval(
     model="gpt-4o",
     evaluation_params=[
         LLMTestCaseParams.EXPECTED_OUTPUT,
-        LLMTestCaseParams.ACTUAL_OUTPUT
+        LLMTestCaseParams.ACTUAL_OUTPUT,
     ],
     evaluation_steps=[
         "Determine whether the actual output is factually correct based on the expected output."
@@ -72,16 +82,13 @@ correctness_metric = GEval(
 )
 
 faithfulness_metric = FaithfulnessMetric(
-    threshold=0.7,
-    model="gpt-4",
-    include_reason=False
+    threshold=0.7, model="gpt-4", include_reason=False
 )
 
 relevance_metric = ContextualRelevancyMetric(
-    threshold=1,
-    model="gpt-4",
-    include_reason=True
+    threshold=1, model="gpt-4", include_reason=True
 )
+
 
 def evaluate_rag(chunks_query_retriever, num_questions: int = 5) -> None:
     """
@@ -93,7 +100,7 @@ def evaluate_rag(chunks_query_retriever, num_questions: int = 5) -> None:
     """
     llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=2000)
     question_answer_from_context_chain = create_question_answer_from_context_chain(llm)
-    
+
     # Load questions and answers from JSON file
     q_a_file_name = "../data/q_a.json"
     with open(q_a_file_name, "r", encoding="utf-8") as json_file:
@@ -109,15 +116,20 @@ def evaluate_rag(chunks_query_retriever, num_questions: int = 5) -> None:
         context = retrieve_context_per_question(question, chunks_query_retriever)
         retrieved_documents.append(context)
         context_string = " ".join(context)
-        result = answer_question_from_context(question, context_string, question_answer_from_context_chain)
+        result = answer_question_from_context(
+            question, context_string, question_answer_from_context_chain
+        )
         generated_answers.append(result["answer"])
 
     # Create test cases and evaluate
-    test_cases = create_deep_eval_test_cases(questions, ground_truth_answers, generated_answers, retrieved_documents)
+    test_cases = create_deep_eval_test_cases(
+        questions, ground_truth_answers, generated_answers, retrieved_documents
+    )
     evaluate(
         test_cases=test_cases,
-        metrics=[correctness_metric, faithfulness_metric, relevance_metric]
+        metrics=[correctness_metric, faithfulness_metric, relevance_metric],
     )
+
 
 if __name__ == "__main__":
     # Add any necessary setup or configuration here

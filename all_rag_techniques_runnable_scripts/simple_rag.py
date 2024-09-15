@@ -3,15 +3,20 @@ import sys
 import argparse
 import time
 from dotenv import load_dotenv
+
+
+# 09/15/24 kimmeyh Added path where helper functions is located to the path
+# Update how the parent directory is added to the path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+
 from helper_functions import *
 from evaluation.evalute_rag import *
 
-# Add the parent directory to the path since we work with notebooks
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
-
 # Load environment variables from a .env file (e.g., OpenAI API key)
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 class SimpleRAG:
@@ -33,12 +38,16 @@ class SimpleRAG:
 
         # Encode the PDF document into a vector store using OpenAI embeddings
         start_time = time.time()
-        self.vector_store = encode_pdf(path, chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-        self.time_records = {'Chunking': time.time() - start_time}
+        self.vector_store = encode_pdf(
+            path, chunk_size=chunk_size, chunk_overlap=chunk_overlap
+        )
+        self.time_records = {"Chunking": time.time() - start_time}
         print(f"Chunking Time: {self.time_records['Chunking']:.2f} seconds")
 
         # Create a retriever from the vector store
-        self.chunks_query_retriever = self.vector_store.as_retriever(search_kwargs={"k": n_retrieved})
+        self.chunks_query_retriever = self.vector_store.as_retriever(
+            search_kwargs={"k": n_retrieved}
+        )
 
     def run(self, query):
         """
@@ -53,7 +62,7 @@ class SimpleRAG:
         # Measure time for retrieval
         start_time = time.time()
         context = retrieve_context_per_question(query, self.chunks_query_retriever)
-        self.time_records['Retrieval'] = time.time() - start_time
+        self.time_records["Retrieval"] = time.time() - start_time
         print(f"Retrieval Time: {self.time_records['Retrieval']:.2f} seconds")
 
         # Display the retrieved context
@@ -73,19 +82,50 @@ def validate_args(args):
 
 # Function to parse command line arguments
 def parse_args():
-    parser = argparse.ArgumentParser(description="Encode a PDF document and test a simple RAG.")
-    parser.add_argument("--path", type=str, default="../data/Understanding_Climate_Change.pdf",
-                        help="Path to the PDF file to encode.")
-    parser.add_argument("--chunk_size", type=int, default=1000,
-                        help="Size of each text chunk (default: 1000).")
-    parser.add_argument("--chunk_overlap", type=int, default=200,
-                        help="Overlap between consecutive chunks (default: 200).")
-    parser.add_argument("--n_retrieved", type=int, default=2,
-                        help="Number of chunks to retrieve for each query (default: 2).")
-    parser.add_argument("--query", type=str, default="What is the main cause of climate change?",
-                        help="Query to test the retriever (default: 'What is the main cause of climate change?').")
-    parser.add_argument("--evaluate", action="store_true",
-                        help="Whether to evaluate the retriever's performance (default: False).")
+    # HK changed the dir path to be the repository home directory plus the file name
+    default_path = os.path.abspath(
+        os.path.join(
+            os.path.dirname(__file__), "..", "data", "Understanding_Climate_Change.pdf"
+        )
+    )
+    parser = argparse.ArgumentParser(
+        description="Encode a PDF document and test a simple RAG."
+    )
+    parser.add_argument(
+        "--path",
+        type=str,
+        default=default_path,
+        help="Path to the PDF file to encode.",
+    )
+    parser.add_argument(
+        "--chunk_size",
+        type=int,
+        default=1000,
+        help="Size of each text chunk (default: 1000).",
+    )
+    parser.add_argument(
+        "--chunk_overlap",
+        type=int,
+        default=200,
+        help="Overlap between consecutive chunks (default: 200).",
+    )
+    parser.add_argument(
+        "--n_retrieved",
+        type=int,
+        default=2,
+        help="Number of chunks to retrieve for each query (default: 2).",
+    )
+    parser.add_argument(
+        "--query",
+        type=str,
+        default="What is the main cause of climate change?",
+        help="Query to test the retriever (default: 'What is the main cause of climate change?').",
+    )
+    parser.add_argument(
+        "--evaluate",
+        action="store_true",
+        help="Whether to evaluate the retriever's performance (default: False).",
+    )
 
     # Parse and validate arguments
     return validate_args(parser.parse_args())
@@ -98,7 +138,7 @@ def main(args):
         path=args.path,
         chunk_size=args.chunk_size,
         chunk_overlap=args.chunk_overlap,
-        n_retrieved=args.n_retrieved
+        n_retrieved=args.n_retrieved,
     )
 
     # Retrieve context based on the query
@@ -109,6 +149,6 @@ def main(args):
         evaluate_rag(simple_rag.chunks_query_retriever)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Call the main function with parsed arguments
     main(parse_args())
