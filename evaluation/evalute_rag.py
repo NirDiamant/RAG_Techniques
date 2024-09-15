@@ -21,6 +21,13 @@ from deepeval.metrics import GEval, FaithfulnessMetric, ContextualRelevancyMetri
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from langchain_openai import ChatOpenAI
 
+# 09/15/24 kimmeyh Added path where helper functions is located to the path
+# Add the parent directory to the path since we work with notebooks
+import sys
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
 
 from helper_functions import (
     create_question_answer_from_context_chain,
@@ -93,7 +100,7 @@ def evaluate_rag(chunks_query_retriever, num_questions: int = 5) -> None:
     """
     llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=2000)
     question_answer_from_context_chain = create_question_answer_from_context_chain(llm)
-    
+
     # Load questions and answers from JSON file
     q_a_file_name = "../data/q_a.json"
     with open(q_a_file_name, "r", encoding="utf-8") as json_file:
