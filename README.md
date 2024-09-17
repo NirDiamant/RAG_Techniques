@@ -103,7 +103,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    - ✅ **Quality Checking:** The generated propositions are passed through a grading system that evaluates accuracy, clarity, completeness, and conciseness.
 
 #### Additional Resources 📚
-   - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://medium.com/@nirdiamant21/the-propositions-method-enhancing-information-retrieval-for-ai-systems-c5ed6e5a4d2e)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
+   - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://open.substack.com/pub/diamantai/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
 
 ### 🔍 Query Enhancement
 
@@ -172,7 +172,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
    #### Additional Resources 📚
-   - **[Semantic Chunking: Improving AI Information Retrieval](https://medium.com/@nirdiamant21/semantic-chunking-improving-ai-information-retrieval-2f468be2d707)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
+   - **[Semantic Chunking: Improving AI Information Retrieval](https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
 12. Contextual Compression 🗜️  
    - **[LangChain](all_rag_techniques/contextual_compression.ipynb)**  
@@ -221,7 +221,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     - 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
 
     #### Additional Resources 📚
-    - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://medium.com/@nirdiamant21/relevance-revolution-how-re-ranking-transforms-rag-systems-0ffaa15f1047)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
+    - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://open.substack.com/pub/diamantai/p/relevance-revolution-how-re-ranking?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
 
 16. Multi-faceted Filtering 🔍
 
@@ -245,7 +245,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
     
     #### Additional Resources 📚
-    - **[Hierarchical Indices: Enhancing RAG Systems](https://medium.com/@nirdiamant21/hierarchical-indices-enhancing-rag-systems-43c06330c085?sk=d5f97cbece2f640da8746f8da5f95188)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
+    - **[Hierarchical Indices: Enhancing RAG Systems](https://open.substack.com/pub/diamantai/p/hierarchical-indices-enhancing-rag?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
 18. Ensemble Retrieval 🎭
 
