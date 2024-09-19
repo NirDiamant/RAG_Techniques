@@ -33,7 +33,7 @@ If you're interested in AI Agents implementations and tutorials, check out our s
 
 ## A Community-Driven Knowledge Hub
 
-**This repository thrives on community contributions!** Join our Discord community — the central hub for discussing and managing contributions to this project:
+**This repository grows stronger with your contributions!** Join our vibrant Discord community — the central hub for shaping and advancing this project together 🤝
 
 **[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)**
 
