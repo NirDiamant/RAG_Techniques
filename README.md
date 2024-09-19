@@ -129,6 +129,9 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
 
+   #### Additional Resources 📚
+   - **[HyDE: Exploring Hypothetical Document Embeddings for AI Retrieval](https://open.substack.com/pub/diamantai/p/hyde-exploring-hypothetical-document?r=336pe4&utm_campaign=post&utm_medium=web)** - A short blog post explaining this method clearly.
+
 ### 📚 Context and Content Enrichment
 
 8. **[Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
