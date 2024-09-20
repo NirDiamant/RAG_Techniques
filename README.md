@@ -264,7 +264,9 @@ Explore the extensive list of cutting-edge RAG techniques:
     Extending RAG capabilities to handle diverse data types for richer responses.
 
     #### Implementation 🛠️
-    Integrate models that can retrieve and understand different data modalities, combining insights from text, images, and videos.
+    - **[Multi-model RAG with Multimedia Captioning](all_rag_techniques/multi_model_rag_with_captioning.ipynb)** - Caption and store all the other multimedia data like pdfs, ppts, etc., with text data in vector store and retrieve them together.
+    - **[Multi-model RAG with Colpali](all_rag_techniques/multi_model_rag_with_colpali.ipynb)** - Instead of captioning convert all the data into image, then find the most relevant images and pass them to a vision large language model.
+    
 
 ### 🔁 Iterative and Adaptive Techniques
 
