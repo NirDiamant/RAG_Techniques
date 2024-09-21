@@ -298,9 +298,33 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
 
+### 📊 Evaluation
+
+23. [DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb) 📘
+
+    - [DeepEval](link_to_deepeval.link)
+
+    #### Overview 🔎
+    Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
+
+    #### Implementation 🛠️
+    Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
+    
+
+24. [GroUSE Evaluation](evaluation/evaluation_grouse.ipynb) 🐦
+
+    - [GroUSE](link_to_grouse.link)
+
+    #### Overview 🔎
+    Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
+
+    #### Implementation 🛠️
+    Use the `grouse` package to evaluate contextually-grounded LLM generations with GPT-4 on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom Llama 3.1 405B evaluator.
+    
+
 ### 🔬 Explainability and Transparency
 
-23. Explainable Retrieval 🔍  
+25. Explainable Retrieval 🔍  
     - **[LangChain](all_rag_techniques/explainable_retrieval.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
 
@@ -312,7 +336,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🏗️ Advanced Architectures
 
-24. Knowledge Graph Integration (Graph RAG) 🕸️  
+26. Knowledge Graph Integration (Graph RAG) 🕸️  
     - **[LangChain](all_rag_techniques/graph_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
 
@@ -322,7 +346,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
     
-25. GraphRag (Microsoft) 🎯
+27. GraphRag (Microsoft) 🎯
     - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
 
     #### Overview 🔎
@@ -331,7 +355,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Analyze an input corpus by extracting entities, relationshipsfrom text units. generates summaries of each community and its constituents from the bottom-up.
 
-26. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
+28. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
     - **[LangChain](all_rag_techniques/raptor.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
@@ -341,7 +365,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-27. Self RAG 🔁  
+29. Self RAG 🔁  
     - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
@@ -351,7 +375,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-28. Corrective RAG 🔧  
+30. Corrective RAG 🔧  
     - **[LangChain](all_rag_techniques/crag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
@@ -363,7 +387,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ## 🌟 Special Advanced Technique 🌟
 
-29. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+31. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
