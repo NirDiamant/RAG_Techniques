@@ -10,9 +10,9 @@ from evaluation.evalute_rag import *
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
 
 # Load environment variables from a .env file (e.g., OpenAI API key)
-load_dotenv()
-os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
+from ds_data_app.logic.utils.utils import get_secret
 
+os.environ["OPENAI_API_KEY"] = get_secret()['chat-gpt']['openai-personal-key']
 
 class SimpleRAG:
     """
@@ -74,7 +74,7 @@ def validate_args(args):
 # Function to parse command line arguments
 def parse_args():
     parser = argparse.ArgumentParser(description="Encode a PDF document and test a simple RAG.")
-    parser.add_argument("--path", type=str, default="../data/Understanding_Climate_Change.pdf",
+    parser.add_argument("--path", type=str, default="ds_data_app/logic/langchain/rag/RAG_Techniques/data/Understanding_Climate_Change.pdf",
                         help="Path to the PDF file to encode.")
     parser.add_argument("--chunk_size", type=int, default=1000,
                         help="Size of each text chunk (default: 1000).")

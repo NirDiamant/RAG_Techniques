@@ -10,11 +10,14 @@ from typing import List
 from openai import RateLimitError
 from rank_bm25 import BM25Okapi
 
-import fitz
+# import fitz
 import asyncio
 import random
 import textwrap
+import os
 import numpy as np
+
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 def replace_t_with_space(list_of_documents):

@@ -15,8 +15,9 @@ from langchain_core.pydantic_v1 import BaseModel, Field
 
 sys.path.append(os.path.abspath(
     os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path since we work with notebooks
-from helper_functions import *
-from evaluation.evalute_rag import *
+
+# from helper_functions import *
+# from evaluation.evalute_rag import *
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -227,6 +228,90 @@ def parse_args():
     parser.add_argument('--texts', nargs='+', help="Input texts for retrieval")
     return parser.parse_args()
 
+ADAPTIVE_RAG_DESCRIPTION = """
+# Adaptive Retrieval-Augmented Generation (RAG) System
+
+## Overview
+
+This system implements an advanced Retrieval-Augmented Generation (RAG) approach that adapts its retrieval strategy based on the type of query. By leveraging Language Models (LLMs) at various stages, it aims to provide more accurate, relevant, and context-aware responses to user queries.
+
+## Motivation
+
+Traditional RAG systems often use a one-size-fits-all approach to retrieval, which can be suboptimal for different types of queries. Our adaptive system is motivated by the understanding that different types of questions require different retrieval strategies. For example, a factual query might benefit from precise, focused retrieval, while an analytical query might require a broader, more diverse set of information.
+
+## Key Components
+
+1. **Query Classifier**: Determines the type of query (Factual, Analytical, Opinion, or Contextual).
+
+2. **Adaptive Retrieval Strategies**: Four distinct strategies tailored to different query types:
+   - Factual Strategy
+   - Analytical Strategy
+   - Opinion Strategy
+   - Contextual Strategy
+
+3. **LLM Integration**: LLMs are used throughout the process to enhance retrieval and ranking.
+
+4. **OpenAI GPT Model**: Generates the final response using the retrieved documents as context.
+
+## Method Details
+
+### 1. Query Classification
+
+The system begins by classifying the user's query into one of four categories:
+- Factual: Queries seeking specific, verifiable information.
+- Analytical: Queries requiring comprehensive analysis or explanation.
+- Opinion: Queries about subjective matters or seeking diverse viewpoints.
+- Contextual: Queries that depend on user-specific context.
+
+### 2. Adaptive Retrieval Strategies
+
+Each query type triggers a specific retrieval strategy:
+
+#### Factual Strategy
+- Enhances the original query using an LLM for better precision.
+- Retrieves documents based on the enhanced query.
+- Uses an LLM to rank documents by relevance.
+
+#### Analytical Strategy
+- Generates multiple sub-queries using an LLM to cover different aspects of the main query.
+- Retrieves documents for each sub-query.
+- Ensures diversity in the final document selection using an LLM.
+
+#### Opinion Strategy
+- Identifies different viewpoints on the topic using an LLM.
+- Retrieves documents representing each viewpoint.
+- Uses an LLM to select a diverse range of opinions from the retrieved documents.
+
+#### Contextual Strategy
+- Incorporates user-specific context into the query using an LLM.
+- Performs retrieval based on the contextualized query.
+- Ranks documents considering both relevance and user context.
+
+### 3. LLM-Enhanced Ranking
+
+After retrieval, each strategy uses an LLM to perform a final ranking of the documents. This step ensures that the most relevant and appropriate documents are selected for the next stage.
+
+### 4. Response Generation
+
+The final set of retrieved documents is passed to an OpenAI GPT model, which generates a response based on the query and the provided context.
+
+## Benefits of This Approach
+
+1. **Improved Accuracy**: By tailoring the retrieval strategy to the query type, the system can provide more accurate and relevant information.
+
+2. **Flexibility**: The system adapts to different types of queries, handling a wide range of user needs.
+
+3. **Context-Awareness**: Especially for contextual queries, the system can incorporate user-specific information for more personalized responses.
+
+4. **Diverse Perspectives**: For opinion-based queries, the system actively seeks out and presents multiple viewpoints.
+
+5. **Comprehensive Analysis**: The analytical strategy ensures a thorough exploration of complex topics.
+
+## Conclusion
+
+This adaptive RAG system represents a significant advancement over traditional RAG approaches. By dynamically adjusting its retrieval strategy and leveraging LLMs throughout the process, it aims to provide more accurate, relevant, and nuanced responses to a wide variety of user queries.
+
+"""
 
 if __name__ == "__main__":
     args = parse_args()
