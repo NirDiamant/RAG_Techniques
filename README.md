@@ -300,9 +300,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📊 Evaluation
 
-23. [DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb) 📘
-
-    - [DeepEval](link_to_deepeval.link)
+23. **[DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb)** 📘
 
     #### Overview 🔎
     Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
@@ -311,9 +309,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
     
 
-24. [GroUSE Evaluation](evaluation/evaluation_grouse.ipynb) 🐦
-
-    - [GroUSE](link_to_grouse.link)
+24. **[GroUSE Evaluation](evaluation/evaluation_grouse.ipynb)** 🐦
 
     #### Overview 🔎
     Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
