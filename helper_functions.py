@@ -2,7 +2,7 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain import PromptTemplate
 from openai import RateLimitError
 from typing import List
@@ -17,8 +17,9 @@ import textwrap
 import os
 import numpy as np
 
-os.environ["OPENAI_API_KEY"] = "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"
+from ds_data_app.logic.utils.utils import get_secret
 
+os.environ["OPENAI_API_KEY"] = get_secret()['chat-gpt']['openai-personal-key']
 
 def replace_t_with_space(list_of_documents):
     """

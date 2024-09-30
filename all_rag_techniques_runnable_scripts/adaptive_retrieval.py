@@ -3,7 +3,8 @@ import sys
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+# from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.prompts import PromptTemplate
 
@@ -11,7 +12,7 @@ from langchain_core.retrievers import BaseRetriever
 from typing import List, Dict, Any
 from langchain.docstore.document import Document
 from langchain_openai import ChatOpenAI
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 
 sys.path.append(os.path.abspath(
     os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path since we work with notebooks
