@@ -3,7 +3,7 @@ import random
 import time
 import os
 from dotenv import load_dotenv
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.core.prompts import PromptTemplate
 from llama_index.core.evaluation import DatasetGenerator, FaithfulnessEvaluator, RelevancyEvaluator
 from llama_index.llms.openai import OpenAI
@@ -39,10 +39,12 @@ def evaluate_response_time_and_accuracy(chunk_size, eval_questions, eval_documen
     total_faithfulness = 0
     total_relevancy = 0
 
-    # Create vector index
+    # Set global LLM as GPT-3.5 
     llm = OpenAI(model="gpt-3.5-turbo")
-    service_context = ServiceContext.from_defaults(llm=llm, chunk_size=chunk_size, chunk_overlap=chunk_size // 5)
-    vector_index = VectorStoreIndex.from_documents(eval_documents, service_context=service_context)
+    Settings.llm = llm
+    
+    # Create vector index
+    vector_index = VectorStoreIndex.from_documents(eval_documents)
 
     # Build query engine
     query_engine = vector_index.as_query_engine(similarity_top_k=5)
@@ -77,7 +79,8 @@ class RAGEvaluator:
         self.chunk_sizes = chunk_sizes
         self.documents = self.load_documents()
         self.eval_questions = self.generate_eval_questions()
-        self.service_context_gpt4 = self.create_service_context()
+        # Set GPT-4o as local configuration for evaluation
+        self.llm_gpt4 = OpenAI(model="gpt-4o")
         self.faithfulness_evaluator = self.create_faithfulness_evaluator()
         self.relevancy_evaluator = self.create_relevancy_evaluator()
 
@@ -90,12 +93,9 @@ class RAGEvaluator:
         eval_questions = data_generator.generate_questions_from_nodes()
         return random.sample(eval_questions, self.num_eval_questions)
 
-    def create_service_context(self):
-        gpt4 = OpenAI(temperature=0, model="gpt-4o")
-        return ServiceContext.from_defaults(llm=gpt4)
 
     def create_faithfulness_evaluator(self):
-        faithfulness_evaluator = FaithfulnessEvaluator(service_context=self.service_context_gpt4)
+        faithfulness_evaluator = FaithfulnessEvaluator(llm=self.llm_gpt4)
         faithfulness_new_prompt_template = PromptTemplate("""
             Please tell if a given piece of information is directly supported by the context.
             You need to answer with either YES or NO.
@@ -106,7 +106,7 @@ class RAGEvaluator:
         return faithfulness_evaluator
 
     def create_relevancy_evaluator(self):
-        return RelevancyEvaluator(service_context=self.service_context_gpt4)
+        return RelevancyEvaluator(llm=self.llm_gpt4)
 
     def run(self):
         for chunk_size in self.chunk_sizes:
