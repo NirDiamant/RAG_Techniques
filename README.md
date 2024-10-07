@@ -421,7 +421,7 @@ We welcome contributions from the community! If you have a new technique or impr
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under a custom non-commercial license - see the [LICENSE](LICENSE) file for details.
 
 ---
 
