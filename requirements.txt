@@ -207,3 +207,5 @@ nbformat==5.10.4
 xxhash==3.5.0
 yarl==1.10.0
 zipp==3.20.1
+semantic_router
+google-generativeai
