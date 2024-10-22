@@ -3,11 +3,12 @@ import sys
 import argparse
 import time
 from dotenv import load_dotenv
-from helper_functions import *
-from evaluation.evalute_rag import *
 
 # Add the parent directory to the path since we work with notebooks
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
+
+from helper_functions import *
+from evaluation.evalute_rag import *
 
 # Load environment variables from a .env file (e.g., OpenAI API key)
 load_dotenv()
