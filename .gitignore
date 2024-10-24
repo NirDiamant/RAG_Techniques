@@ -8,6 +8,7 @@
 !*.ipynb
 !*jpeg
 !*svg
+!*.png
 !LICENSE
 !*.gif
 !all_rag_techniques
