@@ -318,3 +318,44 @@ async def retry_with_exponential_backoff(coroutine, max_retries=5):
 
     # If max retries are reached without success, raise an exception
     raise Exception("Max retries reached")
+
+
+# Enum class representing different embedding providers
+class EmbeddingProvider(Enum):
+    OPENAI = "openai"
+    COHERE = "cohere"
+    AMAZON_BEDROCK = "bedrock"
+
+# Enum class representing different model providers
+class ModelProvider(Enum):
+    OPENAI = "openai"
+    GROQ = "groq"
+    ANTHROPIC = "anthropic"
+    AMAZON_BEDROCK = "bedrock"
+
+
+def get_langchain_embedding_provider(provider: EmbeddingProvider, model_id: str = None):
+    """
+    Returns an embedding provider based on the specified provider and model ID.
+
+    Args:
+        provider (EmbeddingProvider): The embedding provider to use.
+        model_id (str): Optional -  The specific embeddings model ID to use .
+
+    Returns:
+        A LangChain embedding provider instance.
+
+    Raises:
+        ValueError: If the specified provider is not supported.
+    """
+    if provider == EmbeddingProvider.OPENAI:
+        from langchain_openai import OpenAIEmbeddings
+        return OpenAIEmbeddings()
+    elif provider == EmbeddingProvider.COHERE:
+        from langchain_cohere import CohereEmbeddings
+        return CohereEmbeddings()
+    elif provider == EmbeddingProvider.AMAZON_BEDROCK:
+        from langchain_community.embeddings import BedrockEmbeddings
+        return BedrockEmbeddings(model_id=model_id) if model_id else BedrockEmbeddings(model_id="amazon.titan-embed-text-v2:0")
+    else:
+        raise ValueError(f"Unsupported embedding provider: {provider}")
