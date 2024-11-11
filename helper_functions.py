@@ -12,6 +12,7 @@ import asyncio
 import random
 import textwrap
 import numpy as np
+from enum import Enum
 
 
 def replace_t_with_space(list_of_documents):
