@@ -1,53 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="60" viewBox="0 0 320 60">
-  <!-- Outer Glow Animation -->
-  <rect x="5" y="5" width="290" height="45" rx="22.5" fill="#4285F4" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="width" values="290;294;290" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="height" values="45;49;45" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="x" values="5;3;5" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="y" values="5;3;5" dur="2s" repeatCount="indefinite" />
-  </rect>
-
   <!-- Button Shadow -->
-  <rect x="5" y="5" width="290" height="45" rx="22.5" fill="#2468d2">
-    <animate attributeName="y" values="5;7;5" dur="2s" repeatCount="indefinite" />
-    <animate attributeName="filter" values="url(#shadowSmall);url(#shadowLarge);url(#shadowSmall)" dur="2s" repeatCount="indefinite" />
-  </rect>
+  <rect x="5" y="5" width="290" height="45" rx="22.5" fill="#2468d2" filter="url(#shadow)"/>
   
   <!-- Button Background -->
-  <rect x="0" y="0" width="290" height="45" rx="22.5" fill="url(#gradient)">
-    <animate attributeName="y" values="0;2;0" dur="2s" repeatCount="indefinite" />
-  </rect>
-
+  <rect x="0" y="0" width="290" height="45" rx="22.5" fill="url(#gradient)"/>
+  
   <!-- Arrow Icon -->
-  <path d="M250,22 l6,0 l-3,6 z" fill="white">
-    <animate attributeName="transform" values="translate(0,0);translate(5,0);translate(0,0)" dur="1s" repeatCount="indefinite" />
-  </path>
+  <path d="M250,22 l6,0 l-3,6 z" fill="white"/>
   
   <!-- Text -->
   <text x="130" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">
     Subscribe to Newsletter
-    <animate attributeName="y" values="28;30;28" dur="2s" repeatCount="indefinite" />
   </text>
   
   <!-- Definitions -->
   <defs>
     <!-- Gradient -->
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4285F4">
-        <animate attributeName="stop-color" values="#4285F4;#5494FF;#4285F4" dur="4s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" style="stop-color:#3574db">
-        <animate attributeName="stop-color" values="#3574db;#4285F4;#3574db" dur="4s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" style="stop-color:#4285F4"/>
+      <stop offset="100%" style="stop-color:#3574db"/>
     </linearGradient>
     
-    <!-- Shadows -->
-    <filter id="shadowSmall" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
-    </filter>
-    <filter id="shadowLarge" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    <!-- Enhanced Shadow for 3D effect -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
     </filter>
   </defs>
 </svg>

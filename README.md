@@ -24,7 +24,7 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 
 [![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
-*Join thousands of AI enthusiasts getting weekly insights!*
+*Join thousands of AI enthusiasts getting unique cutting edge insights and free tutorials!*
 </div>
 
 [![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
