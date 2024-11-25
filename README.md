@@ -22,11 +22,9 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 </tr>
 </table>
 
-<a href="https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist">
-<img src="https://img.shields.io/badge/Subscribe%20to%20DiamantAI%20Newsletter-4285F4?style=for-the-badge&logo=substack&logoColor=white" alt="Subscribe to Newsletter" />
-</a>
+[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
-*Join thousands of AI enthusiasts getting unique cutting edge insights!*
+*Join thousands of AI enthusiasts getting weekly insights!*
 </div>
 
 [![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
