@@ -10,7 +10,7 @@
 
 Thank you to all my sponsors for supporting this project!
 
-[![Sponsors](https://github.com/sponsors/NirDiamant/sponsors.svg)](https://github.com/sponsors/NirDiamant)
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
