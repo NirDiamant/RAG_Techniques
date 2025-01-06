@@ -6,6 +6,11 @@
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://github.com/sponsors/NirDiamant)** to help maintain and expand this valuable resource!
 
+## Sponsors ❤️
+
+Thank you to all my sponsors for supporting this project!
+
+[![Sponsors](https://github.com/sponsors/NirDiamant/sponsors.svg)](https://github.com/sponsors/NirDiamant)
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
