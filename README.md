@@ -11,7 +11,7 @@
 Thank you to all my sponsors for supporting this project!
 
 
-<img src="https://raw.githubusercontent.com/NirDiamant/projectname/branch/.github/sponsors.svg">
+<a href="https://github.com/sponsors/NirDiamant"><img src="https://github.com/NirDiamant.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
