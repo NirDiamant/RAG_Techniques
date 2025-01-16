@@ -23,7 +23,7 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 <tr>
 <td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
 <td align="center">💡<br><b>Expert<br>Insights</b></td>
-<td align="center">🎯<br><b>Top 1%<br>Content</b></td>
+<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
 
 </tr>
 </table>
