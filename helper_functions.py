@@ -17,7 +17,7 @@ from enum import Enum
 
 def replace_t_with_space(list_of_documents):
     """
-    Replaces all tab characters ('\t') with spaces in the page content of each document.
+    Replaces all tab characters ('\t') with spaces in the page content of each document
 
     Args:
         list_of_documents: A list of document objects, each with a 'page_content' attribute.
