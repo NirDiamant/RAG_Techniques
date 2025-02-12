@@ -278,12 +278,13 @@ Explore the extensive list of cutting-edge RAG techniques:
     Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
 19. Dartboard Retrieval 🎯
-    - **[LangChain](all_rag_techniques/dartboard.ipynb)**
+    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb)** 
     #### Overview 🔎
     Optimizing over Relevant Information Gain in Retrieval
 
     #### Implementation 🛠️
-    Combine both relevance and diversity into a single scoring function and directly optimize for it.
+    - Combine both relevance and diversity into a single scoring function and directly optimize for it.
+    - POC showing plain simple RAG underperforming when the database is dense, and the dartboard retrieval outperforming it.
 
 20. Multi-modal Retrieval 📽️
 
