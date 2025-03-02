@@ -89,6 +89,8 @@ For contribution guidelines, please refer to our **[CONTRIBUTING.md](https://git
 | | Corrective RAG | Dynamically evaluating and correcting retrieval | [LangChain](all_rag_techniques/crag.ipynb), [Runnable Script](all_rag_techniques_runnable_scripts/crag.py) |
 | **🌟 Special Advanced** | Controllable Agent for Complex RAG | Advanced solution for complex questions | [Implementation](https://github.com/NirDiamant/Controllable-RAG-Agent) |
 
+For a more detailed explanation of the project, please refer to the [DETAILED_README.md](DETAILED_README.md)
+
 ## Getting Started
 
 To begin implementing these advanced RAG techniques in your projects:
