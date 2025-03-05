@@ -7,6 +7,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.core.prompts import PromptTemplate
 from llama_index.core.evaluation import DatasetGenerator, FaithfulnessEvaluator, RelevancyEvaluator
 from llama_index.llms.openai import OpenAI
+from llama_index.core.node_parser import SentenceSplitter
 
 # Apply asyncio fix for Jupyter notebooks
 nest_asyncio.apply()
@@ -44,7 +45,8 @@ def evaluate_response_time_and_accuracy(chunk_size, eval_questions, eval_documen
     Settings.llm = llm
     
     # Create vector index
-    vector_index = VectorStoreIndex.from_documents(eval_documents)
+    splitter = SentenceSplitter(chunk_size=chunk_size)
+    vector_index = VectorStoreIndex.from_documents(eval_documents, transformations=[splitter])
 
     # Build query engine
     query_engine = vector_index.as_query_engine(similarity_top_k=5)
