@@ -107,7 +107,7 @@ def main(args):
 
     # Evaluate the retriever's performance on the query (if requested)
     if args.evaluate:
-        evaluate_rag(simple_rag.chunks_query_retriever)
+        evaluate_rag(simple_rag.chunks_query_retriever, q_a_file_name = "../data/q_a.json")
 
 
 if __name__ == '__main__':
