@@ -6,6 +6,8 @@
 !*.md
 !*.txt
 !*.ipynb
+!*.faiss
+!*.json
 !*jpeg
 !*svg
 !*.png
