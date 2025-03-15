@@ -1,0 +1,142 @@
+[
+  {
+    "question": "Who is the author of 'The Wealth of Nations'?",
+    "answer": "Adam Smith"
+  },
+  {
+    "question": "In what year was 'The Wealth of Nations' first published?",
+    "answer": "1776"
+  },
+  {
+    "question": "What is the definition of the 'invisible hand' as described in the book?",
+    "answer": "The 'invisible hand' refers to the self-regulating nature of the marketplace where individuals' pursuit of self-interest leads to societal benefits."
+  },
+  {
+    "question": "What are the three factors of production mentioned?",
+    "answer": "Land, labor, and capital."
+  },
+  {
+    "question": "What is the role of labor in determining the value of goods?",
+    "answer": "Labor is the fundamental measure of value for goods."
+  },
+  {
+    "question": "What are the key differences between productive and unproductive labor?",
+    "answer": "Productive labor results in goods or services that can be sold, contributing to capital accumulation, while unproductive labor does not."
+  },
+  {
+    "question": "List the main advantages of division of labor, as explained in the book.",
+    "answer": "Increased productivity, specialization of skills, and reduced time spent switching tasks."
+  },
+  {
+    "question": "What examples does Adam Smith use to illustrate the benefits of specialization?",
+    "answer": "The manufacture of pins, where specialization significantly increases productivity."
+  },
+  {
+    "question": "Describe the relationship between capital accumulation and economic growth.",
+    "answer": "Capital accumulation enables investment in productive activities, leading to economic growth."
+  },
+  {
+    "question": "What are the primary causes of differences in wages among occupations?",
+    "answer": "Skill levels, working conditions, demand for specific jobs, and length of training."
+  },
+  {
+    "question": "Explain how Adam Smith connects self-interest to the broader good of society.",
+    "answer": "Self-interest drives individuals to produce goods and services that others need, creating economic value and societal benefits."
+  },
+  {
+    "question": "Summarize the role of government in a free-market economy according to Adam Smith.",
+    "answer": "The government should provide defense, justice, and public works that cannot be efficiently managed by private markets."
+  },
+  {
+    "question": "How does Smith justify the need for taxation?",
+    "answer": "Taxation is necessary to fund public services and infrastructure that benefit society."
+  },
+  {
+    "question": "What is the relationship between supply and demand in determining prices?",
+    "answer": "Prices are determined by the balance between supply and demand, ensuring resources are allocated efficiently."
+  },
+  {
+    "question": "Describe the economic implications of monopolies based on Smith’s analysis.",
+    "answer": "Monopolies lead to higher prices and reduced competition, harming consumers and economic efficiency."
+  },
+  {
+    "question": "How does the division of labor contribute to innovation, and what are its long-term economic impacts?",
+    "answer": "Division of labor fosters specialization, leading to skill improvement and innovation, which in turn drives economic growth."
+  },
+  {
+    "question": "Compare Smith’s views on agriculture and manufacturing in terms of their contributions to economic wealth.",
+    "answer": "Smith considers both agriculture and manufacturing essential but emphasizes the productivity and innovation in manufacturing."
+  },
+  {
+    "question": "What role does foreign trade play in enhancing domestic wealth, and how does it relate to Smith’s idea of the 'invisible hand'?",
+    "answer": "Foreign trade allows countries to specialize in goods where they have an advantage, increasing overall wealth, and is guided by self-interest (invisible hand)."
+  },
+  {
+    "question": "Explain how capital accumulation leads to economic growth and affects the division of labor.",
+    "answer": "Capital accumulation enables investment in tools and infrastructure, increasing productivity and encouraging specialization."
+  },
+  {
+    "question": "What does Smith say about the relationship between wealth distribution and societal stability?",
+    "answer": "Fair distribution of wealth promotes social harmony and prevents instability caused by inequality."
+  },
+  {
+    "question": "What does Smith think about merchants?",
+    "answer": "Smith discusses merchants in both positive and critical contexts, praising their role in trade but warning against monopolistic tendencies."
+  },
+  {
+    "question": "What is the best economic system?",
+    "answer": "Smith advocates for free markets but also highlights the need for government intervention in certain cases."
+  },
+  {
+    "question": "Why are taxes important?",
+    "answer": "Taxes fund essential public services, but Smith warns they should not burden economic activity excessively."
+  },
+  {
+    "question": "What are the challenges of trade?",
+    "answer": "Trade faces challenges such as tariffs, monopolies, and protectionist policies."
+  },
+  {
+    "question": "How does the book define value?",
+    "answer": "Smith differentiates between 'use value' and 'exchange value' when discussing value."
+  },
+  {
+    "question": "Summarize Adam Smith’s arguments for the division of labor in less than 100 words.",
+    "answer": "Division of labor increases productivity by allowing workers to specialize, improving skills and efficiency, and reducing time lost in switching tasks."
+  },
+  {
+    "question": "Provide a 50-word summary of Smith’s views on the role of government in the economy.",
+    "answer": "Smith believes government should provide defense, ensure justice, and build public works that markets cannot efficiently manage while avoiding interference in economic transactions."
+  },
+  {
+    "question": "Summarize the key arguments made about the benefits of free trade in Chapter 2.",
+    "answer": "Free trade encourages specialization and exchange, increasing efficiency and wealth for all trading partners."
+  },
+  {
+    "question": "What are the main themes discussed in Book 1?",
+    "answer": "Book 1 covers the division of labor, value of goods, labor productivity, and the origins of wealth."
+  },
+  {
+    "question": "Summarize the economic effects of monopolies as described in the book.",
+    "answer": "Monopolies harm economic efficiency by raising prices, reducing competition, and limiting innovation."
+  },
+  {
+    "question": "Summarize the key arguments made in Book 1 of The Wealth of Nations.",
+    "answer": "Book 1 focuses on the division of labor as a driver of productivity, the value of labor as a measure of wealth, and the dynamics of supply and demand. It explains the origins of wealth, differences in wages across occupations, and the principles of market pricing."
+  },
+  {
+    "question": "Provide a detailed summary of Adam Smith's views on the role of government in the economy as discussed throughout the book.",
+    "answer": "Smith argues for a limited yet essential role for government, including defense, administration of justice, and public works. He emphasizes the need for government intervention in areas where markets cannot operate effectively, such as infrastructure development, while advocating for minimal interference in free-market operations."
+  },
+  {
+    "question": "Summarize the benefits and challenges of foreign trade as described in The Wealth of Nations.",
+    "answer": "Foreign trade enables nations to specialize in goods they produce efficiently, leading to increased global wealth. Smith highlights how trade fosters innovation and resource allocation. However, he also points out challenges like protectionism, monopolistic practices, and tariffs, which can disrupt the benefits of free trade."
+  },
+  {
+    "question": "What are the major themes discussed in Book 2, and how do they connect to the overall message of the book?",
+    "answer": "Book 2 explores the nature of capital, its accumulation, and the ways it fuels economic growth. Smith discusses the importance of reinvestment and contrasts productive and unproductive uses of capital. These ideas reinforce his broader argument about the efficiency of free markets and the importance of prudent economic policies."
+  },
+  {
+    "question": "Write a comprehensive summary of Adam Smith’s perspective on monopolies and their impact on society and the economy.",
+    "answer": "Smith critiques monopolies for distorting market efficiency by limiting competition, raising prices, and stifling innovation. He explains how monopolistic practices harm consumers and reduce economic wealth. While acknowledging that monopolies can sometimes emerge naturally, he warns against government policies that favor monopolistic entities over free-market competition."
+  }
+]
