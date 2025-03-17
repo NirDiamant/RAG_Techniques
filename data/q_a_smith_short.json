@@ -1,0 +1,66 @@
+[
+  {
+    "question": "Who is the author of 'The Wealth of Nations'?",
+    "answer": "Adam Smith"
+  },
+  {
+    "question": "What is the definition of the 'invisible hand' as described in the book?",
+    "answer": "The 'invisible hand' refers to the self-regulating nature of the marketplace where individuals' pursuit of self-interest leads to societal benefits."
+  },
+  {
+    "question": "What are the three factors of production mentioned?",
+    "answer": "Land, labor, and capital."
+  },
+  {
+    "question": "What is the role of labor in determining the value of goods?",
+    "answer": "Labor is the fundamental measure of value for goods."
+  },
+  {
+    "question": "Explain how Adam Smith connects self-interest to the broader good of society.",
+    "answer": "Self-interest drives individuals to produce goods and services that others need, creating economic value and societal benefits."
+  },
+  {
+    "question": "How does Smith justify the need for taxation?",
+    "answer": "Taxation is necessary to fund public services and infrastructure that benefit society."
+  },
+  {
+    "question": "What is the relationship between supply and demand in determining prices?",
+    "answer": "Prices are determined by the balance between supply and demand, ensuring resources are allocated efficiently."
+  },
+  {
+    "question": "How does the division of labor contribute to innovation, and what are its long-term economic impacts?",
+    "answer": "Division of labor fosters specialization, leading to skill improvement and innovation, which in turn drives economic growth."
+  },
+  {
+    "question": "Compare Smith’s views on agriculture and manufacturing in terms of their contributions to economic wealth.",
+    "answer": "Smith considers both agriculture and manufacturing essential but emphasizes the productivity and innovation in manufacturing."
+  },
+  {
+    "question": "What role does foreign trade play in enhancing domestic wealth, and how does it relate to Smith’s idea of the 'invisible hand'?",
+    "answer": "Foreign trade allows countries to specialize in goods where they have an advantage, increasing overall wealth, and is guided by self-interest (invisible hand)."
+  },
+  {
+    "question": "Explain how capital accumulation leads to economic growth and affects the division of labor.",
+    "answer": "Capital accumulation enables investment in tools and infrastructure, increasing productivity and encouraging specialization."
+  },
+  {
+    "question": "What are the challenges of trade?",
+    "answer": "Trade faces challenges such as tariffs, monopolies, and protectionist policies."
+  },
+  {
+    "question": "How does the book define value?",
+    "answer": "Smith differentiates between 'use value' and 'exchange value' when discussing value."
+  },
+  {
+    "question": "Provide a 50-word summary of Smith’s views on the role of government in the economy.",
+    "answer": "Smith believes government should provide defense, ensure justice, and build public works that markets cannot efficiently manage while avoiding interference in economic transactions."
+  },
+  {
+    "question": "Summarize the key arguments made about the benefits of free trade in Chapter 2.",
+    "answer": "Free trade encourages specialization and exchange, increasing efficiency and wealth for all trading partners."
+  },
+  {
+    "question": "Write a comprehensive summary of Adam Smith’s perspective on monopolies and their impact on society and the economy.",
+    "answer": "Smith critiques monopolies for distorting market efficiency by limiting competition, raising prices, and stifling innovation. He explains how monopolistic practices harm consumers and reduce economic wealth. While acknowledging that monopolies can sometimes emerge naturally, he warns against government policies that favor monopolistic entities over free-market competition."
+  }
+]
