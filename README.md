@@ -153,7 +153,24 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📚 Context and Content Enrichment
 
-8. **[Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
+8. Hypothetical Prompt Embeddings (HyPE) ❓🚀  
+   - **[LangChain](all_rag_techniques/HyPE_Hypothetical_Prompt_Embedding.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embedding.py)**  
+
+   #### Overview 🔎  
+   HyPE (Hypothetical Prompt Embeddings) is an enhancement to traditional RAG retrieval that **precomputes hypothetical prompts at the indexing stage**, but inseting the chunk in their place. This transforms retrieval into a **question-question matching task**. This avoids the need for runtime synthetic answer generation, reducing inference-time computational overhead while **improving retrieval alignment**.  
+
+   #### Implementation 🛠️  
+   - 📖 **Precomputed Questions:** Instead of embedding document chunks, HyPE **generates multiple hypothetical queries per chunk** at indexing time.  
+   - 🔍 **Question-Question Matching:** User queries are matched against stored hypothetical questions, leading to **better retrieval alignment**.  
+   - ⚡ **No Runtime Overhead:** Unlike HyDE, HyPE does **not require LLM calls at query time**, making retrieval **faster and cheaper**.  
+   - 📈 **Higher Precision & Recall:** Improves retrieval **context precision by up to 42 percentage points** and **claim recall by up to 45 percentage points**.  
+
+   #### Additional Resources 📚  
+   - **[Preprint: Hypothetical Prompt Embeddings (HyPE)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139335)** - Research paper detailing the method, evaluation, and benchmarks.  
+
+
+9. **[Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
 
     #### Overview 🔎
     Contextual chunk headers (CCH) is a method of creating document-level and section-level context, and prepending those chunk headers to the chunks prior to embedding them.
@@ -164,7 +181,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
 
-9. **[Relevant Segment Extraction 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)**
+10. **[Relevant Segment Extraction 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)**
 
     #### Overview 🔎
     Relevant segment extraction (RSE) is a method of dynamically constructing multi-chunk segments of text that are relevant to a given query.
@@ -172,7 +189,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Perform a retrieval post-processing step that analyzes the most relevant chunks and identifies longer multi-chunk segments to provide more complete context to the LLM.
 
-10. Context Enrichment Techniques 📝  
+11. Context Enrichment Techniques 📝  
    - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
    - **[LlamaIndex](all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
    - **[Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py)**
@@ -183,7 +200,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
-11. Semantic Chunking 🧠
+12. Semantic Chunking 🧠
    - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)**
    - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/semantic_chunking.py)**
 
@@ -196,7 +213,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Additional Resources 📚
    - **[Semantic Chunking: Improving AI Information Retrieval](https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
-12. Contextual Compression 🗜️  
+13. Contextual Compression 🗜️  
    - **[LangChain](all_rag_techniques/contextual_compression.ipynb)**  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py)**
 
@@ -206,7 +223,7 @@ Explore the extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
-13. Document Augmentation through Question Generation for Enhanced Retrieval  
+14. Document Augmentation through Question Generation for Enhanced Retrieval  
    - **[LangChain](all_rag_techniques/document_augmentation.ipynb)**  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py)**
 
@@ -218,7 +235,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🚀 Advanced Retrieval Methods
 
-14. Fusion Retrieval 🔗  
+15. Fusion Retrieval 🔗  
     - **[LangChain](all_rag_techniques/fusion_retrieval.ipynb)**  
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
     - **[Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py)**
@@ -229,7 +246,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
-15. Intelligent Reranking 📈  
+16. Intelligent Reranking 📈  
     - **[LangChain](all_rag_techniques/reranking.ipynb)**  
     - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
     - **[Runnable Script](all_rag_techniques_runnable_scripts/reranking.py)**
@@ -245,7 +262,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://open.substack.com/pub/diamantai/p/relevance-revolution-how-re-ranking?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
 
-16. Multi-faceted Filtering 🔍
+17. Multi-faceted Filtering 🔍
 
     #### Overview 🔎
     Applying various filtering techniques to refine and improve the quality of retrieved results.
@@ -256,7 +273,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
     - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
-17. Hierarchical Indices 🗂️  
+18. Hierarchical Indices 🗂️  
     - **[LangChain](all_rag_techniques/hierarchical_indices.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py)**
 
@@ -269,7 +286,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     - **[Hierarchical Indices: Enhancing RAG Systems](https://open.substack.com/pub/diamantai/p/hierarchical-indices-enhancing-rag?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
-18. Ensemble Retrieval 🎭
+19. Ensemble Retrieval 🎭
 
     #### Overview 🔎
     Combining multiple retrieval models or techniques for more robust and accurate results.
@@ -277,7 +294,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
-19. Dartboard Retrieval 🎯
+20. Dartboard Retrieval 🎯
     - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb)** 
     #### Overview 🔎
     Optimizing over Relevant Information Gain in Retrieval
@@ -286,7 +303,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     - Combine both relevance and diversity into a single scoring function and directly optimize for it.
     - POC showing plain simple RAG underperforming when the database is dense, and the dartboard retrieval outperforming it.
 
-20. Multi-modal Retrieval 📽️
+21. Multi-modal Retrieval 📽️
 
     #### Overview 🔎
     Extending RAG capabilities to handle diverse data types for richer responses.
@@ -298,7 +315,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔁 Iterative and Adaptive Techniques
 
-21. Retrieval with Feedback Loops 🔁  
+22. Retrieval with Feedback Loops 🔁  
     - **[LangChain](all_rag_techniques/retrieval_with_feedback_loop.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py)**
 
@@ -308,7 +325,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
-22. Adaptive Retrieval 🎯  
+23. Adaptive Retrieval 🎯  
     - **[LangChain](all_rag_techniques/adaptive_retrieval.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py)**
 
@@ -318,7 +335,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
 
-23. Iterative Retrieval 🔄
+24. Iterative Retrieval 🔄
 
     #### Overview 🔎
     Performing multiple rounds of retrieval to refine and enhance result quality.
@@ -328,7 +345,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 📊 Evaluation
 
-24. **[DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb)** 📘
+25. **[DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb)** 📘
 
     #### Overview 🔎
     Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
@@ -337,7 +354,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
     
 
-25. **[GroUSE Evaluation](evaluation/evaluation_grouse.ipynb)** 🐦
+26. **[GroUSE Evaluation](evaluation/evaluation_grouse.ipynb)** 🐦
 
     #### Overview 🔎
     Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
@@ -348,7 +365,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🔬 Explainability and Transparency
 
-26. Explainable Retrieval 🔍  
+27. Explainable Retrieval 🔍  
     - **[LangChain](all_rag_techniques/explainable_retrieval.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
 
@@ -360,7 +377,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🏗️ Advanced Architectures
 
-27. Knowledge Graph Integration (Graph RAG) 🕸️  
+28. Knowledge Graph Integration (Graph RAG) 🕸️  
     - **[LangChain](all_rag_techniques/graph_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
 
@@ -370,7 +387,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
     
-28. GraphRag (Microsoft) 🎯
+29. GraphRag (Microsoft) 🎯
     - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
 
     #### Overview 🔎
@@ -379,7 +396,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Analyze an input corpus by extracting entities, relationships from text units. generates summaries of each community and its constituents from the bottom-up.
 
-29. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
+30. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
     - **[LangChain](all_rag_techniques/raptor.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
@@ -389,7 +406,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-30. Self RAG 🔁  
+31. Self RAG 🔁  
     - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
@@ -399,7 +416,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-31. Corrective RAG 🔧  
+32. Corrective RAG 🔧  
     - **[LangChain](all_rag_techniques/crag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
@@ -411,7 +428,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ## 🌟 Special Advanced Technique 🌟
 
-32. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+33. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
