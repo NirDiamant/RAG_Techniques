@@ -121,6 +121,15 @@ Explore the extensive list of cutting-edge RAG techniques:
    - 💪 **Proposition Generation:** The LLM is used in conjunction with a custom prompt to generate factual statements from the document chunks.
    - ✅ **Quality Checking:** The generated propositions are passed through a grading system that evaluates accuracy, clarity, completeness, and conciseness.
 
+6. **[Simple RAG with JSON](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/json_rag.ipynb)**
+
+    #### Overview 🔎
+    RAG with JSON documents is a method of using JSON files to create a retrieval and question answering system.
+
+    #### Implementation 🛠️
+    - 📄 Data Loading & Extraction: JSON data with multiple fields per entry is loaded, and most relevant text fields are combined to generate an embedding.
+    - 🔍 Retrieval: The system retrieves the most relevant JSON entries based on the user's query.
+
 #### Additional Resources 📚
    - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://open.substack.com/pub/diamantai/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
 
