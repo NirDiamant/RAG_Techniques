@@ -43,25 +43,53 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 When adding a new RAG method to the repository, please follow these additional steps:
 
 1. Create your notebook in the `all_rag_techniques` folder.
-2. Update the README.md file:
-   - Add your new method to the list of techniques in the README.
-   - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated).
+2. Update BOTH the list and table in README.md:
+
+   ### A. Update the List of Techniques
+   - Add your new method to the list of techniques in the README
+   - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated)
    - Use the following format for the link:
      ```
      ### [Number]. [Your Method Name 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
      ```
-   - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file.
-   - Choose an appropriate emoji that represents your method.
-   - After inserting your new method, make sure to update the numbers of all subsequent techniques to maintain the correct order.
+   - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file
+   - Choose an appropriate emoji that represents your method
 
-For example:
+   ### B. Update the Techniques Table
+   - Add a new row to the table with your technique
+   - Include all available implementations (LangChain, LlamaIndex, and/or Runnable Script)
+   - Use the following format:
+     ```
+     | [Number] | [Category] | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | [Description] |
+     ```
+   - Make sure to:
+     - Update the technique number to maintain sequential order
+     - Choose the appropriate category with emoji
+     - Include links to all available implementations
+     - Write a clear, concise description
+
+   ### C. Important Note
+   - After inserting your new method, make sure to update the numbers of all subsequent techniques to maintain the correct order in BOTH the list and the table
+   - The numbers in the list and table must match exactly
+   - If you add a new technique as number 5, all techniques after it should be incremented by 1 in both places
+
+For example, if you're adding a new technique between Simple RAG and Next Method:
+
+In the list:
 ```
 ### 1. [Simple RAG 🌱](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
 ### 2. [Your New Method 🆕](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
 ### 3. [Next Method 🔜](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
 ```
 
-Remember to increment the numbers of all methods that come after your newly inserted technique.
+And in the table:
+```
+| 1 | Foundational 🌱 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Basic RAG implementation |
+| 2 | Your Category 🆕 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Your new method description |
+| 3 | Next Category 🔜 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Next method description |
+```
+
+Remember: Always update BOTH the list and table when adding new techniques, and ensure the numbers match exactly between them.
 
 ## Notebook Structure
 
