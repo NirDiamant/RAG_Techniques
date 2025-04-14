@@ -8,6 +8,7 @@
 !*.ipynb
 !*.faiss
 !*.json
+!*.csv
 !*jpeg
 !*svg
 !*.png
