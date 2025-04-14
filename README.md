@@ -69,7 +69,42 @@ Whether you're an expert or just starting out, your insights can shape the futur
 
 ## Advanced Techniques
 
-Explore the extensive list of cutting-edge RAG techniques:
+Explore our extensive list of cutting-edge RAG techniques:
+
+| # | Category | Technique | Description |
+|---|----------|-----------|-------------|
+| 1 | Foundational 🌱 | [LangChain](all_rag_techniques/simple_rag.ipynb) / [LlamaIndex](all_rag_techniques/simple_rag_with_llamaindex.ipynb) | Basic RAG implementation with LangChain and LlamaIndex |
+| 2 | Foundational 🌱 | [LangChain](all_rag_techniques/simple_csv_rag.ipynb) / [LlamaIndex](all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb) | RAG implementation using CSV files as data source |
+| 3 | Foundational 🌱 | [Reliable RAG](all_rag_techniques/reliable_rag.ipynb) | Enhanced RAG with validation and refinement |
+| 4 | Foundational 🌱 | [LangChain](all_rag_techniques/choose_chunk_size.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py) | Optimizing text chunk sizes for better retrieval |
+| 5 | Foundational 🌱 | [Proposition Chunking](all_rag_techniques/proposition_chunking.ipynb) | Breaking text into meaningful propositions |
+| 6 | Query Enhancement 🔍 | [LangChain](all_rag_techniques/query_transformations.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py) | Enhancing queries through various transformations |
+| 7 | Query Enhancement 🔍 | [LangChain](all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py) | Using hypothetical questions for better retrieval |
+| 8 | Context Enrichment 📚 | [Contextual Chunk Headers](all_rag_techniques/contextual_chunk_headers.ipynb) | Adding context headers to document chunks |
+| 9 | Context Enrichment 📚 | [Relevant Segment Extraction](all_rag_techniques/relevant_segment_extraction.ipynb) | Extracting relevant multi-chunk segments |
+| 10 | Context Enrichment 📚 | [LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb) / [LlamaIndex](all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py) | Enhancing context around retrieved chunks |
+| 11 | Context Enrichment 📚 | [LangChain](all_rag_techniques/semantic_chunking.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/semantic_chunking.py) | Dividing documents based on semantic coherence |
+| 12 | Context Enrichment 📚 | [LangChain](all_rag_techniques/contextual_compression.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py) | Compressing information while preserving relevance |
+| 13 | Context Enrichment 📚 | [LangChain](all_rag_techniques/document_augmentation.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py) | Enhancing documents through question generation |
+| 14 | Advanced Retrieval 🚀 | [LangChain](all_rag_techniques/fusion_retrieval.ipynb) / [LlamaIndex](all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py) | Combining different retrieval methods |
+| 15 | Advanced Retrieval 🚀 | [LangChain](all_rag_techniques/reranking.ipynb) / [LlamaIndex](all_rag_techniques/reranking_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/reranking.py) | Advanced scoring mechanisms for better ranking |
+| 16 | Advanced Retrieval 🚀 | [Multi-faceted Filtering](all_rag_techniques/multi_faceted_filtering.ipynb) | Applying various filtering techniques |
+| 17 | Advanced Retrieval 🚀 | [LangChain](all_rag_techniques/hierarchical_indices.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py) | Multi-tiered system for efficient retrieval |
+| 18 | Advanced Retrieval 🚀 | [Ensemble Retrieval](all_rag_techniques/ensemble_retrieval.ipynb) | Combining multiple retrieval models |
+| 19 | Advanced Retrieval 🚀 | [Dartboard Retrieval](all_rag_techniques/dartboard.ipynb) | Optimizing for relevant information gain |
+| 20 | Advanced Retrieval 🚀 | [Multi-modal Retrieval](all_rag_techniques/multi_model_rag_with_captioning.ipynb) | Handling diverse data types |
+| 21 | Iterative Techniques 🔁 | [LangChain](all_rag_techniques/retrieval_with_feedback_loop.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py) | Learning from user interactions |
+| 22 | Iterative Techniques 🔁 | [LangChain](all_rag_techniques/adaptive_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py) | Dynamic adjustment of retrieval strategies |
+| 23 | Iterative Techniques 🔁 | [Iterative Retrieval](all_rag_techniques/iterative_retrieval.ipynb) | Multiple rounds of retrieval refinement |
+| 24 | Evaluation 📊 | [DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb) | Comprehensive RAG system evaluation |
+| 25 | Evaluation 📊 | [GroUSE Evaluation](evaluation/evaluation_grouse.ipynb) | Contextually-grounded LLM evaluation |
+| 26 | Explainability 🔬 | [LangChain](all_rag_techniques/explainable_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py) | Providing transparency in retrieval process |
+| 27 | Advanced Architecture 🏗️ | [LangChain](all_rag_techniques/graph_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py) | Incorporating structured knowledge graphs |
+| 28 | Advanced Architecture 🏗️ | [GraphRag (Microsoft)](all_rag_techniques/Microsoft_GraphRag.ipynb) | Microsoft's advanced RAG with knowledge graphs |
+| 29 | Advanced Architecture 🏗️ | [LangChain](all_rag_techniques/raptor.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/raptor.py) | Tree-organized retrieval with recursive processing |
+| 30 | Advanced Architecture 🏗️ | [LangChain](all_rag_techniques/self_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py) | Dynamic combination of retrieval and generation |
+| 31 | Advanced Architecture 🏗️ | [LangChain](all_rag_techniques/crag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/crag.py) | Dynamic evaluation and correction of retrieval |
+| 32 | Special Technique 🌟 | [Sophisticated Controllable Agent](https://github.com/NirDiamant/Controllable-RAG-Agent) | Advanced RAG solution for complex questions |
 
 ### 🌱 Foundational RAG Techniques
 
