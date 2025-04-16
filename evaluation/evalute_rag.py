@@ -127,42 +127,6 @@ def evaluate_rag(chunks_query_retriever, num_questions: int = 5, q_a_file_name =
         metrics=[correctness_metric, faithfulness_metric, relevance_metric]
     )
 
-def evaluate_rag_long_context(chunks_query_retriever, num_questions: int = 5) -> None:
-    """
-    Evaluate the RAG system using predefined metrics.
-
-    Args:
-        chunks_query_retriever: Function to retrieve context chunks for a given query.
-        num_questions (int): Number of questions to evaluate (default: 5).
-    """
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=2000)
-    question_answer_from_context_chain = create_question_answer_from_context_chain(llm)
-
-    # Load questions and answers from JSON file
-    q_a_file_name = "../data/q_a_smith.json"
-    with open(q_a_file_name, "r", encoding="utf-8") as json_file:
-        q_a = json.load(json_file)
-
-    questions = [qa["question"] for qa in q_a][:num_questions]
-    ground_truth_answers = [qa["answer"] for qa in q_a][:num_questions]
-    generated_answers = []
-    retrieved_documents = []
-
-    # Generate answers and retrieve documents for each question
-    for question in questions:
-        context = retrieve_context_per_question(question, chunks_query_retriever)
-        retrieved_documents.append(context)
-        context_string = " ".join(context)
-        result = answer_question_from_context(question, context_string, question_answer_from_context_chain)
-        generated_answers.append(result["answer"])
-
-    # Create test cases and evaluate
-    test_cases = create_deep_eval_test_cases(questions, ground_truth_answers, generated_answers, retrieved_documents)
-    evaluate(
-        test_cases=test_cases,
-        metrics=[correctness_metric, faithfulness_metric, relevance_metric]
-    )
-
 if __name__ == "__main__":
     # Add any necessary setup or configuration here
     # Example: evaluate_rag(your_chunks_query_retriever_function)
