@@ -6,6 +6,7 @@
 !*.md
 !*.txt
 !*.ipynb
+!*.faiss
 !*jpeg
 !*svg
 !*.png
