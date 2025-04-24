@@ -71,8 +71,8 @@ Whether you're an expert or just starting out, your insights can shape the futur
 
 Explore our extensive list of cutting-edge RAG techniques:
 
-| #  | Category | Technique                                                                                                                                                                                                                                                                       | Description                                            |
-|----|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| # | Category | Technique | Description |
+|---|----------|-----------|-------------|
 | 1  | Foundational 🌱 | [LangChain](all_rag_techniques/simple_rag.ipynb) / [LlamaIndex](all_rag_techniques/simple_rag_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/simple_rag.py)                                                                                     | Basic RAG implementation with LangChain and LlamaIndex |
 | 2  | Foundational 🌱 | [LangChain](all_rag_techniques/simple_csv_rag.ipynb) / [LlamaIndex](all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb)                                                                                                                                                    | RAG implementation using CSV files as data source      |
 | 3  | Foundational 🌱 | [Reliable RAG](all_rag_techniques/reliable_rag.ipynb)                                                                                                                                                                                                                           | Enhanced RAG with validation and refinement            |
