@@ -30,7 +30,7 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 
 [![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
-*Join over 15,000 of AI enthusiasts getting unique cutting-edge insights and free tutorials!* ***Plus, subscribers get exclusive early access and special 33% discounts to my book and the upcoming RAG Techniques course!***
+*Join over 20,000 of AI enthusiasts getting unique cutting-edge insights and free tutorials!* ***Plus, subscribers get exclusive early access and special 33% discounts to my book and the upcoming RAG Techniques course!***
 </div>
 
 
@@ -190,8 +190,8 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 📚 Context and Content Enrichment
 
 8. Hypothetical Prompt Embeddings (HyPE) ❓🚀  
-   - **[LangChain](all_rag_techniques/HyPE_Hypothetical_Prompt_Embedding.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embedding.py)**  
+   - **[LangChain](all_rag_techniques/HyPE_Hypothetical_Prompt_Embeddings.ipynb)**  
+   - **[Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embeddings.py)**  
 
    #### Overview 🔎  
    HyPE (Hypothetical Prompt Embeddings) is an enhancement to traditional RAG retrieval that **precomputes hypothetical prompts at the indexing stage**, but inseting the chunk in their place. This transforms retrieval into a **question-question matching task**. This avoids the need for runtime synthetic answer generation, reducing inference-time computational overhead while **improving retrieval alignment**.  
