@@ -50,7 +50,7 @@ When adding a new RAG method to the repository, please follow these additional s
    - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated)
    - Use the following format for the link:
      ```
-     ### [Number]. [Your Method Name 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
+     ### [Number]. [Your Method Name 🏷️](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
      ```
    - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file
    - Choose an appropriate emoji that represents your method
@@ -77,9 +77,9 @@ For example, if you're adding a new technique between Simple RAG and Next Method
 
 In the list:
 ```
-### 1. [Simple RAG 🌱](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
-### 2. [Your New Method 🆕](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
-### 3. [Next Method 🔜](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
+### 1. [Simple RAG 🌱](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
+### 2. [Your New Method 🆕](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
+### 3. [Next Method 🔜](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
 ```
 
 And in the table:
