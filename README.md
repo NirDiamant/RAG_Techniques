@@ -75,45 +75,45 @@ Explore our extensive list of cutting-edge RAG techniques:
 
 | # | Category | Technique | Description |
 |---|----------|-----------|-------------|
-| 1 | Foundational 🌱 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) / [LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/simple_rag.py) | Basic RAG implementation with LangChain and LlamaIndex |
-| 2 | Foundational 🌱 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb) / [LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb) | RAG implementation using CSV files as data source |
-| 3 | Foundational 🌱 | [Reliable RAG](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb) | Enhanced RAG with validation and refinement |
-| 4 | Foundational 🌱 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py) | Optimizing text chunk sizes for better retrieval |
-| 5 | Foundational 🌱 | [Proposition Chunking](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb) | Breaking text into meaningful propositions |
-| 6 | Query Enhancement 🔍 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py) | Enhancing queries through various transformations |
-| 7 | Query Enhancement 🔍 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py) | Using hypothetical questions for better retrieval |
-| 8 | Query Enhancement 🔍 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embedding.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embedding.py) | Precomputing hypothetical prompts at indexing stage |
-| 9 | Context Enrichment 📚 | [Contextual Chunk Headers](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb) | Adding context headers to document chunks |
-| 10 | Context Enrichment 📚 | [Relevant Segment Extraction](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb) | Extracting relevant multi-chunk segments |
-| 11 | Context Enrichment 📚 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb) / [LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py) | Enhancing context around retrieved chunks |
-| 12 | Context Enrichment 📚 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/semantic_chunking.py) | Dividing documents based on semantic coherence |
-| 13 | Context Enrichment 📚 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py) | Compressing information while preserving relevance |
-| 14 | Context Enrichment 📚 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py) | Enhancing documents through question generation |
-| 15 | Advanced Retrieval 🚀 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb) / [LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py) | Combining different retrieval methods |
-| 16 | Advanced Retrieval 🚀 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb) / [LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/reranking.py) | Advanced scoring mechanisms for better ranking |
-| 17 | Advanced Retrieval 🚀 | [Multi-faceted Filtering](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_faceted_filtering.ipynb) | Applying various filtering techniques |
-| 18 | Advanced Retrieval 🚀 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py) | Multi-tiered system for efficient retrieval |
-| 19 | Advanced Retrieval 🚀 | [Ensemble Retrieval](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/ensemble_retrieval.ipynb) | Combining multiple retrieval models |
-| 20 | Advanced Retrieval 🚀 | [Dartboard Retrieval](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) | Optimizing for relevant information gain |
-| 21 | Advanced Retrieval 🚀 | [Multi-modal Retrieval](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb) | Handling diverse data types |
-| 22 | Iterative Techniques 🔁 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py) | Learning from user interactions |
-| 23 | Iterative Techniques 🔁 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py) | Dynamic adjustment of retrieval strategies |
-| 24 | Iterative Techniques 🔁 | [Iterative Retrieval](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/iterative_retrieval.ipynb) | Multiple rounds of retrieval refinement |
-| 25 | Evaluation 📊 | [DeepEval Evaluation](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb) | Comprehensive RAG system evaluation |
-| 26 | Evaluation 📊 | [GroUSE Evaluation](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb) | Contextually-grounded LLM evaluation |
-| 27 | Explainability 🔬 | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py) | Providing transparency in retrieval process |
-| 28 | Advanced Architecture 🏗️ | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py) | Incorporating structured knowledge graphs |
-| 29 | Advanced Architecture 🏗️ | [GraphRag (Microsoft)](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) | Microsoft's advanced RAG with knowledge graphs |
-| 30 | Advanced Architecture 🏗️ | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/raptor.py) | Tree-organized retrieval with recursive processing |
-| 31 | Advanced Architecture 🏗️ | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py) | Dynamic combination of retrieval and generation |
-| 32 | Advanced Architecture 🏗️ | [LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/crag.py) | Dynamic evaluation and correction of retrieval |
+| 1 | Foundational 🌱 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) / [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/simple_rag.py) | Basic RAG implementation with LangChain and LlamaIndex |
+| 2 | Foundational 🌱 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb) / [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb) | RAG implementation using CSV files as data source |
+| 3 | Foundational 🌱 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb) | Enhanced RAG with validation and refinement |
+| 4 | Foundational 🌱 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py) | Optimizing text chunk sizes for better retrieval |
+| 5 | Foundational 🌱 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb) | Breaking text into meaningful propositions |
+| 6 | Query Enhancement 🔍 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py) | Enhancing queries through various transformations |
+| 7 | Query Enhancement 🔍 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py) | Using hypothetical questions for better retrieval |
+| 8 | Query Enhancement 🔍 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embedding.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embedding.py) | Precomputing hypothetical prompts at indexing stage |
+| 9 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb) | Adding context headers to document chunks |
+| 10 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb) | Extracting relevant multi-chunk segments |
+| 11 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb) / [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py) | Enhancing context around retrieved chunks |
+| 12 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/semantic_chunking.py) | Dividing documents based on semantic coherence |
+| 13 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py) | Compressing information while preserving relevance |
+| 14 | Context Enrichment 📚 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py) | Enhancing documents through question generation |
+| 15 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb) / [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py) | Combining different retrieval methods |
+| 16 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb) / [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/reranking.py) | Advanced scoring mechanisms for better ranking |
+| 17 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_faceted_filtering.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_faceted_filtering.ipynb) | Applying various filtering techniques |
+| 18 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py) | Multi-tiered system for efficient retrieval |
+| 19 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/ensemble_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/ensemble_retrieval.ipynb) | Combining multiple retrieval models |
+| 20 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) | Optimizing for relevant information gain |
+| 21 | Advanced Retrieval 🚀 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb) | Handling diverse data types |
+| 22 | Iterative Techniques 🔁 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py) | Learning from user interactions |
+| 23 | Iterative Techniques 🔁 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py) | Dynamic adjustment of retrieval strategies |
+| 24 | Iterative Techniques 🔁 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/iterative_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/iterative_retrieval.ipynb) | Multiple rounds of retrieval refinement |
+| 25 | Evaluation 📊 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb) | Comprehensive RAG system evaluation |
+| 26 | Evaluation 📊 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb) | Contextually-grounded LLM evaluation |
+| 27 | Explainability 🔬 | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py) | Providing transparency in retrieval process |
+| 28 | Advanced Architecture 🏗️ | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py) | Incorporating structured knowledge graphs |
+| 29 | Advanced Architecture 🏗️ | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) | Microsoft's advanced RAG with knowledge graphs |
+| 30 | Advanced Architecture 🏗️ | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/raptor.py) | Tree-organized retrieval with recursive processing |
+| 31 | Advanced Architecture 🏗️ | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py) | Dynamic combination of retrieval and generation |
+| 32 | Advanced Architecture 🏗️ | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) / [Runnable Script](all_rag_techniques_runnable_scripts/crag.py) | Dynamic evaluation and correction of retrieval |
 | 33 | Special Technique 🌟 | [Sophisticated Controllable Agent](https://github.com/NirDiamant/Controllable-RAG-Agent) | Advanced RAG solution for complex questions |
 
 ### 🌱 Foundational RAG Techniques
 
 1. Simple RAG 🌱
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)**
-   - **[LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
+   - **LlamaIndex**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)
    - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/simple_rag.py)**
 
    #### Overview 🔎
@@ -123,8 +123,8 @@ Explore our extensive list of cutting-edge RAG techniques:
    Start with basic retrieval queries and integrate incremental learning mechanisms.
 
 2. Simple RAG using a CSV file 🧩
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)**
-   - **[LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb)**
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)
+   - **LlamaIndex**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb)
    
     #### Overview 🔎
     Introducing basic RAG using CSV files.
@@ -132,7 +132,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     This uses CSV files to create basic retrieval and integrates with openai to create question and answering system.
 
-3. **[Reliable RAG 🏷️](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)**
+3. **Reliable RAG 🏷️**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)
 
    #### Overview 🔎
    Enhances the Simple RAG by adding validation and refinement to ensure the accuracy and relevance of retrieved information.
@@ -141,7 +141,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    Check for retrieved document relevancy and highlight the segment of docs used for answering.
 
 4. Choose Chunk Size 📏  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py)**
 
    #### Overview 🔎
@@ -150,7 +150,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    #### Implementation 🛠️
    Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
 
-5. **[Proposition Chunking ⛓️‍💥](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb)**
+5. **Proposition Chunking ⛓️‍💥**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb)
 
    #### Overview 🔎
    Breaking down the text into concise, complete, meaningful sentences allowing for better control and handling of specific queries (especially extracting knowledge).
@@ -165,7 +165,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 🔍 Query Enhancement
 
 6. Query Transformations 🔄  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py)**
 
    #### Overview 🔎
@@ -177,7 +177,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
 7. Hypothetical Questions (HyDE Approach) ❓  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py)**
 
    #### Overview 🔎
@@ -192,7 +192,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 📚 Context and Content Enrichment
 
 8. Hypothetical Prompt Embeddings (HyPE) ❓🚀  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embeddings.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embeddings.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embeddings.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/HyPE_Hypothetical_Prompt_Embeddings.py)**  
 
    #### Overview 🔎  
@@ -208,7 +208,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    - **[Preprint: Hypothetical Prompt Embeddings (HyPE)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139335)** - Research paper detailing the method, evaluation, and benchmarks.  
 
 
-9. **[Contextual Chunk Headers :label:](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
+9. **Contextual Chunk Headers :label:**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)
 
     #### Overview 🔎
     Contextual chunk headers (CCH) is a method of creating document-level and section-level context, and prepending those chunk headers to the chunks prior to embedding them.
@@ -219,7 +219,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Additional Resources 📚
     **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
 
-10. **[Relevant Segment Extraction 🧩](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)**
+10. **Relevant Segment Extraction 🧩**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)
 
     #### Overview 🔎
     Relevant segment extraction (RSE) is a method of dynamically constructing multi-chunk segments of text that are relevant to a given query.
@@ -228,8 +228,8 @@ Explore our extensive list of cutting-edge RAG techniques:
     Perform a retrieval post-processing step that analyzes the most relevant chunks and identifies longer multi-chunk segments to provide more complete context to the LLM.
 
 11. Context Enrichment Techniques 📝  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
-   - **[LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)  
+   - **LlamaIndex**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)
    - **[Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py)**
   
    #### Overview 🔎
@@ -239,7 +239,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
 
 12. Semantic Chunking 🧠
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)**
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)
    - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/semantic_chunking.py)**
 
    #### Overview 🔎
@@ -252,7 +252,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    - **[Semantic Chunking: Improving AI Information Retrieval](https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
 13. Contextual Compression 🗜️  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py)**
 
    #### Overview 🔎
@@ -262,7 +262,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
 
 14. Document Augmentation through Question Generation for Enhanced Retrieval  
-   - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)**  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py)**
 
    #### Overview 🔎
@@ -274,8 +274,8 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 🚀 Advanced Retrieval Methods
 
 15. Fusion Retrieval 🔗  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)**  
-    - **[LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)  
+    - **LlamaIndex**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)
     - **[Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py)**
  
     #### Overview 🔎
@@ -285,8 +285,8 @@ Explore our extensive list of cutting-edge RAG techniques:
     Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
 
 16. Intelligent Reranking 📈  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)**  
-    - **[LlamaIndex](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)  
+    - **LlamaIndex**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)
     - **[Runnable Script](all_rag_techniques_runnable_scripts/reranking.py)**
 
     #### Overview 🔎
@@ -312,7 +312,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
 
 18. Hierarchical Indices 🗂️  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py)**
 
     #### Overview 🔎
@@ -333,7 +333,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
 
 20. Dartboard Retrieval 🎯
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb)** 
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) 
     #### Overview 🔎
     Optimizing over Relevant Information Gain in Retrieval
 
@@ -347,14 +347,14 @@ Explore our extensive list of cutting-edge RAG techniques:
     Extending RAG capabilities to handle diverse data types for richer responses.
 
     #### Implementation 🛠️
-    - **[Multi-model RAG with Multimedia Captioning](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb)** - Caption and store all the other multimedia data like pdfs, ppts, etc., with text data in vector store and retrieve them together.
-    - **[Multi-model RAG with Colpali](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_colpali.ipynb)** - Instead of captioning convert all the data into image, then find the most relevant images and pass them to a vision large language model.
+    - **Multi-model RAG with Multimedia Captioning**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb) - Caption and store all the other multimedia data like pdfs, ppts, etc., with text data in vector store and retrieve them together.
+    - **Multi-model RAG with Colpali**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_colpali.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_colpali.ipynb) - Instead of captioning convert all the data into image, then find the most relevant images and pass them to a vision large language model.
     
 
 ### 🔁 Iterative and Adaptive Techniques
 
 22. Retrieval with Feedback Loops 🔁  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py)**
 
     #### Overview 🔎
@@ -364,7 +364,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
 
 23. Adaptive Retrieval 🎯  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py)**
 
     #### Overview 🔎
@@ -383,7 +383,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 
 ### 📊 Evaluation
 
-25. **[DeepEval Evaluation](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb)** 📘
+25. **DeepEval Evaluation**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb) 📘
 
     #### Overview 🔎
     Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
@@ -392,7 +392,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
     
 
-26. **[GroUSE Evaluation](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb)** 🐦
+26. **GroUSE Evaluation**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb) 🐦
 
     #### Overview 🔎
     Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
@@ -404,7 +404,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 🔬 Explainability and Transparency
 
 27. Explainable Retrieval 🔍  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
 
     #### Overview 🔎
@@ -416,7 +416,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 ### 🏗️ Advanced Architectures
 
 28. Knowledge Graph Integration (Graph RAG) 🕸️  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
 
     #### Overview 🔎
@@ -426,7 +426,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
     
 29. GraphRag (Microsoft) 🎯
-    - **[GraphRag](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb)**  
+    - **GraphRag**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb)  
 
     #### Overview 🔎
     Microsoft GraphRAG (Open Source) is an advanced RAG system that integrates knowledge graphs to improve the performance of LLMs
@@ -435,7 +435,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     • Analyze an input corpus by extracting entities, relationships from text units. generates summaries of each community and its constituents from the bottom-up.
 
 30. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
     #### Overview 🔎
@@ -445,7 +445,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
 31. Self RAG 🔁  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
     #### Overview 🔎
@@ -455,7 +455,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
 32. Corrective RAG 🔧  
-    - **[LangChain](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)**  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb)  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
     #### Overview 🔎
