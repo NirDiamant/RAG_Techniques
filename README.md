@@ -107,7 +107,8 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 30 | Advanced Architecture 🏗️ | RAPTOR | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) |
 | 31 | Advanced Architecture 🏗️ | Self-RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) |
 | 32 | Advanced Architecture 🏗️ | Corrective RAG (CRAG) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) |
-| 33 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
+| 33 | Advanced Architecture 🏗️ | KAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/kag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/kag.ipynb) |
+| 34 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
 
 ### 🌱 Foundational RAG Techniques
 
@@ -464,9 +465,20 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
+33. KAG 🔧  
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/kag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/kag.ipynb)  
+
+    #### Overview 🔎
+    KAG is a logical reasoning and Q&A framework based on the OpenSPG engine and large language models, which is used to build logical reasoning and Q&A solutions for vertical domain knowledge bases. KAG can effectively overcome the ambiguity of traditional RAG vector similarity calculation and the noise problem of GraphRAG introduced by OpenIE. KAG supports logical reasoning and multi-hop fact Q&A, etc., and is significantly better than the current SOTA method.
+    
+    #### Implementation 🛠️
+   The KAG framework consists of three interconnected modules: KAG-Builder, KAG-Solver, and KAG-Model. It facilitates knowledge graph construction, problem solving, and language processing, while supporting user customization.
+   Open Information Extraction with Knowledge Alignment. To address the issues of semantic mismatch and inconsistency in knowledge granularity during the construction and querying of the KG index, KAG-Solver uses semantic reasoning based on concept graphs to optimize offline indexing and online retrieval. During the index construction phase, we leverage LLMs to predict relationships between concepts, resolve ambiguities, and establish connections between concepts, thus improving the consistency and usability of the index. 
+   Hybrid Static-Dynamic Task Planning. To support the integration of MCP and enhance the scalability of the framework, we take inspiration from the design for LLM-tool interaction, optimizing the KAGSolver modules. We introduce two powerful planning tools: Static Planner and Iterative Planner. Static Planner decomposes complex problems into a dependency-based directed acyclic graph (DAG) and incrementally completes task resolution using multiple executors. In contrast, Iterative Planner focuses on dynamically adjusting planning strategies to adapt to the requirements of complex and variable scenarios.
+
 ## 🌟 Special Advanced Technique 🌟
 
-33. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+34. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
