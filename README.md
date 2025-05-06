@@ -472,12 +472,9 @@ Explore our extensive list of cutting-edge RAG techniques:
     KAG is a logical reasoning and Q&A framework based on the OpenSPG engine and large language models, which is used to build logical reasoning and Q&A solutions for vertical domain knowledge bases. KAG can effectively overcome the ambiguity of traditional RAG vector similarity calculation and the noise problem of GraphRAG introduced by OpenIE. KAG supports logical reasoning and multi-hop fact Q&A, etc., and is significantly better than the current SOTA method.
     
     #### Implementation 🛠️
-    The goal of KAG is to build a knowledge-enhanced LLM service framework in professional domains, supporting logical reasoning, factual Q&A, etc. KAG fully integrates the logical and factual characteristics of the KGs. Its core features include:
-
-- Knowledge and Chunk Mutual Indexing structure to integrate more complete contextual text information
-- Knowledge alignment using conceptual semantic reasoning to alleviate the noise problem caused by OpenIE
-- Schema-constrained knowledge construction to support the representation and construction of domain expert knowledge
-- Logical form-guided hybrid reasoning and retrieval to support logical reasoning and multi-hop reasoning Q&A
+   The KAG framework consists of three interconnected modules: KAG-Builder, KAG-Solver, and KAG-Model. It facilitates knowledge graph construction, problem solving, and language processing, while supporting user customization.
+   Open Information Extraction with Knowledge Alignment. To address the issues of semantic mismatch and inconsistency in knowledge granularity during the construction and querying of the KG index, KAG-Solver uses semantic reasoning based on concept graphs to optimize offline indexing and online retrieval. During the index construction phase, we leverage LLMs to predict relationships between concepts, resolve ambiguities, and establish connections between concepts, thus improving the consistency and usability of the index. 
+   Hybrid Static-Dynamic Task Planning. To support the integration of MCP and enhance the scalability of the framework, we take inspiration from the design for LLM-tool interaction, optimizing the KAGSolver modules. We introduce two powerful planning tools: Static Planner and Iterative Planner. Static Planner decomposes complex problems into a dependency-based directed acyclic graph (DAG) and incrementally completes task resolution using multiple executors. In contrast, Iterative Planner focuses on dynamically adjusting planning strategies to adapt to the requirements of complex and variable scenarios.
 
 ## 🌟 Special Advanced Technique 🌟
 
