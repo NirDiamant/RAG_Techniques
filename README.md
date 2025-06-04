@@ -14,7 +14,7 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 **Company Sponsors**
 
-<a href="https://zilliz.com" target="_blank"><img src="images/ziliz_logo.png" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" width="180" height="80" alt="Zilliz: Key Collaborator"></a>
+<a href="https://zilliz.com" target="_blank"><img src="images/ziliz_logo.png" style="border-radius: 12px; margin-right: 24px; vertical-align: middle; max-height:80px; max-width:180px;" alt="Zilliz: Key Collaborator"></a>
 
 **Individual Sponsors**
 
