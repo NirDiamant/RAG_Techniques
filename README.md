@@ -12,7 +12,12 @@
 
 We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
 
+**Company Sponsors**
+
 <a href="https://zilliz.com" target="_blank"><img src="images/ziliz_logo.png" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" width="180" height="80" alt="Zilliz: Key Collaborator"></a>
+
+**Individual Sponsors**
+
 <a href="https://github.com/sponsors/Eisenh"><img src="https://github.com/Eisenh.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
