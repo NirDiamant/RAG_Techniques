@@ -54,9 +54,13 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 ## Related Projects
 
-🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
+🚀 Level up with my **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)** repository. It delivers horizontal, code-first tutorials that cover every tool and step in the lifecycle of building production-grade GenAI agents, guiding you from spark to scale with proven patterns and reusable blueprints for real-world launches, making it the smartest place to start if you're serious about shipping agents to production.
 
 🤖 Explore my **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** to discover a variety of AI agent implementations and tutorials, showcasing how different AI technologies can be combined to create powerful, interactive systems.
+
+
+🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
+
 
 ## A Community-Driven Knowledge Hub
 
