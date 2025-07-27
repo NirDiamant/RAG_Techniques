@@ -1,5 +1,3 @@
-![](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=contributing-guide)
-
 # Contributing to RAG Techniques
 
 Welcome to the world's largest and most comprehensive repository of Retrieval-Augmented Generation (RAG) tutorials! 🌟 We're thrilled you're interested in contributing to this ever-growing knowledge base. Your expertise and creativity can help us maintain our position at the forefront of RAG technology.
@@ -156,3 +154,5 @@ We're grateful for all our contributors and excited to see how you'll help expan
 Let's harness our collective knowledge and creativity to push the boundaries of RAG technology together!
 
 Happy contributing! 🚀
+
+![](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=contributing-guide)
