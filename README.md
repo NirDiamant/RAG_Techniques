@@ -191,7 +191,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
 
 7. Hypothetical Questions (HyDE Approach) ❓  
-   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)  
+   - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py)**
 
    #### Overview 🔎
