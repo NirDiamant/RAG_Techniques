@@ -15,7 +15,7 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 **Company Sponsors**
 
-<a href="https://contextual.ai" target="_blank"><img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="96" alt="Contextual AI: Key Collaborator"><img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="96" alt="Contextual AI: Key Collaborator"></a>
+<a href="https://contextual.ai" target="_blank"><img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"><img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"></a>
 
 **Individual Sponsors**
 
