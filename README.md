@@ -15,12 +15,12 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 **Company Sponsors**
 
-<table style="border: none; border-collapse: collapse;">
+<table style="border: none; border-collapse: collapse; width: 100%;">
 <tr>
-<td style="border: none; text-align: center; padding: 8px;">
+<td style="border: none; text-align: center; padding: 8px; width: 50%;">
 <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank"><img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" style="border-radius: 12px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"><img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" style="border-radius: 12px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"></a>
 </td>
-<td style="border: none; text-align: center; padding: 8px;">
+<td style="border: none; text-align: center; padding: 8px; width: 50%;">
 <a href="https://coderabbit.link/nir" target="_blank"><img src="images/coderabbit_Light_Type_Mark_Orange.png" style="border-radius: 12px; vertical-align: middle;" height="24" alt="CodeRabbit: AI Code Reviews"></a>
 </td>
 </tr>
