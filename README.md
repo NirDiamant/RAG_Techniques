@@ -14,30 +14,35 @@
 We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
 
 **Company Sponsors**
-<table style="border: none; border-collapse: collapse; width: 100%; table-layout: fixed;">
+
+<div align="center">
+
+<table style="border: none; border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background: transparent;">
   <tr>
-    <td style="border: none; text-align: center; padding: 8px; width: 50%;">
-      <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank">
+    <td style="border: none; text-align: center; padding: 16px 24px; width: 50%; vertical-align: middle;">
+      <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" 
              alt="Contextual AI"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" 
              alt="Contextual AI"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
     </td>
-    <td style="border: none; text-align: center; padding: 8px; width: 50%;">
-      <a href="https://coderabbit.link/nir" target="_blank">
+    <td style="border: none; text-align: center; padding: 16px 24px; width: 50%; vertical-align: middle;">
+      <a href="https://coderabbit.link/nir" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/coderabbit_Light_Type_Mark_Orange.png#gh-light-mode-only" 
              alt="CodeRabbit"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="images/coderabbit_Dark_Type_Mark.png#gh-dark-mode-only" 
              alt="CodeRabbit"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
     </td>
   </tr>
 </table>
+
+</div>
 
 
 
