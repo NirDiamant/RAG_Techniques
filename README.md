@@ -17,6 +17,8 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank"><img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"><img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="Contextual AI: Key Collaborator"></a>
 
+<a href="https://coderabbit.link/nir" target="_blank"><img src="images/coderabbit_Light_Type_Mark_Orange.png#gh-light-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="CodeRabbit: AI Code Reviews"><img src="images/coderabbit_Dark_Type_Mark.png#gh-dark-mode-only" style="border-radius: 12px; margin-right: 24px; vertical-align: middle;" height="24" alt="CodeRabbit: AI Code Reviews"></a>
+
 **Individual Sponsors**
 
 <a href="https://github.com/sponsors/Eisenh"><img src="https://github.com/Eisenh.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
