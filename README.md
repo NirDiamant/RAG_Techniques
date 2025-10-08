@@ -19,12 +19,12 @@ We gratefully acknowledge the organizations and individuals who have made signif
   <tr>
     <td style="border: none; text-align: center; padding: 8px; width: 50%;">
       <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank">
-        <img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only"
-             alt="Contextual AI"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
-        <img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only"
-             alt="Contextual AI"
-             style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+        <picture>
+          <source srcset="images/trimmed_padded_contextual_black.png" media="(prefers-color-scheme: dark)">
+          <img src="images/trimmed_padded_contextual_white.png"
+               alt="Contextual AI"
+               style="width: 140px; height: auto; border-radius: 12px; vertical-align: middle;">
+        </picture>
       </a>
     </td>
     <td style="border: none; text-align: center; padding: 8px; width: 50%;">
@@ -36,6 +36,7 @@ We gratefully acknowledge the organizations and individuals who have made signif
     </td>
   </tr>
 </table>
+
 
 
 
