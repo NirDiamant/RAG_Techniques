@@ -23,37 +23,35 @@ We gratefully acknowledge the organizations and individuals who have made signif
       <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" 
              alt="Contextual AI"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="images/trimmed_padded_contextual_black.png#gh-dark-mode-only" 
              alt="Contextual AI"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
     </td>
     <td style="border: none; text-align: center; padding: 16px 24px; width: 33.33%; vertical-align: middle;">
       <a href="https://coderabbit.link/nir" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/coderabbit_Light_Type_Mark_Orange.png#gh-light-mode-only" 
              alt="CodeRabbit"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="images/coderabbit_Dark_Type_Mark.png#gh-dark-mode-only" 
              alt="CodeRabbit"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
     </td>
     <td style="border: none; text-align: center; padding: 16px 24px; width: 33.33%; vertical-align: middle;">
       <a href="https://www.igpt.ai/?utm_source=nir_diamant" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/iGPT-logo-white.png#gh-light-mode-only" 
              alt="iGPT"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <img src="images/iGPT-logo-Black.png#gh-dark-mode-only" 
              alt="iGPT"
-             style="width: 160px; height: auto; border-radius: 16px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
+      <div style="margin-top: 8px; font-size: 12px; line-height: 1.4; opacity: 0.8;"><em>iGPT is onboarding in batches — click the logo to join the waitlist.</em></div>
     </td>
   </tr>
 </table>
-
-<small><em>iGPT is onboarding in batches — click the logo to join the waitlist.</em></small>
-
 </div>
 
 
