@@ -19,7 +19,7 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 <table style="border: none; border-collapse: collapse; width: 100%; max-width: 840px; margin: 0 auto; background: transparent; table-layout: fixed;">
   <tr>
-    <td style="border: none; text-align: center; padding: 16px 24px; width: 33.33%; vertical-align: middle;">
+    <td style="border: none; text-align: center; padding: 16px 24px; width: 33.33%; vertical-align: top;">
       <a href="https://app.contextual.ai?utm_campaign=rag-techniques&utm_source=diamantai&utm_medium=github&utm_content=notebook" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
         <img src="images/trimmed_padded_contextual_white.png#gh-light-mode-only" 
              alt="Contextual AI"
