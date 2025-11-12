@@ -123,6 +123,15 @@ Whether you're an expert or just starting out, your insights can shape the futur
 - 🛠️ Practical implementation guidelines
 - 🌟 Regular updates with the latest advancements
 
+## Technologies and Frameworks 🛠️
+
+This repository leverages cutting-edge frameworks and tools to build production-ready RAG systems:
+
+- **PydanticAI** - A Python framework for building agentic AI applications with type safety and structured outputs. PydanticAI provides seamless integration with LLMs while ensuring data validation through Pydantic models, making it ideal for production RAG systems that require reliable, type-safe agent workflows.
+- **LangChain** - Comprehensive framework for developing LLM applications with powerful abstractions for building RAG pipelines
+- **LlamaIndex** - Data framework for LLM applications with focus on data ingestion and retrieval optimization
+- **Contextual AI** - Managed platform for production-ready agentic RAG with enterprise-grade parsing and grounded LLMs
+
 ## Advanced Techniques
 
 Explore our extensive list of cutting-edge RAG techniques:
@@ -593,4 +602,4 @@ This project is licensed under a custom non-commercial license - see the [LICENS
 
 ![](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme)
 
-Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing, LLM, Embeddings, Semantic Search
+Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing, LLM, Embeddings, Semantic Search, PydanticAI, Agent Frameworks
