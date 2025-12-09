@@ -103,6 +103,8 @@ Our goal is to provide a valuable resource for researchers and practitioners loo
 
 🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
 
+🔍 Test and evaluate your RAG systems with **[promptfoo](https://github.com/promptfoo/promptfoo)** - an open-source framework for comparing prompts, models, and RAG architectures. Catch regressions and security vulnerabilities with CI/CD integration.
+
 
 ## A Community-Driven Knowledge Hub
 
