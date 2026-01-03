@@ -159,6 +159,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 28 | Explainability 🔬 | Explainable Retrieval | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/explainable_retrieval.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb) |
 | 29 | Advanced Architecture 🏗️ | Graph RAG with LangChain | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graph_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb) |
 | 30 | Advanced Architecture 🏗️ | Microsoft GraphRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb) |
+| 31 | Advanced Architecture  | Local Graph RAG with Attribution | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb) |
 | 31 | Advanced Architecture 🏗️ | RAPTOR | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) |
 | 32 | Advanced Architecture 🏗️ | Self-RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) |
 | 33 | Advanced Architecture 🏗️ | Corrective RAG (CRAG) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) |
@@ -512,6 +513,18 @@ Explore our extensive list of cutting-edge RAG techniques:
     
     #### Implementation 🛠️
     • Analyze an input corpus by extracting entities, relationships from text units. generates summaries of each community and its constituents from the bottom-up.
+
+32. Local Graph RAG with Verifiable Attribution 
+    - **NetworkX + Ollama**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb)
+
+    #### Overview 
+    A privacy-first Graph RAG implementation that runs entirely locally using Ollama. Focuses on multi-hop reasoning across knowledge graphs and provides sentence-level attribution for every claim in the generated response.
+
+    #### Implementation 
+     Build knowledge graphs from documents using LLM-based entity extraction
+     Combine vector similarity with graph traversal for hybrid retrieval
+     Generate responses with verifiable citations tracing back to source sentences
+     Compare Graph RAG vs Vector RAG on multi-hop reasoning tasks
 
 32. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
     - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb)  
