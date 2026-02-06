@@ -151,7 +151,8 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 31 | Advanced Architecture 🏗️ | RAPTOR | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/raptor.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb) |
 | 32 | Advanced Architecture 🏗️ | Self-RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) |
 | 33 | Advanced Architecture 🏗️ | Corrective RAG (CRAG) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) |
-| 34 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
+| 34 | Advanced Architecture 🏗️ | A-RAG: Hierarchical Agentic RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/Ayanami0730/arag) [<img src="https://img.shields.io/badge/arXiv-Paper-red" height="20">](https://arxiv.org/abs/2602.03442) |
+| 35 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
 
 ### 🌱 Foundational RAG Techniques
 
@@ -532,9 +533,20 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
 
+35. A-RAG: Hierarchical Agentic RAG 🔍
+    - **A-RAG**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/Ayanami0730/arag) [<img src="https://img.shields.io/badge/arXiv-Paper-red" height="20">](https://arxiv.org/abs/2602.03442)
+
+    #### Overview 🔎
+    A-RAG is an agentic RAG framework that exposes hierarchical retrieval interfaces directly to the LLM agent. Unlike Graph RAG (single-shot retrieval) and Workflow RAG (predefined pipelines), A-RAG enables fully autonomous, iterative, and interleaved retrieval at multiple granularities — satisfying the three principles of true agentic autonomy.
+
+    #### Implementation 🛠️
+    • Provides three hierarchical retrieval tools: **keyword_search** (exact lexical matching), **semantic_search** (sentence-level dense retrieval), and **chunk_read** (full content retrieval with context tracking)
+    • Uses a ReAct-style agent loop where the LLM autonomously decides which tools to call, with what arguments, and when to stop
+    • Achieves **94.5% accuracy on HotpotQA** and **74.1% on MuSiQue** with GPT-5-mini, outperforming GraphRAG, HippoRAG2, and LinearRAG
+
 ## 🌟 Special Advanced Technique 🌟
 
-35. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+36. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
