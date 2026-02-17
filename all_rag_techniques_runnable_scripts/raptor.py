@@ -2,16 +2,16 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict, Any
 
-from langchain.chains.llm import LLMChain
+from langchain.chains import LLMChain
 from sklearn.mixture import GaussianMixture
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
-from langchain.schema import AIMessage
-from langchain.docstore.document import Document
+from langchain_core.messages import AIMessage
+from langchain_core.documents import Document
 import matplotlib.pyplot as plt
 import logging
 import os

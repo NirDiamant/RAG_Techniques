@@ -1,7 +1,7 @@
 import os
 import sys
 from dotenv import load_dotenv
-from langchain.docstore.document import Document
+from langchain_core.documents import Document
 from helper_functions import *
 from evaluation.evalute_rag import *
 from typing import List

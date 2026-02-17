@@ -1,7 +1,7 @@
 import os
 import sys
 from dotenv import load_dotenv
-from langchain.docstore.document import Document
+from langchain_core.documents import Document
 from typing import List, Any
 from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA

@@ -1,10 +1,10 @@
 import sys
 import os
 import re
-from langchain.docstore.document import Document
-from langchain.vectorstores import FAISS
+from langchain_core.documents import Document
+from langchain_community.vectorstores import FAISS
 from enum import Enum
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from typing import Any, Dict, List, Tuple
 from pydantic import BaseModel, Field

@@ -1,7 +1,7 @@
 import os
 import sys
 from dotenv import load_dotenv
-from langchain.docstore.document import Document
+from langchain_core.documents import Document
 from typing import List
 from rank_bm25 import BM25Okapi
 import numpy as np
