@@ -558,6 +558,33 @@ To begin implementing these advanced RAG techniques in your projects:
    ```
 3. Follow the detailed implementation guide in each technique's directory.
 
+## Multi-Provider LLM Support
+
+The `helper_functions.py` module includes a `get_langchain_chat_model()` factory function that lets you easily switch between different LLM providers:
+
+| Provider | Enum Value | Default Model | Required Environment Variable |
+|----------|------------|---------------|-------------------------------|
+| OpenAI | `ModelProvider.OPENAI` | `gpt-4o` | `OPENAI_API_KEY` |
+| Groq | `ModelProvider.GROQ` | `llama-3.3-70b-versatile` | `GROQ_API_KEY` |
+| Anthropic | `ModelProvider.ANTHROPIC` | `claude-sonnet-4-20250514` | `ANTHROPIC_API_KEY` |
+| Amazon Bedrock | `ModelProvider.AMAZON_BEDROCK` | `anthropic.claude-3-sonnet-20240229-v1:0` | AWS credentials |
+| MiniMax | `ModelProvider.MINIMAX` | `MiniMax-M1` | `MINIMAX_API_KEY` |
+
+**Example usage:**
+
+```python
+from helper_functions import ModelProvider, get_langchain_chat_model
+
+# Use OpenAI (default)
+llm = get_langchain_chat_model(ModelProvider.OPENAI)
+
+# Use MiniMax
+llm = get_langchain_chat_model(ModelProvider.MINIMAX, model="MiniMax-M1")
+
+# Use Anthropic with custom settings
+llm = get_langchain_chat_model(ModelProvider.ANTHROPIC, temperature=0.7, max_tokens=2000)
+```
+
 ## Contributing
 
 We welcome contributions from the community! If you have a new technique or improvement to suggest:

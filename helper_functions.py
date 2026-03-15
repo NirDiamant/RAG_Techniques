@@ -333,6 +333,64 @@ class ModelProvider(Enum):
     GROQ = "groq"
     ANTHROPIC = "anthropic"
     AMAZON_BEDROCK = "bedrock"
+    MINIMAX = "minimax"
+
+
+def get_langchain_chat_model(provider: ModelProvider, model: str = None, temperature: float = 0, max_tokens: int = 4000):
+    """
+    Returns a LangChain chat model based on the specified provider.
+
+    Args:
+        provider (ModelProvider): The model provider to use.
+        model (str): Optional - The specific model ID to use.
+        temperature (float): The temperature for generation (default: 0).
+        max_tokens (int): Maximum tokens for generation (default: 4000).
+
+    Returns:
+        A LangChain chat model instance.
+
+    Raises:
+        ValueError: If the specified provider is not supported.
+    """
+    if provider == ModelProvider.OPENAI:
+        from langchain_openai import ChatOpenAI
+        return ChatOpenAI(
+            model=model or "gpt-4o",
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+    elif provider == ModelProvider.GROQ:
+        from langchain_groq import ChatGroq
+        return ChatGroq(
+            model=model or "llama-3.3-70b-versatile",
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+    elif provider == ModelProvider.ANTHROPIC:
+        from langchain_anthropic import ChatAnthropic
+        return ChatAnthropic(
+            model=model or "claude-sonnet-4-20250514",
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+    elif provider == ModelProvider.AMAZON_BEDROCK:
+        from langchain_aws import ChatBedrock
+        return ChatBedrock(
+            model_id=model or "anthropic.claude-3-sonnet-20240229-v1:0",
+            model_kwargs={"temperature": temperature, "max_tokens": max_tokens},
+        )
+    elif provider == ModelProvider.MINIMAX:
+        from langchain_openai import ChatOpenAI
+        import os
+        return ChatOpenAI(
+            model=model or "MiniMax-M1",
+            temperature=temperature if temperature > 0 else 0.1,
+            max_tokens=max_tokens,
+            openai_api_key=os.environ.get("MINIMAX_API_KEY"),
+            openai_api_base="https://api.minimax.io/v1",
+        )
+    else:
+        raise ValueError(f"Unsupported model provider: {provider}")
 
 
 def get_langchain_embedding_provider(provider: EmbeddingProvider, model_id: str = None):
