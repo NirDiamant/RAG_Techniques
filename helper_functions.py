@@ -383,7 +383,7 @@ def get_langchain_chat_model(provider: ModelProvider, model: str = None, tempera
         from langchain_openai import ChatOpenAI
         import os
         return ChatOpenAI(
-            model=model or "MiniMax-M1",
+            model=model or "MiniMax-M2.7",
             temperature=temperature if temperature > 0 else 0.1,
             max_tokens=max_tokens,
             openai_api_key=os.environ.get("MINIMAX_API_KEY"),
