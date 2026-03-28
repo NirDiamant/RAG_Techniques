@@ -4,6 +4,7 @@
 [![Reddit](https://img.shields.io/badge/Reddit-Join%20our%20subreddit-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/EducationalAI/)
 [![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
+[![gitcgr](https://gitcgr.com/badge/NirDiamant/RAG_Techniques.svg)](https://gitcgr.com/NirDiamant/RAG_Techniques)
 
 
 
