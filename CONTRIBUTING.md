@@ -1,158 +1,160 @@
-# Contributing to RAG Techniques
+# Contribuindo para RAG Techniques
 
-Welcome to the world's largest and most comprehensive repository of Retrieval-Augmented Generation (RAG) tutorials! 🌟 We're thrilled you're interested in contributing to this ever-growing knowledge base. Your expertise and creativity can help us maintain our position at the forefront of RAG technology.
+Bem-vindo ao maior e mais abrangente repositório de tutoriais sobre Retrieval-Augmented Generation (RAG)! 🌟 Ficamos muito felizes com seu interesse em contribuir para esta base de conhecimento em constante crescimento. Sua experiência e criatividade ajudam a manter este projeto na fronteira da tecnologia RAG.
 
-## Join Our Community
+## Participe da Comunidade
 
-We have a vibrant Discord community where contributors can discuss ideas, ask questions, and collaborate on RAG techniques. Join us at:
+Temos uma comunidade ativa no Discord onde os colaboradores podem discutir ideias, tirar dúvidas e colaborar em técnicas de RAG. Entre aqui:
 
-[RAG Techniques Discord Server](https://discord.gg/cA6Aa4uyDX)
+[Servidor Discord do RAG Techniques](https://discord.gg/cA6Aa4uyDX)
 
-Don't hesitate to introduce yourself and share your thoughts!
+Sinta-se à vontade para se apresentar e compartilhar suas ideias.
 
-## Ways to Contribute
+## Formas de Contribuir
 
-We welcome contributions of all kinds! Here are some ways you can help:
+Aceitamos contribuições de todos os tipos. Algumas formas de ajudar:
 
-1. **Add New RAG Techniques:** Create new notebooks showcasing novel RAG methods.
-2. **Improve Existing Notebooks:** Enhance, update, or expand our current tutorials.
-3. **Fix Bugs:** Help us squash bugs in existing code or explanations.
-4. **Enhance Documentation:** Improve clarity, add examples, or fix typos in our docs.
-5. **Share Creative Ideas:** Have an innovative idea? We're all ears!
-6. **Engage in Discussions:** Participate in our Discord community to help shape the future of RAG.
+1. **Adicionar novas técnicas de RAG:** Crie novos notebooks mostrando métodos inéditos.
+2. **Melhorar notebooks existentes:** Atualize, expanda ou refine os tutoriais atuais.
+3. **Corrigir bugs:** Ajude a resolver problemas no código ou nas explicações.
+4. **Aprimorar a documentação:** Melhore a clareza, adicione exemplos ou corrija erros de digitação.
+5. **Compartilhar ideias criativas:** Tem uma ideia inovadora? Queremos ouvir.
+6. **Participar das discussões:** Ajude a moldar o futuro do projeto na comunidade do Discord.
 
-Remember, no contribution is too small. Every improvement helps make this repository an even better resource for the community.
+Nenhuma contribuição é pequena demais. Toda melhoria torna este repositório ainda mais útil para a comunidade.
 
-## Reporting Issues
+## Relatando Problemas
 
-Found a problem or have a suggestion? Please create an issue on GitHub, providing as much detail as possible. You can also discuss issues in our Discord community.
+Encontrou um problema ou tem uma sugestão? Abra uma issue no GitHub com o máximo de detalhes possível. Você também pode discutir o assunto no Discord.
 
-## Contributing Code or Content
+## Contribuindo com Código ou Conteúdo
 
-1. **Fork and Branch:** Fork the repository and create your branch from `main`.
-2. **Make Your Changes:** Implement your contribution, following our best practices.
-3. **Test:** Ensure your changes work as expected.
-4. **Follow the Style:** Adhere to the coding and documentation conventions used throughout the project.
-5. **Commit:** Make your git commits informative and concise.
-6. **Stay Updated:** The main branch is frequently updated. Before opening a pull request, make sure your code is up-to-date with the current main branch and has no conflicts.
-7. **Push and Pull Request:** Push to your fork and submit a pull request.
-8. **Discuss:** Use the Discord community to discuss your contribution if you need feedback or have questions.
+1. **Fork e branch:** Faça um fork do repositório e crie uma branch a partir de `main`.
+2. **Faça suas alterações:** Implemente sua contribuição seguindo as melhores práticas do projeto.
+3. **Teste:** Verifique se tudo funciona como esperado.
+4. **Siga o estilo do projeto:** Respeite as convenções de código e documentação já usadas no repositório.
+5. **Commit:** Escreva commits objetivos e informativos.
+6. **Mantenha-se atualizado:** A branch principal é atualizada com frequência. Antes de abrir um pull request, garanta que seu código está alinhado com a `main` atual e sem conflitos.
+7. **Push e pull request:** Envie sua branch e abra um pull request.
+8. **Discuta quando necessário:** Use o Discord para pedir feedback ou esclarecer dúvidas.
 
-## Adding a New RAG Method
+## Adicionando um Novo Método de RAG
 
-When adding a new RAG method to the repository, please follow these additional steps:
+Ao adicionar um novo método de RAG ao repositório, siga também estes passos:
 
-1. Create your notebook in the `all_rag_techniques` folder.
-2. Update BOTH the list and table in README.md:
+1. Crie seu notebook na pasta `all_rag_techniques`.
+2. Atualize a lista e a tabela no `README.md`.
 
-   ### A. Update the List of Techniques
-   - Add your new method to the list of techniques in the README
-   - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated)
-   - Use the following format for the link:
-     ```
-     ### [Number]. [Your Method Name 🏷️](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
-     ```
-   - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file
-   - Choose an appropriate emoji that represents your method
+### A. Atualize a Lista de Técnicas
 
-   ### B. Update the Techniques Table
-   - Add a new row to the table with your technique
-   - Include all available implementations (LangChain, LlamaIndex, and/or Runnable Script)
-   - Use the following format:
-     ```
-     | [Number] | [Category] | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | [Description] |
-     ```
-   - Make sure to:
-     - Update the technique number to maintain sequential order
-     - Choose the appropriate category with emoji
-     - Include links to all available implementations
-     - Write a clear, concise description
+- Adicione o novo método à lista de técnicas no `README`.
+- Coloque-o na posição correta com base na complexidade. Os métodos são organizados do mais simples ao mais avançado.
+- Use o seguinte formato para o link:
 
-   ### C. Important Note
-   - After inserting your new method, make sure to update the numbers of all subsequent techniques to maintain the correct order in BOTH the list and the table
-   - The numbers in the list and table must match exactly
-   - If you add a new technique as number 5, all techniques after it should be incremented by 1 in both places
-
-For example, if you're adding a new technique between Simple RAG and Next Method:
-
-In the list:
+```markdown
+### [Number]. [Your Method Name 🏷️](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
 ```
+
+- Substitua `[Number]` pelo número correto, `[Your Method Name]` pelo nome do método e `your_file_name.ipynb` pelo nome real do arquivo.
+- Escolha um emoji apropriado para representar o método.
+
+### B. Atualize a Tabela de Técnicas
+
+- Adicione uma nova linha à tabela com sua técnica.
+- Inclua todas as implementações disponíveis, como LangChain, LlamaIndex e/ou `Runnable Script`.
+- Use o seguinte formato:
+
+```markdown
+| [Number] | [Category] | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | [Description] |
+```
+
+- Certifique-se de:
+- Atualizar a numeração para manter a ordem sequencial.
+- Escolher a categoria correta com emoji.
+- Incluir links para todas as implementações disponíveis.
+- Escrever uma descrição clara e concisa.
+
+### C. Observação Importante
+
+- Depois de inserir o novo método, atualize a numeração de todas as técnicas seguintes para manter a ordem correta tanto na lista quanto na tabela.
+- Os números da lista e da tabela devem corresponder exatamente.
+- Se você adicionar uma nova técnica na posição 5, todas as técnicas posteriores devem ser incrementadas em 1 nos dois lugares.
+
+Por exemplo, se você estiver adicionando uma técnica entre `Simple RAG` e `Next Method`:
+
+Na lista:
+
+```markdown
 ### 1. [Simple RAG 🌱](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
 ### 2. [Your New Method 🆕](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
 ### 3. [Next Method 🔜](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
 ```
 
-And in the table:
-```
+E na tabela:
+
+```markdown
 | 1 | Foundational 🌱 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Basic RAG implementation |
 | 2 | Your Category 🆕 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Your new method description |
 | 3 | Next Category 🔜 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Next method description |
 ```
 
-Remember: Always update BOTH the list and table when adding new techniques, and ensure the numbers match exactly between them.
+Lembre-se: sempre atualize tanto a lista quanto a tabela ao adicionar novas técnicas e garanta que a numeração esteja idêntica nas duas.
 
-## Notebook Structure
+## Estrutura dos Notebooks
 
-For new notebooks or significant additions to existing ones, please follow this structure:
+Para novos notebooks ou grandes expansões em notebooks existentes, siga esta estrutura:
 
-1. **Title and Overview:** Clear title and brief overview of the technique.
+1. **Título e visão geral:** Título claro e breve apresentação da técnica.
+2. **Explicação detalhada:** Cubra motivação, componentes principais, detalhes do método e benefícios.
+3. **Representação visual:** Inclua um diagrama para visualizar a técnica. Recomendamos usar Mermaid para isso. O fluxo sugerido é:
 
-2. **Detailed Explanation:** Cover motivation, key components, method details, and benefits.
+• Crie um grafo usando a sintaxe `graph TD` do Mermaid<br>
+• Você pode usar Claude ou outros assistentes de IA para ajudar a desenhar o grafo<br>
+• Cole o código no [Mermaid Live Editor](https://mermaid.live/)<br>
+• Na aba "Actions" do Mermaid Live Editor, baixe o arquivo SVG do diagrama<br>
+• Armazene o SVG na [pasta `images`](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) do repositório<br>
+• Use um nome descritivo e apropriado para o arquivo<br>
+• No notebook, exiba a imagem com Markdown:<br>
 
-3. **Visual Representation:** Include a diagram to visualize the technique. We recommend using Mermaid syntax for creating these diagrams. Here's how to do it:
+```markdown
+![Your Technique Name](../images/your-technique-name.svg)
+```
 
-• Create a graph using Mermaid's graph TD (top-down) syntax<br>
-• You can use Claude or other AI assistants to help you design the graph if needed<br>
-• Paste your Mermaid code into [Mermaid Live Editor](https://mermaid.live/)<br>
-• In the "Actions" tab of Mermaid Live Editor, download the SVG file of your diagram<br>
-• Store the SVG file in the [images folder](https://github.com/NirDiamant/RAG_Techniques/tree/main/images) of the repository<br>
-• Use an appropriate, descriptive name for the file<br>
-• In your notebook, display the image using Markdown syntax:<br>
-  ```markdown
-  ![Your Technique Name](../images/your-technique-name.svg)
-  ```
+Esse processo ajuda a manter consistência visual e facilita a compreensão e manutenção futura dos diagramas.
 
-This process ensures consistency in our visual representations and makes it easy for others to understand and potentially modify the diagrams in the future.
+4. **Implementação:** Passo a passo em Python com comentários e explicações claras.
+5. **Exemplo de uso:** Demonstre a técnica com um caso prático.
+6. **Comparação:** Compare com `Basic RAG`, de forma qualitativa e, se possível, quantitativa.
+7. **Considerações adicionais:** Discuta limitações, melhorias possíveis ou casos de uso específicos.
+8. **Referências:** Inclua citações ou recursos relevantes quando houver.
 
-4. **Implementation:** Step-by-step Python implementation with clear comments and explanations.
+## Boas Práticas para Notebooks
 
-5. **Usage Example:** Demonstrate the technique with a practical example.
+Para manter consistência e legibilidade:
 
-6. **Comparison:** Compare with basic RAG, both qualitatively and quantitatively if possible.
+1. **Descrição das células de código:** Cada célula de código deve ser precedida por uma célula Markdown com um título curto e claro explicando o conteúdo ou objetivo da célula.
+2. **Limpeza de saídas desnecessárias:** Antes de fazer commit do notebook, remova outputs desnecessários para reduzir o tamanho do arquivo e evitar confusão com resultados antigos.
+3. **Formatação consistente:** Mantenha formatação uniforme em todo o notebook, incluindo uso regular de cabeçalhos Markdown, comentários no código e indentação adequada.
 
-7. **Additional Considerations:** Discuss limitations, potential improvements, or specific use cases.
+## Qualidade e Legibilidade do Código
 
-8. **References:** Include relevant citations or resources if you have.
+Para garantir código de alta qualidade:
 
-## Notebook Best Practices
+1. **Escreva código limpo:** Siga boas práticas para manter o código claro e legível.
+2. **Use comentários:** Adicione comentários claros e objetivos para explicar lógicas mais complexas.
+3. **Formate seu código:** Mantenha consistência de estilo em toda a contribuição.
+4. **Revisão com modelo de linguagem:** Depois de terminar, considere passar o código por um modelo de linguagem para melhorar formatação e legibilidade. Isso pode tornar a contribuição ainda mais acessível e fácil de manter.
 
-To ensure consistency and readability across all notebooks:
+## Documentação
 
-1. **Code Cell Descriptions:** Each code cell should be preceded by a markdown cell with a clear, concise title describing the cell's content or purpose.
+Documentação clara é essencial. Seja melhorando documentação existente ou criando conteúdo novo, siga o mesmo processo: faça o fork, altere, teste e envie um pull request.
 
-2. **Clear Unnecessary Outputs:** Before committing your notebook, clear all unnecessary cell outputs. This helps reduce file size and avoids confusion from outdated results.
+## Observações Finais
 
-3. **Consistent Formatting:** Maintain consistent formatting throughout the notebook, including regular use of markdown headers, code comments, and proper indentation.
+Somos muito gratos por todos os colaboradores e estamos animados para ver como você vai ajudar a expandir o recurso mais completo sobre RAG. Se tiver qualquer dúvida, pergunte na comunidade do Discord.
 
-## Code Quality and Readability
+Vamos usar nosso conhecimento e criatividade coletiva para avançar ainda mais a tecnologia RAG.
 
-To ensure the highest quality and readability of our code:
-
-1. **Write Clean Code:** Follow best practices for clean, readable code.
-2. **Use Comments:** Add clear and concise comments to explain complex logic.
-3. **Format Your Code:** Use consistent formatting throughout your contribution.
-4. **Language Model Review:** After completing your code, consider passing it through a language model for additional formatting and readability improvements. This extra step can help make your code even more accessible and maintainable.
-
-## Documentation
-
-Clear documentation is crucial. Whether you're improving existing docs or adding new ones, follow the same process: fork, change, test, and submit a pull request.
-
-## Final Notes
-
-We're grateful for all our contributors and excited to see how you'll help expand the world's most comprehensive RAG resource. Don't hesitate to ask questions in our Discord community if you're unsure about anything.
-
-Let's harness our collective knowledge and creativity to push the boundaries of RAG technology together!
-
-Happy contributing! 🚀
+Boas contribuições! 🚀
 
 ![](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=contributing-guide)

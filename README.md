@@ -7,13 +7,13 @@
 
 
 
-> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
+> 🌟 **Apoie Este Projeto:** Seu patrocínio impulsiona a inovação em tecnologias de RAG. **[Torne-se um patrocinador](https://www.diamant-ai.com/sponsorship)** para ajudar a manter e expandir este recurso valioso!
 
-## Sponsors ❤️
+## Patrocinadores ❤️
 
-We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
+Registramos aqui nosso agradecimento às organizações e às pessoas que fizeram contribuições significativas para este projeto.
 
-**Company Sponsors**
+**Patrocinadores Corporativos**
 
 <div align="center">
 
@@ -47,15 +47,15 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 
 
-**Individual Sponsors**
+**Patrocinadores Individuais**
 
 <a href="https://github.com/sponsors/Eisenh"><img src="https://github.com/Eisenh.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
 
-# Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
+# Técnicas Avançadas de RAG: Elevando Seus Sistemas de Retrieval-Augmented Generation 🚀
 
-Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
+Bem-vindo a uma das coleções mais abrangentes e dinâmicas de tutoriais sobre Retrieval-Augmented Generation (RAG) disponíveis hoje. Este repositório funciona como um hub de técnicas de ponta voltadas a aumentar a precisão, a eficiência e a riqueza contextual dos sistemas de RAG.
 
-## 📫 Stay Updated!
+## 📫 Fique por Dentro!
 
 <div align="center">
 <table>
@@ -69,7 +69,7 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 
 [![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
-*Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!* ***Plus, subscribers get exclusive early access and special 33% discounts to my book and the upcoming RAG Techniques course!***
+*Junte-se a mais de 50.000 entusiastas de IA que recebem insights exclusivos de ponta e tutoriais gratuitos!* ***Além disso, assinantes recebem acesso antecipado exclusivo e descontos especiais de 33% no meu livro e no próximo curso de RAG Techniques!***
 </div>
 
 
@@ -77,46 +77,46 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 [![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
 
-## Introduction
+## Introdução
 
-Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
+Retrieval-Augmented Generation (RAG) está transformando a forma como combinamos recuperação de informação com IA generativa. Este repositório apresenta uma coleção curada de técnicas avançadas pensadas para potencializar seus sistemas de RAG, permitindo respostas mais precisas, contextualmente relevantes e abrangentes.
 
-Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
+Nosso objetivo é oferecer um recurso valioso para pesquisadores e profissionais que desejam expandir os limites do que é possível com RAG. Ao cultivar um ambiente colaborativo, buscamos acelerar a inovação nesse campo empolgante.
 
-## Related Projects
+## Projetos Relacionados
 
-🚀 Level up with my **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)** repository. It delivers horizontal, code-first tutorials that cover every tool and step in the lifecycle of building production-grade GenAI agents, guiding you from spark to scale with proven patterns and reusable blueprints for real-world launches, making it the smartest place to start if you're serious about shipping agents to production.
+🚀 Evolua com meu repositório **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)**. Ele entrega tutoriais horizontais, orientados a código, cobrindo cada ferramenta e etapa do ciclo de vida de construção de agentes GenAI prontos para produção, guiando você da ideia inicial à escala com padrões comprovados e blueprints reutilizáveis para lançamentos reais.
 
-🤖 Explore my **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** to discover a variety of AI agent implementations and tutorials, showcasing how different AI technologies can be combined to create powerful, interactive systems.
-
-
-🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
+🤖 Explore meu **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** para descobrir uma variedade de implementações e tutoriais de agentes de IA, mostrando como diferentes tecnologias podem ser combinadas para criar sistemas poderosos e interativos.
 
 
-## A Community-Driven Knowledge Hub
+🖋️ Confira meu **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** para uma coleção abrangente de estratégias de prompting, dos conceitos básicos às técnicas avançadas, ampliando sua capacidade de interagir de forma eficaz com modelos de linguagem.
 
-**This repository grows stronger with your contributions!** Join our vibrant communities - the central hubs for shaping and advancing this project together 🤝
+
+## Um Hub de Conhecimento Guiado pela Comunidade
+
+**Este repositório fica mais forte com suas contribuições!** Participe das nossas comunidades vibrantes, os centros de discussão e evolução deste projeto 🤝
 
 **[Educational AI Subreddit](https://www.reddit.com/r/EducationalAI/)**
 
 **[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)**
 
-Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)** file. Let's advance RAG technology together!
+Seja você especialista ou iniciante, seus insights podem ajudar a moldar o futuro do RAG. Junte-se a nós para propor ideias, receber feedback e colaborar em técnicas inovadoras. Para as diretrizes de contribuição, consulte o arquivo **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)**. Vamos avançar a tecnologia de RAG juntos!
 
-🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to **[connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**.
+🔗 Para conversar sobre GenAI, RAG ou agentes personalizados, ou para explorar oportunidades de troca de conhecimento, fique à vontade para **[se conectar comigo no LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**.
 
-## Key Features
+## Principais Destaques
 
-- 🧠 State-of-the-art RAG enhancements
-- 📚 Comprehensive documentation for each technique
-- 🛠️ Practical implementation guidelines
-- 🌟 Regular updates with the latest advancements
+- 🧠 Aprimoramentos de RAG no estado da arte
+- 📚 Documentação abrangente para cada técnica
+- 🛠️ Diretrizes práticas de implementação
+- 🌟 Atualizações regulares com os avanços mais recentes
 
-## Advanced Techniques
+## Técnicas Avançadas
 
-Explore our extensive list of cutting-edge RAG techniques:
+Explore nossa extensa lista de técnicas de RAG de ponta:
 
-| # | Category | Technique | View |
+| # | Categoria | Técnica | Ver |
 |---|----------|-----------|------|
 | 1 | ⭐ Key Collaboration | Agentic RAG with Contextual AI | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/Agentic_RAG.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Agentic_RAG.ipynb) |
 | 2 | Foundational 🌱 | Basic RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/simple_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) |
