@@ -136,24 +136,14 @@ Whether you're an expert or just starting out, your insights can shape the futur
 - 🛠️ Practical implementation guidelines
 - 🌟 Regular updates with the latest advancements
 
-## Technologies and Frameworks 🛠️
-
-This repository leverages cutting-edge frameworks and tools to build production-ready RAG systems:
-
-- **PydanticAI** - A Python framework for building agentic AI applications with type safety and structured outputs. PydanticAI provides seamless integration with LLMs while ensuring data validation through Pydantic models, making it ideal for production RAG systems that require reliable, type-safe agent workflows.
-- **LangChain** - Comprehensive framework for developing LLM applications with powerful abstractions for building RAG pipelines
-- **LlamaIndex** - Data framework for LLM applications with focus on data ingestion and retrieval optimization
-- **Contextual AI** - Managed platform for production-ready agentic RAG with enterprise-grade parsing and grounded LLMs
-
 ## Advanced Techniques
 
 Explore our extensive list of cutting-edge RAG techniques:
 
-| # | Category | Technique | View |
-|---|
-> **Recently added:** MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG | **42 notebooks** and growing
+> **Recently added:** MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
 
-----------|-----------|------|
+| # | Category | Technique | View |
+|---|----------|-----------|------|
 | 1 | Foundational 🌱 | Basic RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/simple_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb) |
 | 2 | Foundational 🌱 | RAG with CSV Files | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/simple_csv_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb) |
 | 3 | Foundational 🌱 | Reliable RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/reliable_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb) |
