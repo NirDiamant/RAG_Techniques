@@ -616,6 +616,16 @@ To begin implementing these advanced RAG techniques in your projects:
    ```
 3. Follow the detailed implementation guide in each technique's directory.
 
+## 📚 Recommended reading
+
+*This list contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases. Every book below is one I've read and genuinely recommend to engineers working in this space. The companion book to this repo is featured separately at the top of this README.*
+
+- [Build a Large Language Model (From Scratch)](https://www.amazon.com/dp/1633437167?tag=diamantai-ragrm-20) by Sebastian Raschka. Build a GPT-style model end to end in PyTorch.
+- [AI Engineering: Building Applications with Foundation Models](https://www.amazon.com/dp/1098166302?tag=diamantai-ragrm-20) by Chip Huyen. Canonical reference for productionizing foundation-model apps.
+- [Hands-On Large Language Models](https://www.amazon.com/dp/1098150961?tag=diamantai-ragrm-20) by Jay Alammar and Maarten Grootendorst. Visual, practical LLM walkthroughs.
+- [Natural Language Processing with Transformers](https://www.amazon.com/dp/1098136799?tag=diamantai-ragrm-20) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf. From the Hugging Face team.
+- [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969?tag=diamantai-ragrm-20) by Chip Huyen. ML systems in production, still the standard reference.
+
 ## Contributing
 
 We welcome contributions from the community! If you have a new technique or improvement to suggest:
