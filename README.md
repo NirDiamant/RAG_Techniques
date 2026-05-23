@@ -1,33 +1,24 @@
 <div align="center">
 
-# 📖 [The RAG Techniques Book is HERE](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-title&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=The%20RAG%20Techniques%20Book%20is%20HERE)
+# 📖 [RAG Made Simple: the book that extends this repo](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-title&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=RAG%20Made%20Simple)
 
-### The super extended version of this repository
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-image&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=Best%20Seller%20Image"><img src="images/rag_book_best_seller.png" alt="RAG Made Simple - Amazon bestseller in Generative AI" width="600"></a>
 
-<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-image&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=Best%20Seller%20Image"><img src="images/rag_book_best_seller.png" alt="#1 Best Seller in Generative AI on Amazon - Click to buy" width="600"></a>
+The full reference: a 400-page visual guide that goes deeper than any notebook can. The **intuition** behind every technique, **side-by-side comparisons** of when each one wins (and when it quietly fails), and **diagrams** that make the tricky parts finally click.
 
-**#1 Best Seller on Amazon in Generative AI**
+**1,500+ copies sold · Hit #1 in Generative AI on Amazon at launch · ⭐ 4.4 stars**
 
-Built on top of everything in this repo, the book goes far deeper: the **intuition** behind every technique, **side-by-side comparisons** of when each one wins (and when it quietly fails), and **illustrations** that make the tricky parts finally click.
+📖 **Kindle $9.99 · Paperback $24.99 · Free with Kindle Unlimited**
 
-### ⏳ **Free with Kindle Unlimited** or **$0.99** launch price
-
-The price goes up once the launch window closes. Readers who grab it now lock in the lowest price it will ever have, and get the same material that took months of research, writing, and iteration to put together.
-
-### 👉 [**Get the book on Amazon before the price changes**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-cta&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=Get%20the%20book%20on%20Amazon%20before%20the%20price%20changes)
-
-</div>
+### 👉 [**Get the book on Amazon**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-amazon-cta&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0D76734SZ%3Ftag%3Ddiamantai-ragrm-20&text=Get%20the%20book%20on%20Amazon)
 
 ---
 
+#### Companion: Prompt Engineering, Master the Art of AI Interaction
 
-<div align="center">
+The prompting foundation that makes RAG work better. Same author, same visual approach. 22 hands-on techniques explained with the same depth as the RAG book.
 
-### 🔥 This week only: companion book on Kindle Countdown Deal
-
-The series prerequisite, **Prompt Engineering: Master the Art of AI Interaction**, is on a Kindle Countdown Deal at **$2.99** through April 21. Strengthen your prompting foundations before working through the RAG techniques.
-
-### 👉 [**Get Prompt Engineering at countdown pricing**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-pe-countdown&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5%3Ftag%3Ddiamantai-ragrm-20&text=Get%20Prompt%20Engineering%20at%20countdown%20pricing)
+👉 [**See Prompt Engineering on Amazon**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-pe&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5%3Ftag%3Ddiamantai-ragrm-20&text=See%20Prompt%20Engineering)
 
 </div>
 
