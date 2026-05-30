@@ -127,6 +127,19 @@ Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine infor
 
 Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
 
+## 📑 Full write-ups for every technique
+
+Each notebook has a free companion explainer on DiamantAI — the intuition, when each technique wins (and when it quietly fails), and the key takeaways:
+
+- [Basic RAG: encode a document into a vector store and query it](https://diamant-ai.com/tutorials/rag-techniques-basic-rag)
+- [Reliable RAG: grounded, hallucination-checked answers](https://diamant-ai.com/tutorials/rag-techniques-reliable-rag)
+- [Semantic chunking for better retrieval](https://diamant-ai.com/tutorials/rag-techniques-semantic-chunking)
+- [Reranking retrieved results](https://diamant-ai.com/tutorials/rag-techniques-reranking)
+- [Self-RAG: let the model decide when to retrieve](https://diamant-ai.com/tutorials/rag-techniques-self-rag)
+- [**Browse all 35 RAG tutorials →**](https://diamant-ai.com/tutorials)
+
+Related deep dives: [How to stop AI hallucinations](https://diamant-ai.com/blog/how-to-stop-ai-hallucinations) · [Graph RAG explained](https://diamant-ai.com/blog/graph-rag-explained)
+
 ## Related Projects
 
 🚀 Level up with my **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)** repository. It delivers horizontal, code-first tutorials that cover every tool and step in the lifecycle of building production-grade GenAI agents, guiding you from spark to scale with proven patterns and reusable blueprints for real-world launches, making it the smartest place to start if you're serious about shipping agents to production.
