@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- ===================== INDEXING PHASE ===================== -->
+  <text x="40" y="40" font-size="22" font-weight="bold" fill="#1a3c5e">1 · Indexing (graph construction)</text>
+
+  <!-- Documents -->
+  <rect x="40" y="70" width="150" height="60" rx="10" fill="#e8f1fb" stroke="#3b7dd8" stroke-width="2"/>
+  <text x="115" y="98" font-size="15" text-anchor="middle" fill="#1a3c5e">Documents</text>
+  <text x="115" y="116" font-size="12" text-anchor="middle" fill="#557">(raw corpus)</text>
+
+  <!-- Chunks -->
+  <rect x="230" y="70" width="150" height="60" rx="10" fill="#e8f1fb" stroke="#3b7dd8" stroke-width="2"/>
+  <text x="305" y="98" font-size="15" text-anchor="middle" fill="#1a3c5e">Text chunks</text>
+  <text x="305" y="116" font-size="12" text-anchor="middle" fill="#557">overlapping splits</text>
+
+  <!-- LLM extraction -->
+  <rect x="420" y="60" width="180" height="80" rx="10" fill="#fff4e0" stroke="#e0922f" stroke-width="2"/>
+  <text x="510" y="90" font-size="15" text-anchor="middle" font-weight="bold" fill="#8a5200">LLM extraction</text>
+  <text x="510" y="110" font-size="12" text-anchor="middle" fill="#8a5200">entities + relations</text>
+  <text x="510" y="126" font-size="12" text-anchor="middle" fill="#8a5200">(+ descriptions)</text>
+
+  <!-- Knowledge graph -->
+  <rect x="640" y="50" width="200" height="100" rx="10" fill="#eafaef" stroke="#3aa564" stroke-width="2"/>
+  <text x="740" y="74" font-size="15" text-anchor="middle" font-weight="bold" fill="#1f6e42">Knowledge graph</text>
+  <text x="740" y="92" font-size="12" text-anchor="middle" fill="#1f6e42">dedup &amp; merge nodes/edges</text>
+  <circle cx="690" cy="118" r="9" fill="#3aa564"/>
+  <circle cx="745" cy="128" r="9" fill="#3aa564"/>
+  <circle cx="795" cy="112" r="9" fill="#3aa564"/>
+  <line x1="690" y1="118" x2="745" y2="128" stroke="#1f6e42" stroke-width="2"/>
+  <line x1="745" y1="128" x2="795" y2="112" stroke="#1f6e42" stroke-width="2"/>
+
+  <!-- KV stores -->
+  <rect x="880" y="55" width="180" height="42" rx="8" fill="#f3eafd" stroke="#8a52c9" stroke-width="2"/>
+  <text x="970" y="81" font-size="13" text-anchor="middle" fill="#5a2e8c">Entity vector index</text>
+  <rect x="880" y="105" width="180" height="42" rx="8" fill="#f3eafd" stroke="#8a52c9" stroke-width="2"/>
+  <text x="970" y="131" font-size="13" text-anchor="middle" fill="#5a2e8c">Relation vector index</text>
+
+  <!-- indexing arrows -->
+  <line x1="190" y1="100" x2="228" y2="100" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="100" x2="418" y2="100" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="100" x2="638" y2="100" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="840" y1="90" x2="878" y2="78" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="840" y1="110" x2="878" y2="124" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- divider -->
+  <line x1="40" y1="200" x2="1060" y2="200" stroke="#ccc" stroke-width="1" stroke-dasharray="6 6"/>
+
+  <!-- ===================== RETRIEVAL PHASE ===================== -->
+  <text x="40" y="250" font-size="22" font-weight="bold" fill="#1a3c5e">2 · Dual-level retrieval</text>
+
+  <!-- Query -->
+  <rect x="40" y="370" width="150" height="60" rx="10" fill="#e8f1fb" stroke="#3b7dd8" stroke-width="2"/>
+  <text x="115" y="405" font-size="15" text-anchor="middle" fill="#1a3c5e">User query</text>
+
+  <!-- keyword extraction -->
+  <rect x="230" y="360" width="190" height="80" rx="10" fill="#fff4e0" stroke="#e0922f" stroke-width="2"/>
+  <text x="325" y="388" font-size="15" text-anchor="middle" font-weight="bold" fill="#8a5200">LLM keyword split</text>
+  <text x="325" y="408" font-size="12" text-anchor="middle" fill="#8a5200">low-level (specific)</text>
+  <text x="325" y="424" font-size="12" text-anchor="middle" fill="#8a5200">high-level (themes)</text>
+
+  <!-- low-level path -->
+  <rect x="470" y="290" width="240" height="64" rx="10" fill="#eafaef" stroke="#3aa564" stroke-width="2"/>
+  <text x="590" y="316" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f6e42">Low-level &#8594; match entities</text>
+  <text x="590" y="336" font-size="12" text-anchor="middle" fill="#1f6e42">entity + its direct relations</text>
+
+  <!-- high-level path -->
+  <rect x="470" y="446" width="240" height="64" rx="10" fill="#eafaef" stroke="#3aa564" stroke-width="2"/>
+  <text x="590" y="472" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f6e42">High-level &#8594; match relations</text>
+  <text x="590" y="492" font-size="12" text-anchor="middle" fill="#1f6e42">themes + connected entities</text>
+
+  <!-- assemble context -->
+  <rect x="760" y="360" width="160" height="80" rx="10" fill="#f3eafd" stroke="#8a52c9" stroke-width="2"/>
+  <text x="840" y="392" font-size="14" text-anchor="middle" font-weight="bold" fill="#5a2e8c">Assemble context</text>
+  <text x="840" y="412" font-size="12" text-anchor="middle" fill="#5a2e8c">entities + relations</text>
+  <text x="840" y="428" font-size="12" text-anchor="middle" fill="#5a2e8c">+ source chunks</text>
+
+  <!-- LLM answer -->
+  <rect x="960" y="370" width="100" height="60" rx="10" fill="#fde8ec" stroke="#d8456b" stroke-width="2"/>
+  <text x="1010" y="398" font-size="14" text-anchor="middle" font-weight="bold" fill="#9c1f42">LLM</text>
+  <text x="1010" y="416" font-size="12" text-anchor="middle" fill="#9c1f42">answer</text>
+
+  <!-- retrieval arrows -->
+  <line x1="190" y1="400" x2="228" y2="400" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="385" x2="468" y2="330" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="415" x2="468" y2="470" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="710" y1="322" x2="758" y2="385" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="710" y1="478" x2="758" y2="415" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="920" y1="400" x2="958" y2="400" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- link from indexes to retrieval (dashed) -->
+  <line x1="970" y1="150" x2="590" y2="288" stroke="#8a52c9" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="970" y1="150" x2="590" y2="444" stroke="#8a52c9" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="800" y="235" font-size="12" fill="#8a52c9">indexes built in phase 1 power both retrieval levels</text>
+</svg>
