@@ -41,18 +41,6 @@ The prompting foundation that makes RAG work better. Same author, same visual ap
 
 <img src="images/collective-banner.png" alt="DiamantAI Collective - AI engineering jobs" width="600">
 
-## 💼 Apply for open AI engineering jobs
-
-**AI-first companies are hiring through the DiamantAI Collective.**
-
-[![See open jobs and apply](https://img.shields.io/badge/%E2%9E%A1%EF%B8%8F%20%20See%20open%20jobs%20and%20apply-7c3aed?style=for-the-badge)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme--jobs-panel&click=jobs-panel-see-all-roles&target=https%3A%2F%2Fdiamant-ai.com%2Fjobs&text=See%20open%20jobs%20and%20apply)
-
----
-
-</div>
-
-> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
-
 ## Sponsors ❤️
 
 We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
@@ -126,19 +114,6 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
 
 Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
-
-## 📑 Full write-ups for every technique
-
-Each notebook has a free companion explainer on DiamantAI — the intuition, when each technique wins (and when it quietly fails), and the key takeaways:
-
-- [Basic RAG: encode a document into a vector store and query it](https://diamant-ai.com/tutorials/rag-techniques-basic-rag)
-- [Reliable RAG: grounded, hallucination-checked answers](https://diamant-ai.com/tutorials/rag-techniques-reliable-rag)
-- [Semantic chunking for better retrieval](https://diamant-ai.com/tutorials/rag-techniques-semantic-chunking)
-- [Reranking retrieved results](https://diamant-ai.com/tutorials/rag-techniques-reranking)
-- [Self-RAG: let the model decide when to retrieve](https://diamant-ai.com/tutorials/rag-techniques-self-rag)
-- [**Browse all 35 RAG tutorials →**](https://diamant-ai.com/tutorials)
-
-Related deep dives: [How to stop AI hallucinations](https://diamant-ai.com/blog/how-to-stop-ai-hallucinations) · [Graph RAG explained](https://diamant-ai.com/blog/graph-rag-explained)
 
 ## Related Projects
 
@@ -651,6 +626,18 @@ To begin implementing these advanced RAG techniques in your projects:
 - [Hands-On Large Language Models](https://www.amazon.com/dp/1098150961?tag=diamantai-ragrm-20) by Jay Alammar and Maarten Grootendorst. Visual, practical LLM walkthroughs.
 - [Natural Language Processing with Transformers](https://www.amazon.com/dp/1098136799?tag=diamantai-ragrm-20) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf. From the Hugging Face team.
 - [Designing Machine Learning Systems](https://www.amazon.com/dp/1098107969?tag=diamantai-ragrm-20) by Chip Huyen. ML systems in production, still the standard reference.
+
+## 💼 Apply for open AI engineering jobs
+
+**AI-first companies are hiring through the DiamantAI Collective.**
+
+[![See open jobs and apply](https://img.shields.io/badge/%E2%9E%A1%EF%B8%8F%20%20See%20open%20jobs%20and%20apply-7c3aed?style=for-the-badge)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme--jobs-panel&click=jobs-panel-see-all-roles&target=https%3A%2F%2Fdiamant-ai.com%2Fjobs&text=See%20open%20jobs%20and%20apply)
+
+---
+
+</div>
+
+> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
 
 ## Contributing
 
