@@ -41,6 +41,8 @@ The prompting foundation that makes RAG work better. Same author, same visual ap
 
 <img src="images/collective-banner.png" alt="DiamantAI Collective - AI engineering jobs" width="600">
 
+</div>
+
 ## Sponsors ❤️
 
 We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
@@ -634,8 +636,6 @@ To begin implementing these advanced RAG techniques in your projects:
 [![See open jobs and apply](https://img.shields.io/badge/%E2%9E%A1%EF%B8%8F%20%20See%20open%20jobs%20and%20apply-7c3aed?style=for-the-badge)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme--jobs-panel&click=jobs-panel-see-all-roles&target=https%3A%2F%2Fdiamant-ai.com%2Fjobs&text=See%20open%20jobs%20and%20apply)
 
 ---
-
-</div>
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
 
