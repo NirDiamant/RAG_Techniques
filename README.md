@@ -568,7 +568,7 @@ The `helper_functions.py` module includes a `get_langchain_chat_model()` factory
 | Groq | `ModelProvider.GROQ` | `llama-3.3-70b-versatile` | `GROQ_API_KEY` |
 | Anthropic | `ModelProvider.ANTHROPIC` | `claude-sonnet-4-20250514` | `ANTHROPIC_API_KEY` |
 | Amazon Bedrock | `ModelProvider.AMAZON_BEDROCK` | `anthropic.claude-3-sonnet-20240229-v1:0` | AWS credentials |
-| MiniMax | `ModelProvider.MINIMAX` | `MiniMax-M2.7` | `MINIMAX_API_KEY` |
+| MiniMax | `ModelProvider.MINIMAX` | `MiniMax-M3` | `MINIMAX_API_KEY` |
 
 **Example usage:**
 
@@ -578,8 +578,8 @@ from helper_functions import ModelProvider, get_langchain_chat_model
 # Use OpenAI (default)
 llm = get_langchain_chat_model(ModelProvider.OPENAI)
 
-# Use MiniMax
-llm = get_langchain_chat_model(ModelProvider.MINIMAX, model="MiniMax-M2.7")
+# Use MiniMax (defaults to MiniMax-M3; pass model="MiniMax-M2.7" for the previous generation)
+llm = get_langchain_chat_model(ModelProvider.MINIMAX)
 
 # Use Anthropic with custom settings
 llm = get_langchain_chat_model(ModelProvider.ANTHROPIC, temperature=0.7, max_tokens=2000)
