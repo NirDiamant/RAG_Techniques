@@ -8,7 +8,7 @@ The full reference: a 400-page visual guide that goes deeper than any notebook c
 
 **1,500+ copies sold · Hit #1 in Generative AI on Amazon at launch · ⭐ 4.6 stars**
 
-📖 **PDF + EPUB · GitHub community offer: 33% off with code RAGKING**
+📖 **PDF + EPUB · GitHub community price: 33% off with code RAGKING**
 
 ### 👉 [**Get RAG Made Simple (33% off with code RAGKING)**](https://diamant-ai.com/rag-made-simple?code=RAGKING)
 
