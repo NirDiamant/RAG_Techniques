@@ -12,6 +12,8 @@ The full reference: a 400-page visual guide that goes deeper than any notebook c
 
 ### 👉 [**Get RAG Made Simple (33% off with code RAGKING)**](https://diamant-ai.com/rag-made-simple?code=RAGKING)
 
+📣 *Teach, write, or run a dev community? Earn 30% recommending RAG Made Simple to your audience: [become an affiliate](https://nirdiamant.gumroad.com/affiliates).*
+
 ---
 
 #### Companion: Prompt Engineering, Master the Art of AI Interaction
