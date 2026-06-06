@@ -94,25 +94,19 @@ Amazon Bestseller in Generative AI · 1,500+ readers · ⭐ 4.6
 
 ## Related Projects
 
-🚀 Level up with my **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)** repository. It delivers horizontal, code-first tutorials that cover every tool and step in the lifecycle of building production-grade GenAI agents, guiding you from spark to scale with proven patterns and reusable blueprints for real-world launches, making it the smartest place to start if you're serious about shipping agents to production.
+🚀 **[Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)** - code-first tutorials for shipping production-grade GenAI agents, prototype to scale.
 
-🤖 Explore my **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** to discover a variety of AI agent implementations and tutorials, showcasing how different AI technologies can be combined to create powerful, interactive systems.
+🤖 **[GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)** - a broad collection of AI agent implementations and tutorials.
 
-🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
+🖋️ **[Prompt Engineering Techniques](https://github.com/NirDiamant/Prompt_Engineering)** - prompting strategies from basics to advanced.
 
-🧠 Give your agents memory with **[Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques)** — 30 runnable notebooks on conversation buffers, vector stores, knowledge graphs, episodic and semantic memory, plus Mem0, MemGPT/Letta, Zep, and Graphiti.
+🧠 **[Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques)** - 30 notebooks on agent memory: vector stores, knowledge graphs, Mem0, MemGPT, Zep, Graphiti.
 
-## A Community-Driven Knowledge Hub
+## Join the community
 
-**This repository grows stronger with your contributions!** Join our vibrant communities - the central hubs for shaping and advancing this project together 🤝
+Contributions make this better - propose ideas, share techniques, or give feedback via **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)**.
 
-**[Educational AI Subreddit](https://www.reddit.com/r/EducationalAI/)**
-
-**[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)**
-
-Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)** file. Let's advance RAG technology together!
-
-🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to **[connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**.
+**[r/EducationalAI](https://www.reddit.com/r/EducationalAI/)** · **[Discord](https://discord.gg/cA6Aa4uyDX)** · **[LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**
 
 ## Key Features
 
