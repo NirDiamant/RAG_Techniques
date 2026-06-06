@@ -1,8 +1,8 @@
 <div align="center">
 
-# 📖 [RAG Made Simple: the book that extends this repo](https://diamant-ai.com/rag-made-simple?code=RAGKING)
+# 📖 [RAG Made Simple: the book that extends this repo](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-title&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=title%20rag%20book)
 
-<a href="https://diamant-ai.com/rag-made-simple?code=RAGKING"><img src="images/rag_book_best_seller.png" alt="RAG Made Simple - Amazon bestseller in Generative AI" width="600"></a>
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=book-buy-gumroad-rag-image&amp;target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&amp;retarget=0&amp;text=image%20rag%20book"><img src="images/rag_book_best_seller.png" alt="RAG Made Simple - Amazon bestseller in Generative AI" width="600"></a>
 
 The full reference: a 400-page visual guide that goes deeper than any notebook can. The **intuition** behind every technique, **side-by-side comparisons** of when each one wins (and when it quietly fails), and **diagrams** that make the tricky parts finally click.
 
@@ -10,7 +10,7 @@ The full reference: a 400-page visual guide that goes deeper than any notebook c
 
 📖 **PDF + EPUB · GitHub community price: 33% off with code RAGKING**
 
-### 👉 [**Get RAG Made Simple (33% off with code RAGKING)**](https://diamant-ai.com/rag-made-simple?code=RAGKING)
+### 👉 [**Get RAG Made Simple (33% off with code RAGKING)**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-title&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=title%20rag%20book)
 
 📖 *Not ready to buy? [**Read Chapter 1 free**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=free-chapter&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%2Fchapter-1&retarget=0&text=read%20chapter%201%20free) - the full first chapter, no signup.*
 
@@ -485,7 +485,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     - Build a complete MemoryStore with FAISS-based retrieval, surrogate queries, and comparison evaluation against standard RAG.
 
-> 📖 **Want to understand all these techniques visually?** [RAG Made Simple](https://diamant-ai.com/rag-made-simple?code=RAGKING) covers 22 core RAG techniques through diagrams and plain-English explanations. Now 33% off for the GitHub community with code RAGKING.
+> 📖 **Want to understand all these techniques visually?** [RAG Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-inline&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=inline%20rag%20book) covers 22 core RAG techniques through diagrams and plain-English explanations. Now 33% off for the GitHub community with code RAGKING.
 
 ### 🔬 Explainability and Transparency
 
