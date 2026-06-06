@@ -1,28 +1,9 @@
 <div align="center">
 
-# 📖 [RAG Made Simple: the book that extends this repo](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-title&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=title%20rag%20book)
+# Advanced RAG Techniques 🚀
+### Elevating Your Retrieval-Augmented Generation Systems
 
-<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=book-buy-gumroad-rag-image&amp;target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&amp;retarget=0&amp;text=image%20rag%20book"><img src="images/rag_book_best_seller.png" alt="RAG Made Simple - Amazon bestseller in Generative AI" width="600"></a>
-
-The full reference: a 400-page visual guide that goes deeper than any notebook can. The **intuition** behind every technique, **side-by-side comparisons** of when each one wins (and when it quietly fails), and **diagrams** that make the tricky parts finally click.
-
-**1,500+ copies sold · Hit #1 in Generative AI on Amazon at launch · ⭐ 4.6 stars**
-
-📖 **PDF + EPUB · GitHub community price: 33% off with code RAGKING**
-
-### 👉 [**Get RAG Made Simple (33% off with code RAGKING)**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-title&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=title%20rag%20book)
-
-📖 *Not ready to buy? [**Read Chapter 1 free**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=free-chapter&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%2Fchapter-1&retarget=0&text=read%20chapter%201%20free) - the full first chapter, no signup.*
-
-📣 *Teach, write, or run a dev community? Earn 25% recommending RAG Made Simple to your audience: [become an affiliate](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=affiliate-signup&target=https%3A%2F%2Fnirdiamant.gumroad.com%2Faffiliates&retarget=0&text=become%20an%20affiliate).*
-
----
-
-#### Companion: Prompt Engineering, Master the Art of AI Interaction
-
-The prompting foundation that makes RAG work better. Same author, same visual approach. 22 hands-on techniques explained with the same depth as the RAG book.
-
-👉 [**See Prompt Engineering on Amazon**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-pe&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5%3Ftag%3Ddiamantai-ragrm-20&text=See%20Prompt%20Engineering)
+A community-driven hub of **42+ runnable notebooks** covering RAG techniques from foundational to cutting-edge - the intuition, the code, and the references to build more accurate, context-rich retrieval systems.
 
 </div>
 
@@ -73,10 +54,6 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 <a href="https://github.com/sponsors/Eisenh"><img src="https://github.com/Eisenh.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
 
-# Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
-
-Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
-
 ## 📫 Stay Updated!
 
 <div align="center">
@@ -101,6 +78,22 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
 
 Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
+
+## 📖 Go deeper: the book
+
+<div align="center">
+
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=book-buy-gumroad-rag-image&amp;target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&amp;retarget=0&amp;text=book-buy-gumroad-rag-image"><img src="images/rag_book_best_seller.png" alt="RAG Made Simple - the visual guide to RAG" width="420"></a>
+
+**[RAG Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-cta&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=book-buy-gumroad-rag-cta)** is the 400-page visual companion to this repo - the intuition behind every technique, side-by-side comparisons of when each one wins (and when it quietly fails), and diagrams that make the tricky parts finally click.
+
+*Amazon Bestseller in Generative AI (hit #1 at launch) · 1,500+ readers · ⭐ 4.6*
+
+### [Get the book - 33% off with code RAGKING →](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-cta&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=book-buy-gumroad-rag-cta)
+
+*Not ready to buy? [Read Chapter 1 free](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=free-chapter&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%2Fchapter-1&retarget=0&text=free-chapter) - the full first chapter, no signup.*
+
+</div>
 
 ## Related Projects
 
@@ -485,8 +478,6 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     - Build a complete MemoryStore with FAISS-based retrieval, surrogate queries, and comparison evaluation against standard RAG.
 
-> 📖 **Want to understand all these techniques visually?** [RAG Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-gumroad-rag-inline&target=https%3A%2F%2Fdiamant-ai.com%2Frag-made-simple%3Fcode%3DRAGKING&retarget=0&text=inline%20rag%20book) covers 22 core RAG techniques through diagrams and plain-English explanations. Now 33% off for the GitHub community with code RAGKING.
-
 ### 🔬 Explainability and Transparency
 
 27. Explainable Retrieval 🔍  
@@ -611,6 +602,12 @@ To begin implementing these advanced RAG techniques in your projects:
 ---
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
+
+## 📚 More from the same author
+
+**[Prompt Engineering: Master the Art of AI Interaction](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-buy-pe&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5%3Ftag%3Ddiamantai-ragrm-20&retarget=0&text=book-buy-pe)** - the prompting foundation that makes RAG work better. Same visual approach, 22 hands-on techniques.
+
+*Run a course, newsletter, or dev community? You can [earn 25% recommending RAG Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=affiliate-signup&target=https%3A%2F%2Fnirdiamant.gumroad.com%2Faffiliates&retarget=0&text=affiliate-signup) to your audience.*
 
 ## Contributing
 
