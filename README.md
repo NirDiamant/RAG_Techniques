@@ -66,12 +66,12 @@ We gratefully acknowledge the organizations and individuals who have made signif
 </tr>
 </table>
 
-[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=newsletter-subscribe-button&target=https%3A%2F%2Fdiamantai.substack.com%2F%3Fr%3D336pe4%26utm_campaign%3Dpub-share-checklist&text=Subscribe%20to%20DiamantAI%20Newsletter)
+[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=newsletter-subscribe-button&target=https%3A%2F%2Fnewsletter.diamant-ai.com%2F%3Fr%3D336pe4%26utm_campaign%3Dpub-share-checklist&text=Subscribe%20to%20DiamantAI%20Newsletter)
 
 *Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!* ***Plus, subscribers get exclusive early access and special 33% discounts to my book and the upcoming RAG Techniques course!***
 </div>
 
-[![DiamantAI's newsletter](images/substack_image.png)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=newsletter-subscribe-image&target=https%3A%2F%2Fdiamantai.substack.com%2F%3Fr%3D336pe4%26utm_campaign%3Dpub-share-checklist&text=DiamantAI%27s%20newsletter)
+[![DiamantAI's newsletter](images/substack_image.png)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=newsletter-subscribe-image&target=https%3A%2F%2Fnewsletter.diamant-ai.com%2F%3Fr%3D336pe4%26utm_campaign%3Dpub-share-checklist&text=DiamantAI%27s%20newsletter)
 
 ## Introduction
 
@@ -219,7 +219,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     - 🔍 Retrieval: The system retrieves the most relevant JSON entries based on the user's query.
 
 #### Additional Resources 📚
-   - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://open.substack.com/pub/diamantai/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
+   - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://newsletter.diamant-ai.com/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
 
 ### 🔍 Query Enhancement
 
@@ -246,7 +246,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
 
    #### Additional Resources 📚
-   - **[HyDE: Exploring Hypothetical Document Embeddings for AI Retrieval](https://open.substack.com/pub/diamantai/p/hyde-exploring-hypothetical-document?r=336pe4&utm_campaign=post&utm_medium=web)** - A short blog post explaining this method clearly.
+   - **[HyDE: Exploring Hypothetical Document Embeddings for AI Retrieval](https://newsletter.diamant-ai.com/p/hyde-exploring-hypothetical-document?r=336pe4&utm_campaign=post&utm_medium=web)** - A short blog post explaining this method clearly.
 
 ### 📚 Context and Content Enrichment
 
@@ -307,7 +307,7 @@ Explore our extensive list of cutting-edge RAG techniques:
    Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
 
    #### Additional Resources 📚
-   - **[Semantic Chunking: Improving AI Information Retrieval](https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
+   - **[Semantic Chunking: Improving AI Information Retrieval](https://newsletter.diamant-ai.com/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
 
 13. Contextual Compression 🗜️  
    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb)  
@@ -356,7 +356,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     - 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
 
     #### Additional Resources 📚
-    - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://open.substack.com/pub/diamantai/p/relevance-revolution-how-re-ranking?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
+    - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://newsletter.diamant-ai.com/p/relevance-revolution-how-re-ranking?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
 
 17. Multi-faceted Filtering 🔍
 
@@ -380,7 +380,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
     
     #### Additional Resources 📚
-    - **[Hierarchical Indices: Enhancing RAG Systems](https://open.substack.com/pub/diamantai/p/hierarchical-indices-enhancing-rag?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
+    - **[Hierarchical Indices: Enhancing RAG Systems](https://newsletter.diamant-ai.com/p/hierarchical-indices-enhancing-rag?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
 
 20. Dartboard Retrieval 🎯
     - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb) 
