@@ -16,6 +16,28 @@ A community-driven hub of **42+ runnable notebooks** covering RAG techniques fro
 [![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
 
+<h2 align="center">🎓 From RAG prototypes to production</h2>
+
+<div align="center">
+
+**[Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta)** - my full course on building software with AI the way professionals do: the methods and paradigms behind reliable, efficient, modular production systems, taught systematically. 17 modules, each pairing a video lecture with a hands-on lab, from your first structured prompt to a working production system.
+
+### 🎁 Try a full module, free
+
+<table>
+<tr>
+<td align="center">🎬<br><b>7-minute<br>video lecture</b></td>
+<td align="center">🛠️<br><b>Hands-on<br>tutorial</b></td>
+<td align="center">🤖<br><b>AI assistant<br>inside Claude Code</b></td>
+</tr>
+</table>
+
+One `npm install` adds the module's AI assistant to your Claude Code, and it guides you through the tutorial as you build.
+
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta"><img src="images/free-module-button.svg" alt="Claim your free module" width="420"></a>
+
+</div>
+
 ## Sponsors ❤️
 
 We gratefully acknowledge the organizations and individuals who have made significant contributions to this project.
@@ -629,16 +651,6 @@ We welcome contributions from the community! If you have a new technique or impr
 This project is licensed under a custom non-commercial license - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-<div align="center">
-
-🎓 **Building with AI is easy. Shipping is hard.** My course **[Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta)** teaches the methods and paradigms professionals use to build production systems with AI, across 17 modules.
-
-**Try a full module, free:** a 7-minute video lecture, a hands-on tutorial, and an AI assistant you `npm install` into Claude Code that guides you through it.
-
-<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta"><img src="https://img.shields.io/badge/FREE_MODULE-Get_yours_now_%E2%86%92-2ea44f?style=for-the-badge&labelColor=555" alt="Get your free module"></a>
-
-</div>
 
 ⭐️ If you find this repository helpful, please consider giving it a star!
 
