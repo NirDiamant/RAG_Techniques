@@ -630,7 +630,15 @@ This project is licensed under a custom non-commercial license - see the [LICENS
 
 ---
 
-🎓 *Building with AI is easy. Shipping is hard. My course **[Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-waitlist-cta&target=https%3A%2F%2Fdiamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-waitlist-cta)** teaches the methods and paradigms professionals use to build production systems with AI: [join the waiting list](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-waitlist-cta&target=https%3A%2F%2Fdiamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-waitlist-cta) and lock in the founding price.*
+<div align="center">
+
+🎓 **Building with AI is easy. Shipping is hard.** My course **[Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta)** teaches the methods and paradigms professionals use to build production systems with AI, across 17 modules.
+
+**Try a full module, free:** a 7-minute video lecture, a hands-on tutorial, and an AI assistant you `npm install` into Claude Code that guides you through it.
+
+<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta"><img src="https://img.shields.io/badge/FREE_MODULE-Get_yours_now_%E2%86%92-2ea44f?style=for-the-badge&labelColor=555" alt="Get your free module"></a>
+
+</div>
 
 ⭐️ If you find this repository helpful, please consider giving it a star!
 
