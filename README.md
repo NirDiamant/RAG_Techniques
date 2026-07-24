@@ -141,6 +141,8 @@ Contributions make this better - propose ideas, share techniques, or give feedba
 
 Explore our extensive list of cutting-edge RAG techniques:
 
+- - **[RAG over SQL with FAISS](all_rag_techniques/rag_over_sql_with_faiss.ipynb)** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/rag_over_sql_with_faiss.ipynb) — Query structured databases using natural language with LangChain + FAISS.
+
 > **Recently added:** MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
 
 | # | Category | Technique | View |
