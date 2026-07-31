@@ -95,6 +95,49 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 [![DiamantAI's newsletter](images/substack_image.png)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=newsletter-subscribe-image&target=https%3A%2F%2Fnewsletter.diamant-ai.com%2F%3Fr%3D336pe4%26utm_campaign%3Dpub-share-checklist&text=DiamantAI%27s%20newsletter)
 
+<h2 align="center">🎬 Prefer video?</h2>
+
+<div align="center">
+
+*I break these ideas down into short, one-idea-per-episode explainers on YouTube.*
+
+<table>
+<tr>
+<td width="25%" align="center" valign="top">
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=youtube-readme-ep01&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRCfl4aRYJs&amp;retarget=0&amp;text=youtube-readme-ep01">
+    <img src="https://img.youtube.com/vi/rRCfl4aRYJs/mqdefault.jpg" width="100%" alt="">
+    <br><b>RAG Explained: Why AI Gets Your Own Documents Wrong</b>
+  </a><br>
+  <sub>why chunks overlap, what &quot;meaning space&quot; is, and where simple RAG breaks down</sub>
+</td>
+<td width="25%" align="center" valign="top">
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=youtube-readme-ep02&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFkeEJz2fh90&amp;retarget=0&amp;text=youtube-readme-ep02">
+    <img src="https://img.youtube.com/vi/FkeEJz2fh90/mqdefault.jpg" width="100%" alt="">
+    <br><b>How Do You Search a Spreadsheet by Meaning?</b>
+  </a><br>
+  <sub>turn each row into one labelled line and search the table by meaning</sub>
+</td>
+<td width="25%" align="center" valign="top">
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=youtube-readme-ep03&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoVI2GA8jn7w&amp;retarget=0&amp;text=youtube-readme-ep03">
+    <img src="https://img.youtube.com/vi/oVI2GA8jn7w/mqdefault.jpg" width="100%" alt="">
+    <br><b>How Do You Know Your RAG Answer Isn't Made Up?</b>
+  </a><br>
+  <sub>three checkpoints that catch a bad chunk on the way in and an unsupported claim on the way out</sub>
+</td>
+<td width="25%" align="center" valign="top">
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=youtube-readme-ep04&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUqh6DPaSTzg&amp;retarget=0&amp;text=youtube-readme-ep04">
+    <img src="https://img.youtube.com/vi/Uqh6DPaSTzg/mqdefault.jpg" width="100%" alt="">
+    <br><b>Why Does RAG Return a Paragraph When You Asked for One Fact?</b>
+  </a><br>
+  <sub>why a paragraph's embedding is a blend that points at nothing in particular</sub>
+</td>
+</tr>
+</table>
+
+[![Subscribe on YouTube](https://img.shields.io/youtube/channel/subscribers/UCatj5F2gohksvfNmnEpRnNA?style=social)](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=youtube-subscribe-channel&target=https%3A%2F%2Fwww.youtube.com%2F%40DiamantAI%3Fsub_confirmation%3D1&retarget=0&text=youtube-subscribe-channel) &nbsp; [**Browse every episode →**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=youtube-all-episodes&target=https%3A%2F%2Fwww.youtube.com%2F%40DiamantAI&retarget=0&text=youtube-all-episodes)
+
+</div>
+
 ## Introduction
 
 Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
