@@ -333,6 +333,7 @@ class ModelProvider(Enum):
     GROQ = "groq"
     ANTHROPIC = "anthropic"
     AMAZON_BEDROCK = "bedrock"
+    MINIMAX = "minimax"
 
 
 def get_langchain_embedding_provider(provider: EmbeddingProvider, model_id: str = None):
@@ -360,3 +361,48 @@ def get_langchain_embedding_provider(provider: EmbeddingProvider, model_id: str 
         return BedrockEmbeddings(model_id=model_id) if model_id else BedrockEmbeddings(model_id="amazon.titan-embed-text-v2:0")
     else:
         raise ValueError(f"Unsupported embedding provider: {provider}")
+
+def get_minimax_chat_model(
+    model: str = None,
+    temperature: float = 0,
+    max_tokens: int = 4000,
+    region: str = "global_en",
+):
+    """
+    Returns a LangChain chat model for the MiniMax provider.
+
+    MiniMax exposes a chat completions API from two regional endpoints. The
+    ``global_en`` endpoint serves ``https://api.minimax.io/v1`` and the ``cn_zh``
+    endpoint serves ``https://api.minimaxi.com/v1``. These endpoints are compatible
+    with the ``langchain_openai`` chat client. The MiniMax-M3 model is used by
+    default; pass ``model="MiniMax-M2.7"`` for the previous generation model.
+
+    Args:
+        model (str): Optional MiniMax model ID (defaults to ``MiniMax-M3``).
+        temperature (float): The temperature for generation (default: 0).
+        max_tokens (int): Maximum tokens for generation (default: 4000).
+        region (str): Regional endpoint to use: ``global_en`` (default) or ``cn_zh``.
+
+    Returns:
+        A LangChain chat model instance configured for the selected MiniMax endpoint.
+
+    Raises:
+        ValueError: If the specified region is not supported.
+    """
+    import os
+    from langchain_openai import ChatOpenAI
+
+    minimax_endpoints = {
+        "global_en": "https://api.minimax.io/v1",
+        "cn_zh": "https://api.minimaxi.com/v1",
+    }
+    if region not in minimax_endpoints:
+        raise ValueError(f"Unsupported MiniMax region: {region}")
+
+    return ChatOpenAI(
+        model=model or "MiniMax-M3",
+        temperature=temperature,
+        max_tokens=max_tokens,
+        openai_api_key=os.environ.get("MINIMAX_API_KEY"),
+        openai_api_base=minimax_endpoints[region],
+    )
