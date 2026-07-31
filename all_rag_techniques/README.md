@@ -11,23 +11,31 @@ Every notebook here has a written walkthrough. Four of them also have a video ex
 <table>
 <tr>
 <td width="25%" align="center" valign="top">
-  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep01&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRCfl4aRYJs&retarget=0&text=youtube-index-ep01"><img src="https://img.youtube.com/vi/rRCfl4aRYJs/mqdefault.jpg" width="100%" alt="RAG Explained: Why AI Gets Your Own Documents Wrong"></a><br>
-  <b><a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep01&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRCfl4aRYJs&retarget=0&text=youtube-index-ep01">RAG Explained: Why AI Gets Your Own Documents Wrong</a></b><br>
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&amp;click=youtube-index-ep01&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRCfl4aRYJs&amp;retarget=0&amp;text=youtube-index-ep01">
+    <img src="https://img.youtube.com/vi/rRCfl4aRYJs/mqdefault.jpg" width="100%" alt="">
+    <br><b>RAG Explained: Why AI Gets Your Own Documents Wrong</b>
+  </a><br>
   <sub>why chunks overlap, what &quot;meaning space&quot; is, and where simple RAG breaks down</sub>
 </td>
 <td width="25%" align="center" valign="top">
-  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep02&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFkeEJz2fh90&retarget=0&text=youtube-index-ep02"><img src="https://img.youtube.com/vi/FkeEJz2fh90/mqdefault.jpg" width="100%" alt="How Do You Search a Spreadsheet by Meaning?"></a><br>
-  <b><a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep02&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFkeEJz2fh90&retarget=0&text=youtube-index-ep02">How Do You Search a Spreadsheet by Meaning?</a></b><br>
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&amp;click=youtube-index-ep02&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFkeEJz2fh90&amp;retarget=0&amp;text=youtube-index-ep02">
+    <img src="https://img.youtube.com/vi/FkeEJz2fh90/mqdefault.jpg" width="100%" alt="">
+    <br><b>How Do You Search a Spreadsheet by Meaning?</b>
+  </a><br>
   <sub>turn each row into one labelled line and search the table by meaning</sub>
 </td>
 <td width="25%" align="center" valign="top">
-  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep03&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoVI2GA8jn7w&retarget=0&text=youtube-index-ep03"><img src="https://img.youtube.com/vi/oVI2GA8jn7w/mqdefault.jpg" width="100%" alt="How Do You Know Your RAG Answer Isn't Made Up?"></a><br>
-  <b><a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep03&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoVI2GA8jn7w&retarget=0&text=youtube-index-ep03">How Do You Know Your RAG Answer Isn't Made Up?</a></b><br>
-  <sub>three checkpoints that catch a bad chunk in and an unsupported claim out</sub>
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&amp;click=youtube-index-ep03&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoVI2GA8jn7w&amp;retarget=0&amp;text=youtube-index-ep03">
+    <img src="https://img.youtube.com/vi/oVI2GA8jn7w/mqdefault.jpg" width="100%" alt="">
+    <br><b>How Do You Know Your RAG Answer Isn't Made Up?</b>
+  </a><br>
+  <sub>three checkpoints that catch a bad chunk on the way in and an unsupported claim on the way out</sub>
 </td>
 <td width="25%" align="center" valign="top">
-  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep04&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUqh6DPaSTzg&retarget=0&text=youtube-index-ep04"><img src="https://img.youtube.com/vi/Uqh6DPaSTzg/mqdefault.jpg" width="100%" alt="Why Does RAG Return a Paragraph When You Asked for One Fact?"></a><br>
-  <b><a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&click=youtube-index-ep04&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUqh6DPaSTzg&retarget=0&text=youtube-index-ep04">Why Does RAG Return a Paragraph When You Asked for One Fact?</a></b><br>
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=all-rag-techniques--index&amp;click=youtube-index-ep04&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUqh6DPaSTzg&amp;retarget=0&amp;text=youtube-index-ep04">
+    <img src="https://img.youtube.com/vi/Uqh6DPaSTzg/mqdefault.jpg" width="100%" alt="">
+    <br><b>Why Does RAG Return a Paragraph When You Asked for One Fact?</b>
+  </a><br>
   <sub>why a paragraph's embedding is a blend that points at nothing in particular</sub>
 </td>
 </tr>
