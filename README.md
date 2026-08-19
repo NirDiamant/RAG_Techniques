@@ -68,6 +68,13 @@ We gratefully acknowledge the organizations and individuals who have made signif
              style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </a>
     </td>
+    <td style="border: none; text-align: center; padding: 16px 24px; width: 33.33%; vertical-align: middle;">
+      <a href="https://www.qodo.ai/?utm_source=diamantai&utm_medium=github&utm_campaign=rag-techniques&utm_content=readme-sponsor" target="_blank" style="text-decoration: none; display: inline-block; transition: transform 0.2s ease;">
+        <img src="images/qodo-logo.svg"
+             alt="Qodo"
+             style="height: 28px; width: auto; border-radius: 12px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      </a>
+    </td>
   </tr>
 </table>
 </div>
