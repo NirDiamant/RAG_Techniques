@@ -10,7 +10,7 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from helper_functions import text_wrap
 
 # Load environment variables from a .env file
@@ -90,6 +90,11 @@ def apply_diversity_filter(
     similarity_threshold: float = 0.9,
 ) -> List[Tuple[Document, float]]:
     """Remove near-duplicate documents greedily using embedding cosine similarity."""
+    if embeddings is None:
+        raise ValueError(
+            "embeddings are required when diversity filtering is enabled; "
+            "pass a HuggingFaceEmbeddings instance to apply_diversity_filter"
+        )
     kept: List[Tuple[Document, float]] = []
     kept_vectors: List[np.ndarray] = []
     for doc, score in doc_score_pairs:
