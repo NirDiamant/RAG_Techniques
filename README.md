@@ -316,6 +316,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 7. Hypothetical Questions (HyDE Approach) ❓  
    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)  
    - **[Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py)**
+   - **🎬 Watch it explained**: **[HyDE for RAG: Search With a Fake Answer to Find the Real One](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=youtube-hyde-list&target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkoHZ6JbTk_c&retarget=0&text=youtube-hyde-list)** — why a short question and a long document land far apart in embedding space even when they mean the same thing, why the made-up answer never has to be correct, and the two places the technique genuinely fails.
 
    #### Overview 🔎
    Generating hypothetical questions to improve alignment between queries and data.
