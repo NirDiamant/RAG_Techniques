@@ -1,0 +1,27 @@
+# Keeps dependencies current so the tutorials stay installable and free of
+# known vulnerabilities. Security advisories are handled separately by
+# Dependabot security updates, which are enabled on this repository.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      # One PR for routine patch/minor bumps instead of a flood of individual
+      # ones. Major bumps stay separate, since those are the ones that can
+      # break a notebook and need a real read.
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "dependencies"
