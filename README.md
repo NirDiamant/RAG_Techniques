@@ -227,10 +227,11 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 30 | Advanced Architecture 🏗️ | Self-RAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/self_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb) |
 | 31 | Advanced Architecture 🏗️ | Corrective RAG (CRAG) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/crag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb) |
 | 32 | Advanced Architecture 🏗️ | Local Graph RAG with Verifiable Attribution | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb) |
-| 33 | Evaluation 📊 | End-to-End RAG Evaluation | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) |
-| 34 | Evaluation 📊 | Open-RAG-Eval | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/open-rag-eval-example.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/open-rag-eval-example.ipynb) |
-| 35 | Advanced 🔬 | MemoRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/memorag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/memorag.ipynb) |
-| 36 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
+| 33 | Advanced Architecture 🏗️ | LightRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/light_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/light_rag.ipynb) |
+| 34 | Evaluation 📊 | End-to-End RAG Evaluation | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) |
+| 35 | Evaluation 📊 | Open-RAG-Eval | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/open-rag-eval-example.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/open-rag-eval-example.ipynb) |
+| 36 | Advanced 🔬 | MemoRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/memorag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/memorag.ipynb) |
+| 37 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
 
 ### 🌱 Foundational RAG Techniques
 
@@ -646,9 +647,19 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Extract entities and relationships from documents using a local LLM, building a knowledge graph with full source provenance. Combine vector similarity search (entry points) with graph traversal (multi-hop expansion). Generate answers with inline citations that map each claim to its source document, sentence, and graph path.
 
+36. LightRAG 💡
+    - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/light_rag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/light_rag.ipynb)
+    - **[Runnable Script](all_rag_techniques_runnable_scripts/light_rag.py)**
+
+    #### Overview 🔎
+    A simple and fast graph-based RAG that extracts an entity-relationship knowledge graph from the corpus and retrieves with a dual-level strategy (specific entities + high-level themes), supporting cheap incremental updates.
+
+    #### Implementation 🛠️
+    Extract entities and relationships per chunk into a merged knowledge graph, embed entity and relation profiles into two vector indexes, split the query into low-level and high-level keywords, then retrieve the matching entities and relations (plus their source chunks) to build the context.
+
 ## 🌟 Special Advanced Technique 🌟
 
-36. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+37. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
