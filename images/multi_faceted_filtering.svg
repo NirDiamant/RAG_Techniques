@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1295 240" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; font-family: 'trebuchet ms', verdana, arial, sans-serif;">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333333"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #ECECFF; stroke: #9370DB; stroke-width: 1.5px; }
+    .title { fill: #333333; font-size: 15px; font-weight: bold; }
+    .sub { fill: #666666; font-size: 12px; }
+    .arrow { stroke: #333333; stroke-width: 2px; fill: none; }
+  </style>
+  <g class="boxes">
+    <rect class="box" x="0" y="90" width="190" height="64"/>
+    <text class="title" x="95" y="118" text-anchor="middle">Vector Store Retrieval</text>
+    <text class="sub" x="95" y="138" text-anchor="middle">top-k candidates + scores</text>
+
+    <rect class="box" x="235" y="90" width="190" height="64"/>
+    <text class="title" x="330" y="118" text-anchor="middle">Metadata Filter</text>
+    <text class="sub" x="330" y="138" text-anchor="middle">country · company · date</text>
+
+    <rect class="box" x="470" y="90" width="190" height="64"/>
+    <text class="title" x="565" y="118" text-anchor="middle">Similarity Threshold</text>
+    <text class="sub" x="565" y="138" text-anchor="middle">drop low-score results</text>
+
+    <rect class="box" x="705" y="90" width="190" height="64"/>
+    <text class="title" x="800" y="118" text-anchor="middle">Content Filter</text>
+    <text class="sub" x="800" y="138" text-anchor="middle">required keywords</text>
+
+    <rect class="box" x="940" y="90" width="190" height="64"/>
+    <text class="title" x="1035" y="118" text-anchor="middle">Diversity Filter</text>
+    <text class="sub" x="1035" y="138" text-anchor="middle">remove near-duplicates</text>
+
+    <rect class="box" x="1175" y="90" width="120" height="64"/>
+    <text class="title" x="1235" y="118" text-anchor="middle">Filtered Context</text>
+    <text class="sub" x="1235" y="138" text-anchor="middle">clean context → LLM</text>
+  </g>
+  <g class="edges">
+    <line class="arrow" x1="190" y1="122" x2="225" y2="122" marker-end="url(#arrow)"/>
+    <line class="arrow" x1="425" y1="122" x2="460" y2="122" marker-end="url(#arrow)"/>
+    <line class="arrow" x1="660" y1="122" x2="695" y2="122" marker-end="url(#arrow)"/>
+    <line class="arrow" x1="895" y1="122" x2="930" y2="122" marker-end="url(#arrow)"/>
+    <line class="arrow" x1="1130" y1="122" x2="1165" y2="122" marker-end="url(#arrow)"/>
+  </g>
+  <text class="sub" x="647" y="205" text-anchor="middle">Each filter removes a different kind of noise, leaving a smaller, higher-quality context for the LLM.</text>
+</svg>
