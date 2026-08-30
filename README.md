@@ -174,6 +174,8 @@ Amazon Bestseller in Generative AI · 1,500+ readers · ⭐ 4.6
 
 🧠 **[Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques)** - 30 notebooks on agent memory: vector stores, knowledge graphs, Mem0, MemGPT, Zep, Graphiti.
 
+🔍 **[Hybrid RAG Issue & PR Assistant](https://github.com/Cagrik34/Hybrid-RAG-Issue-PR-Assistant)** - Zero-cloud hybrid retrieval GitHub Action combining SQLite FTS5 (Okapi BM25) and dense vector embeddings via Reciprocal Rank Fusion (k=60) with AST-grounded line citations directly in CI/CD runners.
+
 ## Join the community
 
 Contributions make this better - propose ideas, share techniques, or give feedback via **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)**.
