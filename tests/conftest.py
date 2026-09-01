@@ -22,7 +22,7 @@ def pytest_addoption(parser):
 def notebook_paths(request):
     exclude = request.config.getoption("--exclude")
     folder = 'all_rag_techniques/'
-    notebook_paths = os.listdir(folder)
+    notebook_paths = [n for n in os.listdir(folder) if n.endswith('.ipynb')]
 
     if exclude:
         exclude_notebooks = set(s for s in exclude.split(',') if s.endswith('.ipynb'))
