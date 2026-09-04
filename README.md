@@ -112,6 +112,14 @@ We gratefully acknowledge the organizations and individuals who have made signif
 
 *I break these ideas down into short, one-idea-per-episode explainers on YouTube.*
 
+<p align="center">
+  <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&amp;click=youtube-readme-hallucination&amp;target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAiyRZV38Lk0%26list%3DPLBrpE2PttR2k&amp;retarget=0&amp;text=youtube-readme-hallucination">
+    <img src="https://img.youtube.com/vi/AiyRZV38Lk0/maxresdefault.jpg" width="60%" alt="">
+    <br><b>🆕 AI Is Rewarded for Guessing [Hallucination]</b>
+  </a><br>
+  <sub>why a model guesses instead of saying I don't know, watched on its own token probabilities, and where retrieval moves the fact out of the guess</sub>
+</p>
+
 <table>
 <tr>
 <td width="25%" align="center" valign="top">
