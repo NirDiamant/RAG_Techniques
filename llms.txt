@@ -1,0 +1,90 @@
+# RAG Techniques
+
+> A community-driven collection of 41 runnable Jupyter notebooks teaching Retrieval-Augmented Generation (RAG), from foundational retrieval and chunking through adaptive, agentic, graph-based and self-correcting systems. Each notebook is self-contained: the intuition behind one technique, a full implementation, and the paper or source it derives from. This is a teaching repository rather than a library, so there is no package to install and no public API. Authored by Nir Diamant. Licensed under a custom non-commercial license.
+
+## Core Documents
+
+- [README](https://github.com/NirDiamant/RAG_Techniques/blob/main/README.md): Overview, the full technique index, prerequisites and quick start.
+- [CONTRIBUTING](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md): How to add a technique and the pull request checklist.
+- [AGENTS](https://github.com/NirDiamant/RAG_Techniques/blob/main/AGENTS.md): Repository conventions for AI coding agents.
+- [helper_functions.py](https://github.com/NirDiamant/RAG_Techniques/blob/main/helper_functions.py): Shared loaders, splitters and retrieval utilities imported across notebooks.
+- [LICENSE](https://github.com/NirDiamant/RAG_Techniques/blob/main/LICENSE): Custom non-commercial license. Read before any commercial reuse.
+
+## Foundational RAG
+
+- [Simple RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb): The baseline pipeline. Load, chunk, embed, retrieve, generate.
+- [Simple RAG with LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb): The same baseline built on LlamaIndex.
+- [Simple CSV RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb): Retrieval over tabular CSV data.
+- [Simple CSV RAG with LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb): The CSV baseline on LlamaIndex.
+- [Local RAG with Hugging Face and FAISS](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/local_rag_huggingface_faiss.ipynb): A fully local pipeline with no hosted API calls.
+- [Choose Chunk Size](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb): How chunk size changes retrieval quality, and how to pick one.
+
+## Chunking and Indexing
+
+- [Semantic Chunking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb): Split on meaning shifts rather than fixed character counts.
+- [Proposition Chunking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb): Decompose text into standalone factual propositions before indexing.
+- [Contextual Chunk Headers](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb): Prepend document and section context to each chunk so it survives retrieval alone.
+- [Hierarchical Indices](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb): Two-tier retrieval. Summaries first, then the chunks beneath the winning summary.
+- [RAPTOR](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb): Recursive clustering and summarization into a tree, retrieved at multiple levels of abstraction.
+- [Document Augmentation](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb): Generate questions each chunk answers, and index those alongside the text.
+- [Context Enrichment Window](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb): Retrieve a chunk, then return its neighbours for continuity.
+- [Context Enrichment Window with LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb): The same window technique on LlamaIndex.
+
+## Query Transformation
+
+- [Query Transformations](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb): Rewrite, expand and decompose a query before retrieving.
+- [HyDE](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb): Embed a hypothetical answer instead of the question, then retrieve against it.
+- [HyPE](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyPE_Hypothetical_Prompt_Embeddings.ipynb): Move the hypothetical step to index time by embedding generated prompts.
+
+## Retrieval Strategies
+
+- [Fusion Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb): Combine keyword (BM25) and vector retrieval, then fuse the ranked lists.
+- [Fusion Retrieval with LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb): Hybrid fusion on LlamaIndex.
+- [Reranking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb): Over-retrieve, then reorder with a cross-encoder or LLM judge.
+- [Reranking with LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb): Reranking on LlamaIndex.
+- [Multi-Faceted Filtering](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_faceted_filtering.ipynb): Metadata, similarity, diversity and relevance filters applied together.
+- [Dartboard](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/dartboard.ipynb): Optimize retrieval for relevance and diversity jointly rather than top-k similarity.
+- [Relevant Segment Extraction](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb): Assemble contiguous multi-chunk segments instead of isolated chunks.
+- [Contextual Compression](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb): Compress retrieved context down to the parts that answer the question.
+- [Adaptive Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb): Classify the query type and route it to a matching retrieval strategy.
+- [Explainable Retrieval](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb): Return why each result was retrieved alongside the result.
+
+## Iterative and Self-Correcting RAG
+
+- [Self-RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb): The model decides when to retrieve, and critiques its own retrieved evidence.
+- [CRAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb): Corrective RAG. Grade retrieved documents and fall back to web search when they are weak.
+- [Reliable RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb): Validation and hallucination checks layered over a standard pipeline.
+- [Retrieval with Feedback Loop](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb): Learn from user feedback to improve future retrieval.
+- [Agentic RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Agentic_RAG.ipynb): An agent plans, retrieves, reflects and retries across multiple steps.
+- [MemoRAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/memorag.ipynb): A global memory over the corpus that guides retrieval.
+
+## Graph RAG
+
+- [Graph RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb): Build a knowledge graph from documents and traverse it to answer multi-hop questions.
+- [Graph RAG with Local Attribution](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag_local_attribution.ipynb): Graph traversal that keeps span-level source attribution.
+- [Microsoft GraphRAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb): Microsoft's community-detection approach to graph retrieval.
+- [GraphRAG with Milvus](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graphrag_with_milvus_vectordb.ipynb): Graph retrieval backed by the Milvus vector database.
+- [LightRAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/light_rag.ipynb): A lighter graph-and-vector hybrid.
+
+## Structured and Multimodal
+
+- [JSON RAG](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/json_rag.ipynb): Retrieval over structured JSON documents.
+- [Multimodal RAG with Captioning](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb): Caption images so they become retrievable text.
+- [Multimodal RAG with ColPali](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_colpali.ipynb): Retrieve document pages visually, without an OCR step.
+
+## Evaluation
+
+- [Define Evaluation Metrics](https://github.com/NirDiamant/RAG_Techniques/blob/main/evaluation/define_evaluation_metrics.ipynb): What to measure. Faithfulness, relevance, context precision and recall.
+- [End-to-End RAG Evaluation](https://github.com/NirDiamant/RAG_Techniques/blob/main/evaluation/end-2-end_rag_evaluation.ipynb): Evaluating a full pipeline rather than retrieval alone.
+- [DeepEval](https://github.com/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb): Evaluation with the DeepEval framework.
+- [Grouse](https://github.com/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb): Evaluation with the Grouse framework.
+- [evalute_rag.py](https://github.com/NirDiamant/RAG_Techniques/blob/main/evaluation/evalute_rag.py): Reusable evaluation harness.
+
+## Related work by the same author
+
+- [RAG Made Simple](https://diamant-ai.com/rag-made-simple): The book that extends this repository. A 400-page visual guide to RAG.
+- [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents): Tutorials for building GenAI agents, from single bots to multi-agent systems.
+- [agents-towards-production](https://github.com/NirDiamant/agents-towards-production): Taking agents from prototype to deployed product.
+- [Agent_Memory_Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques): 30 notebooks on memory for LLM agents.
+- [Newsletter](https://newsletter.diamant-ai.com): Weekly deep dives on GenAI engineering.
+- [Community Discord](https://discord.gg/cA6Aa4uyDX): Questions, contributions and discussion.

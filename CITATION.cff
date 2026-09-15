@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "RAG Techniques: A Community-Driven Collection of Retrieval-Augmented Generation Methods"
+version: "1.0.0"
+date-released: "2024-07-13"
+authors:
+  - family-names: "Diamant"
+    given-names: "Nir"
+repository-code: "https://github.com/NirDiamant/RAG_Techniques"
+url: "https://github.com/NirDiamant/RAG_Techniques"
+abstract: >-
+  A community-driven collection of 41 runnable Jupyter notebooks teaching
+  Retrieval-Augmented Generation (RAG), from foundational retrieval and
+  chunking through adaptive, agentic, graph-based and self-correcting
+  systems, with an accompanying evaluation suite. Each notebook covers the
+  intuition behind one technique, a full implementation, and the source it
+  derives from.
+keywords:
+  - rag
+  - retrieval-augmented-generation
+  - llm
+  - embeddings
+  - vector-database
+  - semantic-search
+  - agentic-rag
+  - graph-rag
+  - generative-ai
+  - tutorials
+license: LicenseRef-Custom-NonCommercial
