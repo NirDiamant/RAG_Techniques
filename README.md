@@ -28,15 +28,20 @@ A community-driven hub of **42+ runnable notebooks** covering RAG techniques fro
 
 Your coding agent starts every session knowing nothing about your project, so it guesses. Paste one line into the agent you already have open, and about fifteen minutes later your repository has a docs layer written from the code itself, plus a card scoring what your agent knew before and after.
 
-<table>
-<tr>
-<td align="center">📋<br><b>One line,<br>your own repo</b></td>
-<td align="center">⏱️<br><b>About fifteen<br>minutes</b></td>
-<td align="center">🏷️<br><b>A card that<br>scores your agent</b></td>
-</tr>
-</table>
+We ran it on six repositories you already depend on. Each one was asked five questions about itself, cold, then again after the layer was written. The last column counts statements in that project's **own documentation** that its **own code disproves**:
 
-The last two people who ran it posted their cards: **0 of 5 → 5 of 5** and **3 of 5 → 4 of 5**, on five questions about their own codebase. No signup.
+| repo | before | after | own docs its code disproves |
+|---|---|---|---|
+| fastapi | 2 of 5 | **5 of 5** | 2 |
+| flask | 3 of 5 | **5 of 5** | 6 |
+| django | 3 of 5 | **4 of 5** | 1 |
+| express | 2 of 5 | **4 of 5** | 4 |
+| requests | 2 of 5 | **4 of 5** | 0 |
+| langchain | 5 of 5 | **4 of 5** | 5 |
+
+Flask's six include four documentation examples that raise `TypeError` when you run them. Langchain scored *lower* afterwards, because it already ships a 380-line agent instruction file and the cold read was grading theirs; that row is in the table anyway.
+
+Clone any of those repos, paste the same line, and check the number yourself. No signup.
 
 <a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-direct&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Flectures%2F00-present%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques-direct&retarget=0&text=course-free-module-direct"><img src="images/free-module-button.svg" alt="Claim your free module" width="420"></a>
 
