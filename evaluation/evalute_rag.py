@@ -70,7 +70,7 @@ def create_deep_eval_test_cases(
 # Define evaluation metrics
 correctness_metric = GEval(
     name="Correctness",
-    model="gpt-4-turbo",
+    model="gpt-5.6-sol",
     evaluation_params=[
         LLMTestCaseParams.EXPECTED_OUTPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT
@@ -82,13 +82,13 @@ correctness_metric = GEval(
 
 faithfulness_metric = FaithfulnessMetric(
     threshold=0.7,
-    model="gpt-4-turbo",
+    model="gpt-5.6-sol",
     include_reason=False
 )
 
 relevance_metric = ContextualRelevancyMetric(
     threshold=1,
-    model="gpt-4-turbo",
+    model="gpt-5.6-sol",
     include_reason=True
 )
 
@@ -105,7 +105,7 @@ def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     """
     
     # Initialize LLM
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4-turbo")
+    llm = ChatOpenAI(model_name="gpt-5.6-sol")
     
     # Create evaluation prompt
     eval_prompt = PromptTemplate.from_template("""
