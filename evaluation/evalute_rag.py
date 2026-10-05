@@ -70,7 +70,7 @@ def create_deep_eval_test_cases(
 # Define evaluation metrics
 correctness_metric = GEval(
     name="Correctness",
-    model="gpt-5.6-sol",
+    model="gpt-5.4",  # GEval needs logprobs for probability-weighted scoring.
     evaluation_params=[
         LLMTestCaseParams.EXPECTED_OUTPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT
