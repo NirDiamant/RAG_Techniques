@@ -1,0 +1,88 @@
+# Turns Qodo's code review into a "Changes requested" review.
+#
+# When Qodo posts or updates its "Code Review by Qodo" comment, this workflow reads the
+# latest results. If any finding at High or Medium severity is still open (bugs, rule
+# violations of the contribution guidelines, or skill insights), it requests changes on
+# the PR so the contributor knows they must fix them. Once Qodo marks every High and
+# Medium finding resolved, the request is dismissed.
+#
+# Safe for fork PRs: it runs on the base repository, never checks out PR code, and only
+# reads comments written by the Qodo bot.
+name: Qodo request changes
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  pull-requests: write
+
+concurrency:
+  group: qodo-request-changes-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    if: >-
+      github.event.issue.pull_request &&
+      github.event.issue.state == 'open' &&
+      github.event.comment.user.login == 'qodo-code-review[bot]' &&
+      startsWith(github.event.comment.body, '<h3>Code Review by Qodo</h3>')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.comment.body;
+            const commentUrl = context.payload.comment.html_url;
+            const pull_number = context.payload.issue.number;
+            const { owner, repo } = context.repo;
+
+            // Only the latest results: everything above "Previous reviews".
+            const latest = body.split('<strong>Previous reviews</strong>')[0];
+
+            // Collect open findings under the High (or Critical) and Medium headers.
+            const blocking = [];
+            let severity = null;
+            for (const line of latest.split('\n')) {
+              const header = line.match(/^\S+\s+\*\*(Critical|High|Medium|Low)\*\*\s*$/);
+              if (header) { severity = header[1]; continue; }
+              if (line.trim() === '---') { severity = null; continue; }
+              const item = line.match(/^<summary>\s+\d+\.\s+(.*)<\/summary>\s*$/);
+              if (!item || !severity || severity === 'Low') continue;
+              if (item[1].includes('✓ Resolved')) continue;
+              const kind = (item[1].match(/<code>([^<]*(?:Bug|Rule violation|Skill insight|Requirement gap)[^<]*)<\/code>/) || [])[1] || '';
+              const title = item[1].split('<code>')[0].replace(/<[^>]+>/g, '').trim();
+              blocking.push({ severity, title, kind });
+            }
+
+            const { data: reviews } = await github.rest.pulls.listReviews({ owner, repo, pull_number, per_page: 100 });
+            const mine = reviews.filter(r => r.user.login === 'github-actions[bot]' && r.state === 'CHANGES_REQUESTED');
+
+            if (blocking.length > 0) {
+              if (mine.length > 0) {
+                core.info(`Changes already requested; ${blocking.length} finding(s) still open.`);
+                return;
+              }
+              const list = blocking.map(f => `- **${f.severity}** · ${f.title}${f.kind ? ` (${f.kind})` : ''}`).join('\n');
+              await github.rest.pulls.createReview({
+                owner, repo, pull_number, event: 'REQUEST_CHANGES',
+                body: [
+                  'Thanks for the contribution! Qodo\'s review found issues that need fixing before this PR can be merged:',
+                  '',
+                  list,
+                  '',
+                  `Each one is explained, with a suggested fix, in [Qodo's review](${commentUrl}). The contribution rules are in [CONTRIBUTING.md](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md).`,
+                  'Push a fix and Qodo will re-review automatically; this request is cleared once nothing at High or Medium severity is left open.',
+                ].join('\n'),
+              });
+              core.info(`Requested changes for ${blocking.length} finding(s).`);
+            } else {
+              for (const r of mine) {
+                await github.rest.pulls.dismissReview({
+                  owner, repo, pull_number, review_id: r.id,
+                  message: 'Qodo reports no open High or Medium findings. Thanks for the fixes!',
+                });
+              }
+              core.info(mine.length ? 'Dismissed the change request.' : 'No blocking findings.');
+            }
