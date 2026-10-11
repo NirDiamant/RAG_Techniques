@@ -56,33 +56,45 @@ jobs:
               blocking.push({ severity, title, kind });
             }
 
-            const { data: reviews } = await github.rest.pulls.listReviews({ owner, repo, pull_number, per_page: 100 });
+            const reviews = await github.paginate(github.rest.pulls.listReviews, { owner, repo, pull_number, per_page: 100 });
             const mine = reviews.filter(r => r.user.login === 'github-actions[bot]' && r.state === 'CHANGES_REQUESTED');
 
             if (blocking.length > 0) {
+              const list = blocking.map(f => `- **${f.severity}** · ${f.title}${f.kind ? ` (${f.kind})` : ''}`).join('\n');
+              const reviewBody = [
+                'Thanks for the contribution! Qodo\'s review found issues that need fixing before this PR can be merged:',
+                '',
+                list,
+                '',
+                `Each one is explained, with a suggested fix, in [Qodo's review](${commentUrl}). The contribution rules are in [CONTRIBUTING.md](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md).`,
+                'Push a fix and Qodo will re-review automatically; this request is cleared once nothing at High or Medium severity is left open.',
+              ].join('\n');
               if (mine.length > 0) {
-                core.info(`Changes already requested; ${blocking.length} finding(s) still open.`);
+                // Keep the existing request current instead of stacking a new one.
+                const latestReview = mine[mine.length - 1];
+                if (latestReview.body !== reviewBody) {
+                  await github.rest.pulls.updateReview({ owner, repo, pull_number, review_id: latestReview.id, body: reviewBody });
+                }
+                core.info(`Changes already requested; updated list of ${blocking.length} open finding(s).`);
                 return;
               }
-              const list = blocking.map(f => `- **${f.severity}** · ${f.title}${f.kind ? ` (${f.kind})` : ''}`).join('\n');
-              await github.rest.pulls.createReview({
-                owner, repo, pull_number, event: 'REQUEST_CHANGES',
-                body: [
-                  'Thanks for the contribution! Qodo\'s review found issues that need fixing before this PR can be merged:',
-                  '',
-                  list,
-                  '',
-                  `Each one is explained, with a suggested fix, in [Qodo's review](${commentUrl}). The contribution rules are in [CONTRIBUTING.md](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md).`,
-                  'Push a fix and Qodo will re-review automatically; this request is cleared once nothing at High or Medium severity is left open.',
-                ].join('\n'),
-              });
+              await github.rest.pulls.createReview({ owner, repo, pull_number, event: 'REQUEST_CHANGES', body: reviewBody });
               core.info(`Requested changes for ${blocking.length} finding(s).`);
             } else {
               for (const r of mine) {
-                await github.rest.pulls.dismissReview({
-                  owner, repo, pull_number, review_id: r.id,
-                  message: 'Qodo reports no open High or Medium findings. Thanks for the fixes!',
-                });
+                try {
+                  await github.rest.pulls.dismissReview({
+                    owner, repo, pull_number, review_id: r.id,
+                    message: 'Qodo reports no open High or Medium findings. Thanks for the fixes!',
+                  });
+                } catch (err) {
+                  // On a protected branch the workflow token may lack dismissal rights.
+                  core.warning(`Could not dismiss review ${r.id}: ${err.message}`);
+                  await github.rest.issues.createComment({
+                    owner, repo, issue_number: pull_number,
+                    body: 'Qodo reports no open High or Medium findings, but the automated change request could not be dismissed. A maintainer can dismiss it manually.',
+                  });
+                }
               }
-              core.info(mine.length ? 'Dismissed the change request.' : 'No blocking findings.');
+              core.info(mine.length ? 'Handled the change request.' : 'No blocking findings.');
             }
