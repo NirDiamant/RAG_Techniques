@@ -47,7 +47,7 @@ When adding a new RAG method to the repository, please follow these additional s
 
    ### A. Add a List Entry
    - Put it in the category section that fits your method (for example "🌱 Foundational RAG Techniques" or "🏗️ Advanced Architectures"), positioned by complexity (methods are sorted from easiest to most complicated)
-   - Add one bullet per implementation you provide (LangChain, LlamaIndex, Runnable Script), each with the GitHub and Colab badges pointing at your notebook
+   - Add one bullet per implementation you provide: a notebook (LangChain or LlamaIndex) gets the GitHub and Colab badges pointing at it, and a Runnable Script gets a plain link to its `.py` file
    - Follow it with a short **Overview** and **Implementation** description
    - Choose an emoji that represents your method
 
