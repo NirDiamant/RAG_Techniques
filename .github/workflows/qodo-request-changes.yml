@@ -52,7 +52,11 @@ jobs:
               if (!item || !severity || severity === 'Low') continue;
               if (item[1].includes('✓ Resolved')) continue;
               const kind = (item[1].match(/<code>([^<]*(?:Bug|Rule violation|Skill insight|Requirement gap)[^<]*)<\/code>/) || [])[1] || '';
-              const title = item[1].split('<code>')[0].replace(/<[^>]+>/g, '').trim();
+              const title = item[1].split('<code>')[0].replace(/<[^>]+>/g, '')
+                .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+                .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+                .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+                .trim();
               blocking.push({ severity, title, kind });
             }
 
