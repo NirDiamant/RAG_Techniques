@@ -1,0 +1,61 @@
+[github_app]
+pr_commands = [
+    "/agentic_describe",
+    "/agentic_review",
+]
+
+[review_agent]
+# This repo is almost entirely Jupyter notebooks. Inline comments anchor to raw
+# .ipynb JSON lines, which is unreadable for contributors, so keep feedback in
+# the summary comment. Flip to "both" if notebook diff rendering improves.
+comments_location_policy = "summary"
+inline_comments_severity_threshold = 3
+# REVIEW.md at the repo root carries the contribution-guidelines instructions.
+enable_review_md = true
+
+issues_user_guidelines = """
+This is a public educational repository of RAG tutorials. Contributors are
+often first-time open source contributors. Review for teaching quality, not
+production hardening.
+
+Prioritize:
+- Code that will not run as written (bad imports, undefined names, API calls
+  that no longer match the library versions the notebook installs).
+- Explanations that are factually wrong or misleading about how a RAG
+  technique works.
+- Real API keys, tokens, or credentials committed in notebook cells or outputs.
+- Notebook outputs containing personal data, private URLs, or customer data.
+- New or changed dependencies that are unpinned, typosquatted, abandoned, or
+  pulled from a non-PyPI source.
+- Obfuscated code, dynamic exec/eval of downloaded content, network calls to
+  unexpected hosts, or anything that reads local files or environment
+  variables beyond what the tutorial needs.
+- Broken links, and Colab badges pointing at the wrong notebook path.
+
+Do NOT flag as issues:
+- Missing tests, type hints, docstrings, or logging.
+- Missing production error handling or retry logic. Tutorial code is
+  deliberately simple.
+- print() used instead of a logger.
+- Hardcoded example values, small sample datasets, or magic numbers used to
+  make a concept concrete.
+- Long notebook cells, when the length serves the explanation.
+
+Report separately, as a note rather than a bug: any promotional or commercial
+content such as vendor product plugs, affiliate links, company branding, or
+links to paid services. Do not treat it as a defect. Just surface it clearly
+so the maintainer can decide.
+"""
+
+compliance_user_guidelines = """
+Check the contribution against CONTRIBUTING.md, using the format the README
+uses today:
+- New RAG technique notebooks belong in the `all_rag_techniques/` folder.
+- README.md must be updated in BOTH places: a numbered list entry in the
+  matching category section AND a row in the techniques table. Updating only
+  one is the most common miss.
+- Every GitHub and Colab link in the new entries points at the new notebook's
+  real path.
+- Judge only what the PR adds or changes. The existing README numbering has
+  known gaps and duplicates; do not ask contributors to fix them.
+"""

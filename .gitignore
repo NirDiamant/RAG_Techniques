@@ -18,6 +18,7 @@
 !*.yml
 !.github
 !.github/workflows
+!.pr_agent.toml
 
 # remove specific files
 __pycache__/

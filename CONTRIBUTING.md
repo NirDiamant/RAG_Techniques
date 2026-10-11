@@ -42,54 +42,42 @@ Found a problem or have a suggestion? Please create an issue on GitHub, providin
 
 When adding a new RAG method to the repository, please follow these additional steps:
 
-1. Create your notebook in the `all_rag_techniques` folder.
-2. Update BOTH the list and table in README.md:
+1. Create your notebook in the `all_rag_techniques` folder. If you also write a runnable script version, put it in `all_rag_techniques_runnable_scripts`.
+2. Add your technique to README.md in BOTH places, under "Advanced Techniques": the list and the table.
 
-   ### A. Update the List of Techniques
-   - Add your new method to the list of techniques in the README
-   - Place it in the appropriate position based on complexity (methods are sorted from easiest to most complicated)
-   - Use the following format for the link:
-     ```
-     ### [Number]. [Your Method Name 🏷️](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_file_name.ipynb)
-     ```
-   - Replace `[Number]` with the appropriate number, `[Your Method Name]` with your method's name, and `your_file_name.ipynb` with the actual name of your notebook file
-   - Choose an appropriate emoji that represents your method
+   ### A. Add a List Entry
+   - Put it in the category section that fits your method (for example "🌱 Foundational RAG Techniques" or "🏗️ Advanced Architectures"), positioned by complexity (methods are sorted from easiest to most complicated)
+   - Add one bullet per implementation you provide: a notebook (LangChain or LlamaIndex) gets the GitHub and Colab badges pointing at it, and a Runnable Script gets a plain link to its `.py` file
+   - Follow it with a short **Overview** and **Implementation** description
+   - Choose an emoji that represents your method
 
-   ### B. Update the Techniques Table
-   - Add a new row to the table with your technique
-   - Include all available implementations (LangChain, LlamaIndex, and/or Runnable Script)
-   - Use the following format:
-     ```
-     | [Number] | [Category] | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | [Description] |
-     ```
-   - Make sure to:
-     - Update the technique number to maintain sequential order
-     - Choose the appropriate category with emoji
-     - Include links to all available implementations
-     - Write a clear, concise description
+   For example, this is the current entry for Choose Chunk Size:
+   ```
+   4. Choose Chunk Size 📏
+      - **LangChain**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb)
+      - **[Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py)**
+
+      #### Overview 🔎
+      Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
+
+      #### Implementation 🛠️
+      Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
+   ```
+
+   ### B. Add a Table Row
+   - Add a row to the techniques table with the number, the category (with its emoji), the technique name, and the GitHub and Colab badges
+   - Use the same number as your list entry
+
+   For example:
+   ```
+   | 4 | Foundational 🌱 | Optimizing Chunk Sizes | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb) |
+   ```
 
    ### C. Important Note
-   - After inserting your new method, make sure to update the numbers of all subsequent techniques to maintain the correct order in BOTH the list and the table
-   - The numbers in the list and table must match exactly
-   - If you add a new technique as number 5, all techniques after it should be incremented by 1 in both places
+   - Always add BOTH the list entry and the table row. Adding only one is the most common miss.
+   - Check that every link points at your notebook's real path in `all_rag_techniques`.
 
-For example, if you're adding a new technique between Simple RAG and Next Method:
-
-In the list:
-```
-### 1. [Simple RAG 🌱](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)
-### 2. [Your New Method 🆕](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/your_new_method.ipynb)
-### 3. [Next Method 🔜](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/next_method.ipynb)
-```
-
-And in the table:
-```
-| 1 | Foundational 🌱 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Basic RAG implementation |
-| 2 | Your Category 🆕 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Your new method description |
-| 3 | Next Category 🔜 | [LangChain](...) / [LlamaIndex](...) / [Runnable Script](...) | Next method description |
-```
-
-Remember: Always update BOTH the list and table when adding new techniques, and ensure the numbers match exactly between them.
+Pull requests are reviewed automatically against these guidelines. If the review asks for changes, the comment names the rule and how to fix it.
 
 ## Notebook Structure
 
