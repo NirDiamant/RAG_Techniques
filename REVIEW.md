@@ -16,14 +16,17 @@ These are must-fix findings (Medium):
 - A new technique without BOTH a README list entry and a README table row.
 - New README entries that do not follow the current README format, or whose
   GitHub or Colab links do not point at the new notebook.
+- A new technique whose README list entry and table row carry different
+  numbers.
 - A new notebook that starts with code instead of a title, an overview and an
   explanation of the technique.
 - A code cell the PR adds without a markdown cell before it describing what the
   cell does.
 
 These are recommendations (Low) and must not block a merge: a missing diagram,
-missing comparison or references sections, leftover outputs, numbering of the
-new README entries, and runnable script placement.
+missing comparison or references sections, leftover outputs, where the new
+technique sits in the simplest-to-most-complex order, and runnable script
+placement.
 
 ## Scope
 
