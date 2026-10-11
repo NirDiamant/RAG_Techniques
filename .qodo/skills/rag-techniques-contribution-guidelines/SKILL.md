@@ -60,20 +60,18 @@ These apply when the PR adds a new `.ipynb` that presents a RAG technique.
    Missing either one is a finding. Adding the list entry and forgetting the
    table row is the most common miss.
 
-3. **README entries follow the current format (Medium).** Check new entries
-   against the format the README uses today, which CONTRIBUTING.md shows with
-   the Choose Chunk Size entry as its example:
-   - **List entry:** a numbered item, `N. Technique Name EMOJI`, followed by a
-     bullet per available implementation (`**LangChain**:`, `**LlamaIndex**:`,
-     `**[Runnable Script](...)**`) carrying GitHub-View and Colab badges, then
-     `#### Overview 🔎` and `#### Implementation 🛠️` subsections with a short
-     description each.
-   - **Table row:** `| N | Category EMOJI | Technique Name | badges |`, with
-     the GitHub-View badge and the Colab badge.
-   - **Links point at the file this PR adds.** Every GitHub and Colab link in
-     the new entries must resolve to the new notebook's real path under
-     `all_rag_techniques/`. A typo or a link to a different notebook is a
-     finding.
+3. **README entries point at the new notebook (Medium).** The list entry must
+   be a numbered item in a category section, and the table row must carry the
+   number, the category, and the technique name. Every GitHub and Colab link in
+   the new entries must resolve to the new notebook's real path under
+   `all_rag_techniques/`. A typo or a link to a different notebook is a
+   finding.
+
+   **The entry's layout (Low).** Existing README entries vary in layout, so
+   treat the rest as a recommendation, using the Choose Chunk Size example in
+   CONTRIBUTING.md: a bullet per implementation (GitHub and Colab badges for a
+   notebook, a plain link for a Runnable Script), then short `#### Overview 🔎`
+   and `#### Implementation 🛠️` descriptions.
 
 4. **Numbering of the new entries.** The new list entry and the new table row
    must carry the same number (Medium). Where the technique sits in the
