@@ -10,6 +10,8 @@
 !*svg
 !*.png
 !LICENSE
+!.qodo
+!.qodo/**
 !*.gif
 !all_rag_techniques
 !data
