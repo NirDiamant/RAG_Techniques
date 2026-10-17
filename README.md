@@ -22,30 +22,15 @@ A community-driven hub of **42+ runnable notebooks** covering RAG techniques fro
 
 **[Prompt to Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-free-module-cta)** - my full course on building software with AI the way professionals do: the methods and paradigms behind reliable, efficient, modular production systems, taught systematically. 17 modules, each pairing a video lecture with a hands-on lab, from your first structured prompt to a working production system.
 
-**The course is live.** Every module is out, lecture and lab.
+**$199 · one payment · lifetime access · 30-day refund, no questions**<br>
+<sub>$99 in India, Pakistan, Bangladesh, Sri Lanka and Nepal, applied at checkout.</sub>
 
-### 🎁 Try it on your own repo, free
+> "I went through the module and I like that you explicitly separate advisory rules from rules that become executable through hooks, tests or CI."<br>
+> **Theo Valmis, Mneme HQ**
 
-Your coding agent starts every session knowing nothing about your project, so it guesses. Paste one line into the agent you already have open, and about fifteen minutes later your repository has a docs layer written from the code itself, plus a card scoring what your agent knew before and after.
+### 👉 [**Get the course: $199**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-buy-top&target=https%3A%2F%2Fdiamant-ai.com%2Fbuy%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques%26utm_content%3Dreadme-buy&retarget=0&text=course-buy-top)
 
-We ran it on six repositories you already depend on. Each one was asked five questions about itself, cold, then again after the layer was written. The last column counts statements in that project's **own documentation** that its **own code disproves**:
-
-| repo | before | after | own docs its code disproves |
-|---|---|---|---|
-| fastapi | 2 of 5 | **5 of 5** | 2 |
-| flask | 3 of 5 | **5 of 5** | 6 |
-| django | 3 of 5 | **4 of 5** | 1 |
-| express | 2 of 5 | **4 of 5** | 4 |
-| requests | 2 of 5 | **4 of 5** | 0 |
-| langchain | 5 of 5 | **4 of 5** | 5 |
-
-Flask's six include four documentation examples that raise `TypeError` when you run them. Langchain scored *lower* afterwards, because it already ships a 380-line agent instruction file and the cold read was grading theirs; that row is in the table anyway.
-
-Clone any of those repos, paste the same line, and check the number yourself. No signup.
-
-<a href="https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-direct&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Flectures%2F00-present%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques-direct&retarget=0&text=course-free-module-direct"><img src="images/free-module-button.svg" alt="Claim your free module" width="420"></a>
-
-### 👉 [**Get the full course**](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-full-cta&target=https%3A%2F%2Fwww.diamant-ai.com%2Fcourses%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques&retarget=0&text=course-full-cta)
+Not ready? [Try the first module free, no signup](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-free-module-direct&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Flectures%2F00-present%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques-direct&retarget=0&text=course-free-module-direct) · Expensing it? [The note for your manager](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=course-expense&target=https%3A%2F%2Fp2p-course.diamant-ai.com%2Fexpense%3Futm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Drag-techniques%26utm_content%3Dreadme-expense&retarget=0&text=course-expense)
 
 </div>
 
