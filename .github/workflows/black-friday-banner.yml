@@ -1,0 +1,65 @@
+# Black Friday 2026: swaps the course block's price line for the sale line and back.
+#
+# The sale runs Fri Nov 27 00:00 to Mon Nov 30 23:59, Israel time (Nov 26 22:00 to Nov 30 21:59 UTC),
+# the same window as BLACKFRIDAY2026 in Polar and in diamant-ai.com's src/lib/offer.ts. The buy link
+# never changes: diamant-ai.com/buy sends everyone to the sale checkout inside the window by itself.
+# Only the text needs swapping, and both swaps are timed so a late run errs cheap: the README can say
+# $199 while the checkout charges $99, never the other way round.
+#
+# A schedule fires every year, so the job only acts in 2026. A VPS cron (nir-vps,
+# ~/course-banner/check.sh) reads the live README afterwards and posts to Slack if a swap did not land.
+# `check` mode (manual) verifies the README still holds the exact text both swaps expect, and writes nothing.
+name: black-friday-banner
+
+on:
+  schedule:
+    - cron: "7 22 26 11 *"   # on:  Nov 26 22:07 UTC = Fri Nov 27 00:07 Israel
+    - cron: "30 21 30 11 *"  # off: Nov 30 21:30 UTC = Mon Nov 30 23:30 Israel
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "on, off or check"
+        required: true
+        default: check
+
+permissions:
+  contents: write
+
+jobs:
+  swap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Swap the price line
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || (github.event.schedule == '7 22 26 11 *' && 'on' || 'off') }}
+        run: |
+          if [ "$(date -u +%Y)" != "2026" ] && [ "$MODE" != "check" ]; then echo "Not 2026, nothing to do."; exit 0; fi
+          python3 - <<'PY'
+          import os, sys
+          mode = os.environ["MODE"]
+          regular = ("**$199 · one payment · lifetime access · 30-day refund, no questions**<br>\n"
+                     "<sub>$99 in India, Pakistan, Bangladesh, Sri Lanka and Nepal, applied at checkout.</sub>")
+          sale = ("**🖤 Black Friday, the only sale of the year: <s>$199</s> $99 until Monday night, Nov 30.**<br>\n"
+                  "<sub>One payment · lifetime access · 30-day refund, no questions. The discount is applied at checkout.</sub>")
+          pairs = [(regular, sale), ("[**Get the course: $199**]", "[**Get the course: $99**]")]
+          s = open("README.md", encoding="utf-8").read()
+          if mode == "check":
+              ok = all(s.count(a) == 1 for a, _ in pairs)
+              print("README holds the text the swap expects" if ok else "README text changed: the swap would fail")
+              sys.exit(0 if ok else 1)
+          if mode == "off":
+              pairs = [(b, a) for a, b in pairs]
+          for src, dst in pairs:
+              if s.count(dst) == 1 and s.count(src) == 0:
+                  print(f"already {mode}"); continue
+              if s.count(src) != 1:
+                  sys.exit(f"Expected exactly one copy of the {mode} source text, found {s.count(src)}. README changed; swap by hand.")
+              s = s.replace(src, dst)
+          open("README.md", "w", encoding="utf-8").write(s)
+          PY
+          if [ "$MODE" = "check" ] || git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Black Friday banner: $MODE"
+          git push
