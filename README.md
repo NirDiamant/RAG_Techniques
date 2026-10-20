@@ -301,11 +301,12 @@ Explore our extensive list of cutting-edge RAG techniques:
     - 📄 Data Loading & Extraction: JSON data with multiple fields per entry is loaded, and most relevant text fields are combined to generate an embedding.
     - 🔍 Retrieval: The system retrieves the most relevant JSON entries based on the user's query.
 
+<!-- a new list, so this entry shows the number of its table row -->
 38. **Document Parsing with Mistral OCR 4 📄**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb)
    - **Sponsored by [Mistral AI](https://mistr.al/ocr-nir-github)**
 
    #### Overview 🔎
-   Every technique here starts by turning a PDF into text, and none of them checks what the parser produced. This notebook prints it, shows a results table losing its structure before indexing, and swaps the parsing step for Mistral OCR 4 while the rest of the pipeline stays identical.
+   Most PDF-based techniques here start with a plain text extractor, and none of them checks what it produced. This notebook prints it, shows a results table losing its structure before indexing, and swaps the parsing step for Mistral OCR 4 while the rest of the pipeline stays identical.
 
    #### Implementation 🛠️
    - 🧪 **Controlled comparison:** the repository's own `encode_pdf()` pipeline, then the same pipeline with OCR 4 as the parser.
