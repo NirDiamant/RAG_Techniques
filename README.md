@@ -195,7 +195,7 @@ Contributions make this better - propose ideas, share techniques, or give feedba
 
 Explore our extensive list of cutting-edge RAG techniques:
 
-> **Recently added:** MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
+> **Recently added:** Document Parsing with [Mistral OCR 4](https://mistr.al/ocr-nir-github) (sponsored by Mistral AI), MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
 
 | # | Category | Technique | View |
 |---|----------|-----------|------|
@@ -236,6 +236,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 35 | Evaluation 📊 | Open-RAG-Eval | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/open-rag-eval-example.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/open-rag-eval-example.ipynb) |
 | 36 | Advanced 🔬 | MemoRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/memorag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/memorag.ipynb) |
 | 37 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
+| 38 | Foundational 🌱 | Document Parsing with Mistral OCR 4 (sponsored by Mistral AI) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) |
 
 ### 🌱 Foundational RAG Techniques
 
@@ -299,6 +300,18 @@ Explore our extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     - 📄 Data Loading & Extraction: JSON data with multiple fields per entry is loaded, and most relevant text fields are combined to generate an embedding.
     - 🔍 Retrieval: The system retrieves the most relevant JSON entries based on the user's query.
+
+38. **Document Parsing with Mistral OCR 4 📄**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb)
+   - **Sponsored by [Mistral AI](https://mistr.al/ocr-nir-github)**
+
+   #### Overview 🔎
+   Every technique here starts by turning a PDF into text, and none of them checks what the parser produced. This notebook prints it, shows a results table losing its structure before indexing, and swaps the parsing step for Mistral OCR 4 while the rest of the pipeline stays identical.
+
+   #### Implementation 🛠️
+   - 🧪 **Controlled comparison:** the repository's own `encode_pdf()` pipeline, then the same pipeline with OCR 4 as the parser.
+   - 🧱 **Block-aware chunking:** OCR 4 labels every block, so each table stays whole together with its caption instead of being cut by a character splitter.
+   - 📈 **Reranking all three pipelines:** PyPDF ends with a confident wrong number, the block-aware pipeline with the right one.
+   - 💾 **Runs without a Mistral key:** the OCR output ships in `data/mistral_ocr_cache/`.
 
 #### Additional Resources 📚
    - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://newsletter.diamant-ai.com/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
