@@ -82,7 +82,7 @@
 
 ## Related work by the same author
 
-- [RAG Made Simple](https://diamant-ai.com/rag-made-simple): The book that extends this repository. A 400-page visual guide to RAG.
+- [RAG Made Simple](https://www.amazon.com/dp/B0GWDH8JJL): The book that extends this repository. A 400-page visual guide to RAG.
 - [GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents): Tutorials for building GenAI agents, from single bots to multi-agent systems.
 - [agents-towards-production](https://github.com/NirDiamant/agents-towards-production): Taking agents from prototype to deployed product.
 - [Agent_Memory_Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques): 30 notebooks on memory for LLM agents.
