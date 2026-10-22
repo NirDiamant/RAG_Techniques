@@ -51,6 +51,6 @@ Every notebook here has a written walkthrough. Four of them also have a video ex
 
 <div align="center">
 
-**[← Back to the main README](../README.md)** for the full technique table, the book and the course.
+**[← Back to the main README](../README.md)** for the full technique table and the book.
 
 </div>

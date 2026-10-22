@@ -50,4 +50,3 @@ It is a **teaching repository, not a library.** There is no package to install a
 - Newsletter: https://newsletter.diamant-ai.com
 - Community: https://discord.gg/cA6Aa4uyDX
 - Book, RAG Made Simple: https://diamant-ai.com/rag-made-simple
-- Course, Prompt to Production: https://diamant-ai.com/courses
