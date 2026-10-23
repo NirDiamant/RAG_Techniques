@@ -1,0 +1,5 @@
+# Isolated dependencies for test_correctness_metric.py (Python 3.12).
+deepeval==4.2.8
+openai==3.24.0
+httpx==0.28.1
+pytest==8.4.2
