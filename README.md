@@ -1,9 +1,9 @@
 <!-- launch-banner-099: remove when the $0.99 launch price ends -->
 <div align="center">
 
-🔥 **Launch day: my new book _AI Agents Made Simple_ is $0.99 on Kindle for the next 24 hours only.** 🔥<br>
+**_AI Agents Made Simple_ reached #1 in Software Development, Software Engineering and Software Design Tools on Amazon.com's Kindle Store.**<br>
 A decision guide to building AI agents that work: 28 chapters, 148 illustrations, no code.<br>
-**[Get it on Amazon for $0.99 →](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=launch-banner-099&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HNXRSRH2&retarget=0&text=launch-banner-099)**
+**[Get the book on Amazon →](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=launch-banner-099&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HNXRSRH2&retarget=0&text=launch-banner-099)**
 
 </div>
 <!-- /launch-banner-099 -->
