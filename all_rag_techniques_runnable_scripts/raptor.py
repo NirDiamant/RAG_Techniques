@@ -28,6 +28,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Helper functions
 
@@ -121,7 +124,7 @@ class RAPTORMethod:
         self.texts = texts
         self.max_levels = max_levels
         self.embeddings = OpenAIEmbeddings()
-        self.llm = ChatOpenAI(model_name="gpt-4o-mini")
+        self.llm = ChatOpenAI(model_name=LLM_MODEL)
         self.tree_results = self.build_raptor_tree()
 
     def build_raptor_tree(self) -> Dict[int, pd.DataFrame]:

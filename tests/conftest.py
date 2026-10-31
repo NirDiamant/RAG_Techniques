@@ -55,7 +55,7 @@ def llm():
     """Fixture for ChatOpenAI model."""
     return ChatOpenAI(
         temperature=0,
-        model_name="gpt-4-turbo-preview",
+        model_name="gpt-5.4-mini",
         max_tokens=4000
     )
 

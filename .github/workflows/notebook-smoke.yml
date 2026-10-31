@@ -1,0 +1,70 @@
+# Parse check for every notebook and script. It needs no API keys and runs no code:
+# each notebook's code cells are converted the way Jupyter sees them (IPython turns
+# %magics and !shell lines into plain Python), joined in order and compiled, and every
+# .py file is byte-compiled. A syntax error anywhere fails the check.
+name: Notebook smoke test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Install parser dependencies
+        run: python -m pip install --quiet nbformat ipython
+
+      - name: Parse every notebook and script
+        run: |
+          python - <<'EOF'
+          import ast
+          import pathlib
+          import py_compile
+          import sys
+          import warnings
+
+          import nbformat
+          from IPython.core.inputtransformer2 import TransformerManager
+
+          warnings.filterwarnings("ignore")
+          to_python = TransformerManager().transform_cell
+          failures = []
+
+          notebooks = sorted(p for p in pathlib.Path(".").rglob("*.ipynb") if ".git" not in p.parts)
+          for path in notebooks:
+              try:
+                  nb = nbformat.read(path, as_version=4)
+              except Exception as exc:
+                  failures.append(f"{path}: cannot load ({exc})")
+                  continue
+              cells = [to_python(c.source) for c in nb.cells if c.cell_type == "code"]
+              try:
+                  compile("\n\n".join(cells), str(path), "exec", flags=ast.PyCF_ALLOW_TOP_LEVEL_AWAIT)
+              except SyntaxError as exc:
+                  failures.append(f"{path}: line {exc.lineno}: {exc.msg}")
+
+          scripts = sorted(p for p in pathlib.Path(".").rglob("*.py") if ".git" not in p.parts)
+          for path in scripts:
+              try:
+                  py_compile.compile(str(path), doraise=True)
+              except py_compile.PyCompileError as exc:
+                  failures.append(f"{path}: {exc.msg}")
+
+          print(f"Checked {len(notebooks)} notebooks and {len(scripts)} scripts.")
+          if failures:
+              print("\n".join(failures))
+              sys.exit(1)
+          print("Everything parses.")
+          EOF

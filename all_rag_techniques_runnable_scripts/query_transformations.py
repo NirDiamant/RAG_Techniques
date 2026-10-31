@@ -9,6 +9,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Function for rewriting a query to improve retrieval
 def rewrite_query(original_query, llm_chain):
@@ -63,9 +66,9 @@ def decompose_query(original_query, llm_chain):
 class RAGQueryProcessor:
     def __init__(self):
         # Initialize LLM models
-        self.re_write_llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
-        self.step_back_llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
-        self.sub_query_llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+        self.re_write_llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
+        self.step_back_llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
+        self.sub_query_llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
 
         # Initialize prompt templates
         query_rewrite_template = """You are an AI assistant tasked with reformulating user queries to improve retrieval in a RAG system. 

@@ -533,7 +533,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
 
     #### Implementation 🛠️
-    Use the `grouse` package to evaluate contextually-grounded LLM generations with GPT-4 on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom Llama 3.1 405B evaluator.
+    Use the `grouse` package to evaluate contextually-grounded LLM generations with an OpenAI judge (gpt-5.4) on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom, cheaper gpt-5.4-mini evaluator.
     
 
 27. **End-to-End RAG Evaluation**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) | Complete evaluation pipeline |
@@ -706,13 +706,19 @@ To begin implementing these advanced RAG techniques in your projects:
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://www.diamant-ai.com/sponsorship)** to help maintain and expand this valuable resource!
 
-## 📚 More from the same author
+## 📚 More from DiamantAI
+
+**[RAG Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-book-rag&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0GWDH8JJL%3Fmaas%3Dmaas_adg_api_580351185840460851_static_9_573%26ref_%3Daa_maas%26tag%3Dmaas%26aa_campaignid%3Drag-en%26aa_adgroupid%3Dgithub-readme%26aa_creativeid%3Drag-book-footer-rag&retarget=0&text=footer-book-rag)** - the companion book to this repo, featured at the top.
 
 **[Agent Memory Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-footer-am&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HCRMGHCM%3Fmaas%3Dmaas_adg_api_580351185840460851_static_9_573%26ref_%3Daa_maas%26tag%3Dmaas%26aa_campaignid%3Dam-en%26aa_adgroupid%3Dgithub-readme%26aa_creativeid%3Drag-book-footer-am&retarget=0&text=book-footer-am)** - the visual guide to memory for AI agents: buffers, vector and graph memory, cognitive architectures and the frameworks in production.
 
 **[Prompt Engineering: Master the Art of AI Interaction](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-footer-pe&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0DZ85RPB5%3Ftag%3Ddiamantai-ragrm-20&retarget=0&text=book-footer-pe)** - the prompting foundation that makes RAG work better. Same visual approach, 22 hands-on techniques.
 
 **[AI Agents Made Simple](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=book-footer-agents&target=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0HNXRSRH2%3Fmaas%3Dmaas_adg_api_580351185840460851_static_9_573%26ref_%3Daa_maas%26tag%3Dmaas%26aa_campaignid%3Dagents-en%26aa_adgroupid%3Dgithub-readme%26aa_creativeid%3Drag-book-footer-agents&retarget=0&text=book-footer-agents)** - the decision guide to building agents that work: 28 chapters on what each pattern does, what breaks, what it costs, and when it is overkill. No code.
+
+**Other repos:** [GenAI Agents](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-genai-agents&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FGenAI_Agents&retarget=0&text=footer-genai-agents) · [Agents Towards Production](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-atp&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2Fagents-towards-production&retarget=0&text=footer-atp) · [Prompt Engineering](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-prompt-engineering&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FPrompt_Engineering&retarget=0&text=footer-prompt-engineering) · [Agent Memory Techniques](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-agent-memory&target=https%3A%2F%2Fgithub.com%2FNirDiamant%2FAgent_Memory_Techniques&retarget=0&text=footer-agent-memory)
+
+**Follow along:** [Newsletter](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-newsletter&target=https%3A%2F%2Fnewsletter.diamant-ai.com&retarget=0&text=footer-newsletter) · [YouTube](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-youtube&target=https%3A%2F%2Fwww.youtube.com%2F%40DiamantAI&retarget=0&text=footer-youtube) · [Discord](https://discord.gg/cA6Aa4uyDX) · [Website](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-website&target=https%3A%2F%2Fdiamant-ai.com&retarget=0&text=footer-website) · [Course](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=footer-course&target=https%3A%2F%2Fdiamant-ai.com%2Fcourses&retarget=0&text=footer-course)
 
 *To hear when the next book comes out, [follow the author on Amazon](https://europe-west1-rag-techniques-views-tracker.cloudfunctions.net/rag-techniques-tracker?notebook=main-readme&click=author-follow-amazon&target=https%3A%2F%2Fwww.amazon.com%2Fstores%2FNir-Diamant%2Fauthor%2FB0DZMTVQHJ&retarget=0&text=author-follow-amazon).*
 

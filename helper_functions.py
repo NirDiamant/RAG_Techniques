@@ -140,7 +140,7 @@ def retrieve_context_per_question(question, chunks_query_retriever):
     """
 
     # Retrieve relevant documents for the given question
-    docs = chunks_query_retriever.get_relevant_documents(question)
+    docs = chunks_query_retriever.invoke(question)
 
     # Concatenate document content
     # context = " ".join(doc.page_content for doc in docs)

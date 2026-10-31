@@ -23,6 +23,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Define all the required classes and strategies
 class CategoriesOptions(BaseModel):
@@ -47,7 +50,7 @@ class SubQueries(BaseModel):
 
 class QueryClassifier:
     def __init__(self):
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         self.prompt = PromptTemplate(
             input_variables=["query"],
             template="Classify the following query into one of these categories: Factual, Analytical, Opinion, or Contextual.\nQuery: {query}\nCategory:"
@@ -65,7 +68,7 @@ class BaseRetrievalStrategy:
         text_splitter = CharacterTextSplitter(chunk_size=800, chunk_overlap=0)
         self.documents = text_splitter.create_documents(texts)
         self.db = FAISS.from_documents(self.documents, self.embeddings)
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
 
     def retrieve(self, query, k=4):
         return self.db.similarity_search(query, k=k)
@@ -200,7 +203,7 @@ class AdaptiveRAG:
             "Opinion": OpinionRetrievalStrategy(texts),
             "Contextual": ContextualRetrievalStrategy(texts)
         }
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         prompt_template = """Use the following pieces of context to answer the question at the end. 
         If you don't know the answer, just say that you don't know, don't try to make up an answer.
 

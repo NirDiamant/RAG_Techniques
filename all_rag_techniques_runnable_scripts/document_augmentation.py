@@ -16,6 +16,9 @@ load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path
 
 from helper_functions import *
@@ -59,7 +62,7 @@ def clean_and_filter_questions(questions: List[str]) -> List[str]:
 
 
 def generate_questions(text: str) -> List[str]:
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    llm = ChatOpenAI(model=LLM_MODEL, temperature=0)
     prompt = PromptTemplate(
         input_variables=["context", "num_questions"],
         template="Using the context data: {context}\n\nGenerate a list of at least {num_questions} "
@@ -73,7 +76,7 @@ def generate_questions(text: str) -> List[str]:
 
 
 def generate_answer(content: str, question: str) -> str:
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    llm = ChatOpenAI(model=LLM_MODEL, temperature=0)
     prompt = PromptTemplate(
         input_variables=["context", "question"],
         template="Using the context data: {context}\n\nProvide a brief and precise answer to the question: {question}"
