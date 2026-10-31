@@ -16,6 +16,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Define all relevant classes/functions
 class RetrievalResponse(BaseModel):
@@ -73,7 +76,7 @@ class SelfRAG:
     def __init__(self, path, top_k=3):
         self.vectorstore = encode_pdf(path)
         self.top_k = top_k
-        self.llm = ChatOpenAI(model="gpt-4o-mini", max_tokens=1000, temperature=0)
+        self.llm = ChatOpenAI(model=LLM_MODEL, max_tokens=1000, temperature=0)
 
         # Create LLMChains for each step
         self.retrieval_chain = retrieval_prompt | self.llm.with_structured_output(RetrievalResponse)

@@ -20,6 +20,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Helper Classes and Functions
 
@@ -36,7 +39,7 @@ def rerank_documents(query: str, docs: List[Document], top_n: int = 3) -> List[D
         Relevance Score:"""
     )
 
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+    llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
     llm_chain = prompt_template | llm.with_structured_output(RatingScore)
 
     scored_docs = []
@@ -110,7 +113,7 @@ def compare_rag_techniques(query: str, docs: List[Document]) -> None:
 class RAGPipeline:
     def __init__(self, path: str):
         self.vectorstore = encode_pdf(path)
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o")
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL)
 
     def run(self, query: str, retriever_type: str = "reranker"):
         if retriever_type == "reranker":

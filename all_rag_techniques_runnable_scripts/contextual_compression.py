@@ -16,6 +16,9 @@ sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 class ContextualCompressionRAG:
     """
@@ -23,13 +26,13 @@ class ContextualCompressionRAG:
     with a contextual compression retriever.
     """
 
-    def __init__(self, path, model_name="gpt-4o-mini", temperature=0, max_tokens=4000):
+    def __init__(self, path, model_name=LLM_MODEL, temperature=0, max_tokens=4000):
         """
         Initializes the ContextualCompressionRAG by setting up the document store and retriever.
 
         Args:
             path (str): Path to the PDF file to process.
-            model_name (str): The name of the language model to use (default: gpt-4o-mini).
+            model_name (str): The name of the language model to use (default: gpt-5.4-mini).
             temperature (float): The temperature for the language model.
             max_tokens (int): The maximum tokens for the language model (default: 4000).
         """
@@ -92,8 +95,8 @@ class ContextualCompressionRAG:
 # Function to parse command line arguments
 def parse_args():
     parser = argparse.ArgumentParser(description="Process a PDF document with contextual compression RAG.")
-    parser.add_argument("--model_name", type=str, default="gpt-4o-mini",
-                        help="Name of the language model to use (default: gpt-4o-mini).")
+    parser.add_argument("--model_name", type=str, default=LLM_MODEL,
+                        help="Name of the language model to use (default: gpt-5.4-mini).")
     parser.add_argument("--path", type=str, default="../data/Understanding_Climate_Change.pdf",
                         help="Path to the PDF file to process.")
     parser.add_argument("--query", type=str, default="What is the main topic of the document?",

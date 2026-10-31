@@ -19,6 +19,9 @@ load_dotenv()
 
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
+
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 
@@ -69,7 +72,7 @@ def adjust_relevance_scores(query: str, docs: List[Any], feedback_data: List[Dic
         Is this feedback relevant? Respond with only 'Yes' or 'No'.
         """
     )
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+    llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
     relevance_chain = relevance_prompt | llm.with_structured_output(Response)
 
     for doc in docs:
@@ -108,7 +111,7 @@ class RetrievalAugmentedGeneration:
         self.content = read_pdf_to_string(self.path)
         self.vectorstore = encode_from_string(self.content)
         self.retriever = self.vectorstore.as_retriever()
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         self.qa_chain = RetrievalQA.from_chain_type(self.llm, retriever=self.retriever)
 
     def run(self, query: str, relevance: int, quality: int):

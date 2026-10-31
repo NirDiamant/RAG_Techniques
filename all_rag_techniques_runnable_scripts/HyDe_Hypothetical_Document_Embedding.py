@@ -15,10 +15,13 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 # Define the HyDe retriever class - creating vector store, generating hypothetical document, and retrieving
 class HyDERetriever:
     def __init__(self, files_path, chunk_size=500, chunk_overlap=100):
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         self.embeddings = OpenAIEmbeddings()
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap

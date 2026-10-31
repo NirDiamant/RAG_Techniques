@@ -38,6 +38,9 @@ load_dotenv()
 
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
+
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 nltk.download('punkt', quiet=True)
@@ -746,7 +749,7 @@ class GraphRAG:
         - query_engine: An instance of the QueryEngine class for handling queries (initialized as None).
         - visualizer: An instance of the Visualizer class for visualizing the knowledge graph traversal.
         """
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         self.embedding_model = OpenAIEmbeddings()
         self.document_processor = DocumentProcessor()
         self.knowledge_graph = KnowledgeGraph()

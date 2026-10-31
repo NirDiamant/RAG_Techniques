@@ -18,6 +18,9 @@ from evaluation.evalute_rag import *
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 class HyPE:
     """
     A class to handle the HyPE RAG process, which enhances document chunking by 
@@ -57,7 +60,7 @@ class HyPE:
         Returns:
         tuple: (Original chunk text, List of embedding vectors generated from the questions)
         """
-        llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini")
+        llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL)
         embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
 
         question_gen_prompt = PromptTemplate.from_template(

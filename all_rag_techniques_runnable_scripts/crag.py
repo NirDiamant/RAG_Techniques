@@ -16,6 +16,9 @@ sys.path.append(os.path.abspath(
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 class RetrievalEvaluatorInput(BaseModel):
     """
@@ -44,7 +47,7 @@ class CRAG:
     A class to handle the CRAG process for document retrieval, evaluation, and knowledge refinement.
     """
 
-    def __init__(self, path, model="gpt-4o-mini", max_tokens=1000, temperature=0, lower_threshold=0.3,
+    def __init__(self, path, model=LLM_MODEL, max_tokens=1000, temperature=0, lower_threshold=0.3,
                  upper_threshold=0.7):
         """
         Initializes the CRAG Retriever by encoding the PDF document and creating the necessary models and search tools.
@@ -198,8 +201,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description="CRAG Process for Document Retrieval and Query Answering.")
     parser.add_argument("--path", type=str, default="../data/Understanding_Climate_Change.pdf",
                         help="Path to the PDF file to encode.")
-    parser.add_argument("--model", type=str, default="gpt-4o-mini",
-                        help="Language model to use (default: gpt-4o-mini).")
+    parser.add_argument("--model", type=str, default=LLM_MODEL,
+                        help="Language model to use (default: gpt-5.4-mini).")
     parser.add_argument("--max_tokens", type=int, default=1000,
                         help="Maximum tokens to use in LLM responses (default: 1000).")
     parser.add_argument("--temperature", type=float, default=0,

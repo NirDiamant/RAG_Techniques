@@ -12,13 +12,16 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Define utility classes/functions
 class ExplainableRetriever:
     def __init__(self, texts):
         self.embeddings = OpenAIEmbeddings()
         self.vectorstore = FAISS.from_texts(texts, self.embeddings)
-        self.llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini", max_tokens=4000)
+        self.llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
         self.retriever = self.vectorstore.as_retriever(search_kwargs={"k": 5})
 
         explain_prompt = PromptTemplate(

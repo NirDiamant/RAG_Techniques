@@ -17,6 +17,9 @@ load_dotenv()
 # Set the OpenAI API key environment variable
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # Function to encode to both summary and chunk levels, sharing the page metadata
 async def encode_pdf_hierarchical(path, chunk_size=1000, chunk_overlap=200, is_string=False):
@@ -33,7 +36,7 @@ async def encode_pdf_hierarchical(path, chunk_size=1000, chunk_overlap=200, is_s
         )
         documents = text_splitter.create_documents([path])
 
-    summary_llm = ChatOpenAI(temperature=0, model_name="gpt-4o-mini", max_tokens=4000)
+    summary_llm = ChatOpenAI(temperature=0, model_name=LLM_MODEL, max_tokens=4000)
     summary_chain = load_summarize_chain(summary_llm, chain_type="map_reduce")
 
     async def summarize_doc(doc):

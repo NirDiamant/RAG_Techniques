@@ -533,7 +533,7 @@ Explore our extensive list of cutting-edge RAG techniques:
     Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
 
     #### Implementation 🛠️
-    Use the `grouse` package to evaluate contextually-grounded LLM generations with GPT-4 on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom Llama 3.1 405B evaluator.
+    Use the `grouse` package to evaluate contextually-grounded LLM generations with an OpenAI judge (gpt-5.4) on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom, cheaper gpt-5.4-mini evaluator.
     
 
 27. **End-to-End RAG Evaluation**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/end-2-end_rag_evaluation.ipynb) | Complete evaluation pipeline |

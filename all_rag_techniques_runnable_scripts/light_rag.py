@@ -25,6 +25,9 @@ sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
 # Load environment variables from a .env file (OpenAI or Azure OpenAI credentials)
 load_dotenv()
 
+# Chat model used in this script
+LLM_MODEL = "gpt-5.4-mini"
+
 
 # ----------------------------- Extraction schema -----------------------------
 class Entity(BaseModel):
@@ -99,7 +102,7 @@ class LightRAG:
     """
 
     def __init__(self, path, chunk_size=1200, chunk_overlap=150, max_chunks=20,
-                 model="gpt-4o-mini", embedding_model="text-embedding-3-small", azure=False):
+                 model=LLM_MODEL, embedding_model="text-embedding-3-small", azure=False):
         if azure:
             # Azure reads the AZURE_* deployment variables from the environment.
             self.llm = AzureChatOpenAI(
