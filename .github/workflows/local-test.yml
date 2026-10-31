@@ -5,6 +5,7 @@ on:
 
 jobs:
   test:
+    runs-on: ubuntu-latest
     container:
       image: catthehacker/ubuntu:act-latest
     
