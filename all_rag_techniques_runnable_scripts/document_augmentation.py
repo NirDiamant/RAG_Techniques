@@ -175,13 +175,13 @@ if __name__ == "__main__":
 
     # Example usage of the retriever
     query = "What is climate change?"
-    retrieved_docs = document_query_retriever.get_relevant_documents(query)
+    retrieved_docs = document_query_retriever.invoke(query)
     print(f"\nQuery: {query}")
     print(f"Retrieved document: {retrieved_docs[0].page_content}")
 
     # Further query example
     query = "How do freshwater ecosystems change due to alterations in climatic factors?"
-    retrieved_documents = document_query_retriever.get_relevant_documents(query)
+    retrieved_documents = document_query_retriever.invoke(query)
     for doc in retrieved_documents:
         print_document("Relevant fragment retrieved", doc)
 

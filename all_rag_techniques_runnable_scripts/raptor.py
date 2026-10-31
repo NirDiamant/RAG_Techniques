@@ -2,14 +2,13 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict, Any
 
-from langchain.chains import LLMChain
 from sklearn.mixture import GaussianMixture
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import LLMChainExtractor
+from langchain_classic.retrievers import ContextualCompressionRetriever
+from langchain_classic.retrievers.document_compressors import LLMChainExtractor
 from langchain_core.messages import AIMessage
 from langchain_core.documents import Document
 import matplotlib.pyplot as plt
@@ -185,7 +184,7 @@ class RAPTORMethod:
         retriever = create_retriever(vectorstore, self.llm)
 
         logging.info(f"Processing query: {query}")
-        relevant_docs = retriever.get_relevant_documents(query)
+        relevant_docs = retriever.invoke(query)
 
         doc_details = [{"content": doc.page_content, "metadata": doc.metadata} for doc in relevant_docs]
 
@@ -196,8 +195,8 @@ class RAPTORMethod:
             "Question: {question}\n\n"
             "Answer:"
         )
-        chain = LLMChain(llm=self.llm, prompt=prompt)
-        answer = chain.run(context=context, question=query)
+        chain = prompt | self.llm  # LLMChain and Chain.run() are deprecated in LangChain 1.x
+        answer = chain.invoke({"context": context, "question": query}).content
 
         return {
             "query": query,

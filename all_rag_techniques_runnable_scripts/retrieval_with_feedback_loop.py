@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import ChatOpenAI
-from langchain.chains import RetrievalQA
+from langchain_classic.chains import RetrievalQA
 from langchain_core.prompts import PromptTemplate
 
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path
@@ -115,11 +115,11 @@ class RetrievalAugmentedGeneration:
         self.qa_chain = RetrievalQA.from_chain_type(self.llm, retriever=self.retriever)
 
     def run(self, query: str, relevance: int, quality: int):
-        response = self.qa_chain(query)["result"]
+        response = self.qa_chain.invoke(query)["result"]
         feedback = get_user_feedback(query, response, relevance, quality)
         store_feedback(feedback)
 
-        docs = self.retriever.get_relevant_documents(query)
+        docs = self.retriever.invoke(query)
         adjusted_docs = adjust_relevance_scores(query, docs, load_feedback_data())
         self.retriever.search_kwargs['k'] = len(adjusted_docs)
         self.retriever.search_kwargs['docs'] = adjusted_docs

@@ -3,9 +3,10 @@ import sys
 import time
 import argparse
 from dotenv import load_dotenv
-from langchain.retrievers.document_compressors import LLMChainExtractor
-from langchain.retrievers import ContextualCompressionRetriever
-from langchain.chains import RetrievalQA
+from langchain_classic.retrievers.document_compressors import LLMChainExtractor
+from langchain_classic.retrievers import ContextualCompressionRetriever
+from langchain_classic.chains import RetrievalQA
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # repo root, for helper_functions and evaluation: set it before importing them
 from helper_functions import *
 from evaluation.evalute_rag import *
 

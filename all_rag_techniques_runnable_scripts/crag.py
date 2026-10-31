@@ -4,8 +4,9 @@ import argparse
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_community.tools import DuckDuckGoSearchResults
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # repo root, for helper_functions and evaluation: set it before importing them
 from helper_functions import encode_pdf
 import json
 
@@ -72,7 +73,7 @@ class CRAG:
         self.llm = ChatOpenAI(model=model, max_tokens=max_tokens, temperature=temperature)
 
         # Initialize search tool
-        self.search = DuckDuckGoSearchResults()
+        self.search = DuckDuckGoSearchResults(output_format="json")  # parse_search_results reads JSON
 
     @staticmethod
     def retrieve_documents(query, faiss_index, k=3):

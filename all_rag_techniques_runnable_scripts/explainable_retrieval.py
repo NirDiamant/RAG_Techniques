@@ -40,7 +40,7 @@ class ExplainableRetriever:
         self.explain_chain = explain_prompt | self.llm
 
     def retrieve_and_explain(self, query):
-        docs = self.retriever.get_relevant_documents(query)
+        docs = self.retriever.invoke(query)
         explained_results = []
 
         for doc in docs:

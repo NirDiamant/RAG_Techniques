@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_core.documents import Document
 from typing import List, Any
 from langchain_openai import ChatOpenAI
-from langchain.chains import RetrievalQA
+from langchain_classic.chains import RetrievalQA
 from langchain_core.retrievers import BaseRetriever
 from sentence_transformers import CrossEncoder
 from pydantic import BaseModel, Field
@@ -62,7 +62,8 @@ class CustomRetriever(BaseRetriever, BaseModel):
     class Config:
         arbitrary_types_allowed = True
 
-    def get_relevant_documents(self, query: str, num_docs=2) -> List[Document]:
+    # LangChain 1.x retrievers implement _get_relevant_documents; callers use invoke()
+    def _get_relevant_documents(self, query: str, *, run_manager=None, num_docs=2) -> List[Document]:
         initial_docs = self.vectorstore.similarity_search(query, k=30)
         return rerank_documents(query, initial_docs, top_n=num_docs)
 
@@ -76,15 +77,12 @@ class CrossEncoderRetriever(BaseRetriever, BaseModel):
     class Config:
         arbitrary_types_allowed = True
 
-    def get_relevant_documents(self, query: str) -> List[Document]:
+    def _get_relevant_documents(self, query: str, *, run_manager=None) -> List[Document]:
         initial_docs = self.vectorstore.similarity_search(query, k=self.k)
         pairs = [[query, doc.page_content] for doc in initial_docs]
         scores = self.cross_encoder.predict(pairs)
         scored_docs = sorted(zip(initial_docs, scores), key=lambda x: x[1], reverse=True)
         return [doc for doc, _ in scored_docs[:self.rerank_top_k]]
-
-    async def aget_relevant_documents(self, query: str) -> List[Document]:
-        raise NotImplementedError("Async retrieval not implemented")
 
 
 def compare_rag_techniques(query: str, docs: List[Document]) -> None:
@@ -103,7 +101,7 @@ def compare_rag_techniques(query: str, docs: List[Document]) -> None:
 
     print("\nAdvanced Retrieval Result:")
     custom_retriever = CustomRetriever(vectorstore=vectorstore)
-    advanced_docs = custom_retriever.get_relevant_documents(query)
+    advanced_docs = custom_retriever.invoke(query)
     for i, doc in enumerate(advanced_docs):
         print(f"\nDocument {i + 1}:")
         print(doc.page_content)
@@ -136,7 +134,7 @@ class RAGPipeline:
             return_source_documents=True
         )
 
-        result = qa_chain({"query": query})
+        result = qa_chain.invoke({"query": query})
 
         print(f"\nQuestion: {query}")
         print(f"Answer: {result['result']}")
