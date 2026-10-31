@@ -67,10 +67,14 @@ def create_deep_eval_test_cases(
         )
     ]
 
+# Judge model for every metric and for evaluate_rag below. OpenAI shut down the previous
+# judge, gpt-4-turbo, on 2026-10-23. Needs deepeval 4.x or later: 3.x rejects gpt-5.x names.
+EVAL_MODEL = "gpt-5.4"
+
 # Define evaluation metrics
 correctness_metric = GEval(
     name="Correctness",
-    model="gpt-4-turbo",
+    model=EVAL_MODEL,
     evaluation_params=[
         LLMTestCaseParams.EXPECTED_OUTPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT
@@ -82,13 +86,13 @@ correctness_metric = GEval(
 
 faithfulness_metric = FaithfulnessMetric(
     threshold=0.7,
-    model="gpt-4-turbo",
+    model=EVAL_MODEL,
     include_reason=False
 )
 
 relevance_metric = ContextualRelevancyMetric(
     threshold=1,
-    model="gpt-4-turbo",
+    model=EVAL_MODEL,
     include_reason=True
 )
 
@@ -105,7 +109,7 @@ def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     """
     
     # Initialize LLM
-    llm = ChatOpenAI(temperature=0, model_name="gpt-4-turbo")
+    llm = ChatOpenAI(temperature=0, model_name=EVAL_MODEL)
     
     # Create evaluation prompt
     eval_prompt = PromptTemplate.from_template("""
@@ -141,7 +145,7 @@ def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     results = []
     for question in questions:
         # Get retrieval results
-        context = retriever.get_relevant_documents(question)
+        context = retriever.invoke(question)  # get_relevant_documents() was removed in LangChain 1.x
         context_text = "\n".join([doc.page_content for doc in context])
         
         # Evaluate results
