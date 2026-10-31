@@ -3,6 +3,7 @@ import os
 import sys
 import argparse
 from dotenv import load_dotenv
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # repo root, for helper_functions and evaluation: set it before importing them
 from helper_functions import *
 from langchain_experimental.text_splitter import SemanticChunker, BreakpointThresholdType
 from langchain_openai.embeddings import OpenAIEmbeddings

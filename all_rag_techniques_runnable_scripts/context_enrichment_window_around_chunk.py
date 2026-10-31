@@ -2,6 +2,7 @@ import os
 import sys
 from dotenv import load_dotenv
 from langchain_core.documents import Document
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # repo root, for helper_functions and evaluation: set it before importing them
 from helper_functions import *
 from evaluation.evalute_rag import *
 from typing import List
@@ -37,7 +38,7 @@ def get_chunk_by_index(vectorstore, target_index: int) -> Document:
 # Function that retrieves from the vectorstore based on semantic similarity and pads each retrieved chunk with its neighboring chunks
 def retrieve_with_context_overlap(vectorstore, retriever, query: str, num_neighbors: int = 1, chunk_size: int = 200,
                                   chunk_overlap: int = 20) -> List[str]:
-    relevant_chunks = retriever.get_relevant_documents(query)
+    relevant_chunks = retriever.invoke(query)
     result_sequences = []
 
     for chunk in relevant_chunks:
@@ -114,7 +115,7 @@ class RAGMethod:
         return vectorstore, retriever
 
     def run(self, query: str, num_neighbors: int = 1):
-        baseline_chunk = self.retriever.get_relevant_documents(query)
+        baseline_chunk = self.retriever.invoke(query)
         enriched_chunks = retrieve_with_context_overlap(self.vectorstore, self.retriever, query, num_neighbors,
                                                         self.chunk_size, self.chunk_overlap)
         return baseline_chunk[0].page_content, enriched_chunks[0]

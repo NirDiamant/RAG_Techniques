@@ -108,15 +108,17 @@ def build_metrics(model: str = EVAL_MODEL):
 
 
 # Define evaluation metrics. deepeval releases before 4.x reject gpt-5.x model names, so an
-# older or missing deepeval leaves these as None (with a warning) instead of failing the import.
-try:
-    correctness_metric, faithfulness_metric, relevance_metric = build_metrics()
-except Exception as exc:
-    correctness_metric = faithfulness_metric = relevance_metric = None
-    warnings.warn(
-        f"deepeval metrics are unavailable ({exc}). evaluate_rag() still works. "
-        "To use the metrics, run: pip install -U 'deepeval>=4.3'"
-    )
+# older or missing deepeval leaves these as None instead of failing the import. Only notebooks
+# that use the metrics install deepeval, so a missing deepeval is silent; an old one warns.
+correctness_metric = faithfulness_metric = relevance_metric = None
+if GEval is not None:
+    try:
+        correctness_metric, faithfulness_metric, relevance_metric = build_metrics()
+    except Exception as exc:
+        warnings.warn(
+            f"deepeval metrics are unavailable ({exc}). evaluate_rag() still works. "
+            "To use the metrics, run: pip install -U 'deepeval>=4.3'"
+        )
 
 def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     """

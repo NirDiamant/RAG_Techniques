@@ -3,8 +3,9 @@ import os
 import sys
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
-from langchain.chains.summarize.chain import load_summarize_chain
-from langchain.docstore.document import Document
+from langchain_classic.chains.summarize import load_summarize_chain
+from langchain_core.documents import Document
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # repo root, for helper_functions and evaluation: set it before importing them
 from helper_functions import encode_pdf, encode_from_string
 
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))  # Add the parent directory to the path
