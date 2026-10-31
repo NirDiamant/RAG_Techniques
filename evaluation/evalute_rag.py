@@ -14,11 +14,18 @@ Custom modules:
 """
 
 import json
+import warnings
 from typing import List, Tuple, Dict, Any
 
-from deepeval import evaluate
-from deepeval.metrics import GEval, FaithfulnessMetric, ContextualRelevancyMetric
-from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+# deepeval is needed only for the metrics and test cases below, not for evaluate_rag(),
+# so a missing or older deepeval does not stop the notebooks that import this module.
+try:
+    from deepeval import evaluate
+    from deepeval.metrics import GEval, FaithfulnessMetric, ContextualRelevancyMetric
+    from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+except ImportError:
+    evaluate = GEval = FaithfulnessMetric = ContextualRelevancyMetric = None
+    LLMTestCase = LLMTestCaseParams = None
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -42,7 +49,7 @@ def create_deep_eval_test_cases(
     gt_answers: List[str],
     generated_answers: List[str],
     retrieved_documents: List[str]
-) -> List[LLMTestCase]:
+) -> List["LLMTestCase"]:
     """
     Create a list of LLMTestCase objects for evaluation.
 
@@ -68,33 +75,48 @@ def create_deep_eval_test_cases(
     ]
 
 # Judge model for every metric and for evaluate_rag below. OpenAI shut down the previous
-# judge, gpt-4-turbo, on 2026-10-23. Needs deepeval 4.x or later: 3.x rejects gpt-5.x names.
+# judge, gpt-4-turbo, on 2026-10-23.
 EVAL_MODEL = "gpt-5.4"
 
-# Define evaluation metrics
-correctness_metric = GEval(
-    name="Correctness",
-    model=EVAL_MODEL,
-    evaluation_params=[
-        LLMTestCaseParams.EXPECTED_OUTPUT,
-        LLMTestCaseParams.ACTUAL_OUTPUT
-    ],
-    evaluation_steps=[
-        "Determine whether the actual output is factually correct based on the expected output."
-    ],
-)
 
-faithfulness_metric = FaithfulnessMetric(
-    threshold=0.7,
-    model=EVAL_MODEL,
-    include_reason=False
-)
+def build_metrics(model: str = EVAL_MODEL):
+    """Return the correctness, faithfulness and contextual relevancy metrics."""
+    if GEval is None:
+        raise ImportError("deepeval is not installed")
+    correctness = GEval(
+        name="Correctness",
+        model=model,
+        evaluation_params=[
+            LLMTestCaseParams.EXPECTED_OUTPUT,
+            LLMTestCaseParams.ACTUAL_OUTPUT
+        ],
+        evaluation_steps=[
+            "Determine whether the actual output is factually correct based on the expected output."
+        ],
+    )
+    faithfulness = FaithfulnessMetric(
+        threshold=0.7,
+        model=model,
+        include_reason=False
+    )
+    relevance = ContextualRelevancyMetric(
+        threshold=1,
+        model=model,
+        include_reason=True
+    )
+    return correctness, faithfulness, relevance
 
-relevance_metric = ContextualRelevancyMetric(
-    threshold=1,
-    model=EVAL_MODEL,
-    include_reason=True
-)
+
+# Define evaluation metrics. deepeval releases before 4.x reject gpt-5.x model names, so an
+# older or missing deepeval leaves these as None (with a warning) instead of failing the import.
+try:
+    correctness_metric, faithfulness_metric, relevance_metric = build_metrics()
+except Exception as exc:
+    correctness_metric = faithfulness_metric = relevance_metric = None
+    warnings.warn(
+        f"deepeval metrics are unavailable ({exc}). evaluate_rag() still works. "
+        "To use the metrics, run: pip install -U 'deepeval>=4.3'"
+    )
 
 def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     """
@@ -109,7 +131,7 @@ def evaluate_rag(retriever, num_questions: int = 5) -> Dict[str, Any]:
     """
     
     # Initialize LLM
-    llm = ChatOpenAI(temperature=0, model_name=EVAL_MODEL)
+    llm = ChatOpenAI(model_name=EVAL_MODEL)  # no temperature: some current OpenAI models accept only the default
     
     # Create evaluation prompt
     eval_prompt = PromptTemplate.from_template("""
