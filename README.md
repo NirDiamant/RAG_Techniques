@@ -187,7 +187,7 @@ Contributions make this better - propose ideas, share techniques, or give feedba
 
 Explore our extensive list of cutting-edge RAG techniques:
 
-> **Recently added:** Document Parsing with [Mistral OCR 4](https://mistr.al/ocr-nir-github) (sponsored by Mistral AI), MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
+> **Recently added:** Document Parsing with [Mistral OCR 4.1](https://mistr.al/ocr-nir-github) (sponsored by Mistral AI), MemoRAG (memory-augmented retrieval), End-to-End RAG Evaluation, Open-RAG-Eval, JSON RAG. **42 notebooks** and growing.
 
 | # | Category | Technique | View |
 |---|----------|-----------|------|
@@ -228,7 +228,7 @@ Explore our extensive list of cutting-edge RAG techniques:
 | 35 | Evaluation 📊 | Open-RAG-Eval | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/evaluation/open-rag-eval-example.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/evaluation/open-rag-eval-example.ipynb) |
 | 36 | Advanced 🔬 | MemoRAG | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/memorag.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/memorag.ipynb) |
 | 37 | Special Technique 🌟 | Sophisticated Controllable Agent | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/Controllable-RAG-Agent) |
-| 38 | Foundational 🌱 | Document Parsing with Mistral OCR 4 (sponsored by Mistral AI) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) |
+| 38 | Foundational 🌱 | Document Parsing with Mistral OCR 4.1 (sponsored by Mistral AI) | [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) |
 
 ### 🌱 Foundational RAG Techniques
 
@@ -294,15 +294,15 @@ Explore our extensive list of cutting-edge RAG techniques:
     - 🔍 Retrieval: The system retrieves the most relevant JSON entries based on the user's query.
 
 <!-- a new list, so this entry shows the number of its table row -->
-38. **Document Parsing with Mistral OCR 4 📄**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb)
+38. **Document Parsing with Mistral OCR 4.1 📄**: [<img src="https://img.shields.io/badge/GitHub-View-blue" height="20">](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb) [<img src="https://colab.research.google.com/assets/colab-badge.svg" height="20">](https://colab.research.google.com/github/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_parsing_with_mistral_ocr.ipynb)
    - **Sponsored by [Mistral AI](https://mistr.al/ocr-nir-github)**
 
    #### Overview 🔎
-   Most PDF-based techniques here start with a plain text extractor, and none of them checks what it produced. This notebook prints it, shows a results table losing its structure before indexing, and swaps the parsing step for Mistral OCR 4 while the rest of the pipeline stays identical.
+   Most PDF-based techniques here start with a plain text extractor, and none of them checks what it produced. This notebook prints it, shows a results table losing its structure before indexing, and swaps the parsing step for Mistral OCR 4.1 while the rest of the pipeline stays identical.
 
    #### Implementation 🛠️
-   - 🧪 **Controlled comparison:** the repository's own `encode_pdf()` pipeline, then the same pipeline with OCR 4 as the parser.
-   - 🧱 **Block-aware chunking:** OCR 4 labels every block, so each table stays whole together with its caption instead of being cut by a character splitter.
+   - 🧪 **Controlled comparison:** the repository's own `encode_pdf()` pipeline, then the same pipeline with OCR 4.1 as the parser.
+   - 🧱 **Block-aware chunking:** OCR 4.1 labels every block, so each table stays whole together with its caption instead of being cut by a character splitter.
    - 📈 **Reranking all three pipelines:** PyPDF ends with a confident wrong number, the block-aware pipeline with the right one.
    - 💾 **Runs without a Mistral key:** the OCR output ships in `data/mistral_ocr_cache/`.
 
